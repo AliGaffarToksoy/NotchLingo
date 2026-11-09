@@ -1,0 +1,580 @@
+{
+  "schemaVersion": 1,
+  "id": "4608a6e7-5d1b-58f7-a730-7480f1c0eee2",
+  "name": "Tech / Work English",
+  "track": "techWork",
+  "cards": [
+    {
+      "id": "95c803a8-cff5-5990-b80c-f268929f7feb",
+      "term": "rollback",
+      "partOfSpeech": "noun",
+      "cefr": "B2",
+      "definition": "A return to an earlier working version after a change causes problems.",
+      "turkishMeaning": "Önceki çalışan sürüme geri dönüş.",
+      "examples": [
+        "The **rollback** restored the previous release.",
+        "We need a **rollback** plan before deployment."
+      ],
+      "ipaUS": "/ˈroʊlbæk/",
+      "ipaUK": "/ˈrəʊlbæk/",
+      "note": "The noun is rollback; the verb is roll back.",
+      "tags": [
+        "devops",
+        "deployment"
+      ]
+    },
+    {
+      "id": "6fa3915e-1623-5d8b-999e-ef15ba629358",
+      "term": "provisioning",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "Preparing and supplying the resources a system needs.",
+      "turkishMeaning": "Kaynakları hazırlama ve kullanıma sunma.",
+      "examples": [
+        "Automated **provisioning** saves us time.",
+        "Server **provisioning** takes five minutes."
+      ],
+      "ipaUS": "/prəˈvɪʒənɪŋ/",
+      "ipaUK": "/prəˈvɪʒənɪŋ/",
+      "note": "More than buying hardware: it includes configuring resources.",
+      "tags": [
+        "cloud",
+        "infrastructure"
+      ]
+    },
+    {
+      "id": "e94474d5-12e0-5727-9254-c79e1f7acb81",
+      "term": "idempotent",
+      "partOfSpeech": "adjective",
+      "cefr": "C1",
+      "definition": "Producing the same final effect when repeated as when done once.",
+      "turkishMeaning": "Tekrarlansa da aynı nihai etkiyi oluşturan.",
+      "examples": [
+        "This **idempotent** operation can be retried safely.",
+        "Make the setup script **idempotent**."
+      ],
+      "ipaUS": "/ˌaɪdəmˈpoʊtənt/",
+      "ipaUK": "/ˌaɪdəmˈpəʊtənt/",
+      "note": "The final effect is stable; responses may still differ.",
+      "tags": [
+        "devops",
+        "api"
+      ]
+    },
+    {
+      "id": "e2952b30-3806-56c7-9799-1874161a193b",
+      "term": "on-call",
+      "partOfSpeech": "adjective",
+      "cefr": "B2",
+      "definition": "Available to respond to urgent work problems outside normal duties.",
+      "turkishMeaning": "Gerektiğinde müdahale etmek üzere nöbetçi.",
+      "examples": [
+        "The **on-call** engineer received an alert.",
+        "Check the **on-call** schedule before the weekend."
+      ],
+      "ipaUS": "/ˌɑːn ˈkɔːl/",
+      "ipaUK": "/ˌɒn ˈkɔːl/",
+      "note": "Hyphenated before a noun; you can also say I am on call.",
+      "tags": [
+        "devops",
+        "incident"
+      ]
+    },
+    {
+      "id": "8e7745ea-f17b-5697-a743-31f26f5bc965",
+      "term": "post-mortem",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A review after an incident to understand causes and improve systems.",
+      "turkishMeaning": "Olay sonrası neden ve iyileştirme değerlendirmesi.",
+      "examples": [
+        "We held a **post-mortem** after the outage.",
+        "The **post-mortem** lists three follow-up actions."
+      ],
+      "ipaUS": "/ˌpoʊst ˈmɔːrtəm/",
+      "ipaUK": "/ˌpəʊst ˈmɔːtəm/",
+      "note": "In engineering, aim for a blameless review.",
+      "tags": [
+        "devops",
+        "incident"
+      ]
+    },
+    {
+      "id": "cfdcd4bc-de88-5cae-808b-1a4956b4962c",
+      "term": "deployment",
+      "partOfSpeech": "noun",
+      "cefr": "B2",
+      "definition": "Putting a software version into an environment where it can run.",
+      "turkishMeaning": "Yazılımı çalışacağı ortama dağıtma.",
+      "examples": [
+        "The **deployment** finished without errors.",
+        "We paused the **deployment** during the incident."
+      ],
+      "ipaUS": "/dɪˈplɔɪmənt/",
+      "ipaUK": "/dɪˈplɔɪmənt/",
+      "note": "Deployment and release can be separate steps.",
+      "tags": [
+        "devops",
+        "deployment"
+      ]
+    },
+    {
+      "id": "6eb770ea-66c1-5a4e-b0f0-8f662148fc44",
+      "term": "availability",
+      "partOfSpeech": "noun",
+      "cefr": "B2",
+      "definition": "How reliably a service is ready for people to use.",
+      "turkishMeaning": "Bir hizmetin kullanılabilir olma durumu.",
+      "examples": [
+        "We measure **availability** every month.",
+        "The team improved **availability** by removing a single point of failure."
+      ],
+      "ipaUS": "/əˌveɪləˈbɪləti/",
+      "ipaUK": "/əˌveɪləˈbɪləti/",
+      "note": "Usually uncountable in this meaning.",
+      "tags": [
+        "cloud",
+        "reliability"
+      ]
+    },
+    {
+      "id": "dcee732a-c376-5dd1-aeb2-2bda3ca4f08c",
+      "term": "latency",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "The delay before a request receives a response.",
+      "turkishMeaning": "İstek ile yanıt arasındaki gecikme.",
+      "examples": [
+        "Network **latency** increased this morning.",
+        "We reduced **latency** by caching common results."
+      ],
+      "ipaUS": "/ˈleɪtənsi/",
+      "ipaUK": "/ˈleɪtənsi/",
+      "note": "Low latency means a shorter delay.",
+      "tags": [
+        "cloud",
+        "performance"
+      ]
+    },
+    {
+      "id": "7d2e0d87-6cfa-5fee-aed6-9c3e0b950758",
+      "term": "throughput",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "The amount of work a system completes in a period of time.",
+      "turkishMeaning": "Bir sistemin birim zamanda işlediği iş miktarı.",
+      "examples": [
+        "The queue's **throughput** doubled after the change.",
+        "We measure **throughput** in requests per second."
+      ],
+      "ipaUS": "/ˈθruːpʊt/",
+      "ipaUK": "/ˈθruːpʊt/",
+      "note": "Not the same as latency: rate versus delay.",
+      "tags": [
+        "cloud",
+        "performance"
+      ]
+    },
+    {
+      "id": "5a2f72c9-5569-570e-b61a-df7c9c4c7641",
+      "term": "bottleneck",
+      "partOfSpeech": "noun",
+      "cefr": "B2",
+      "definition": "A part of a system that limits overall speed or capacity.",
+      "turkishMeaning": "Darboğaz.",
+      "examples": [
+        "The database became a **bottleneck**.",
+        "Profiling helped us find the **bottleneck**."
+      ],
+      "ipaUS": "/ˈbɑːtəlnek/",
+      "ipaUK": "/ˈbɒtəlnek/",
+      "note": "Also used for slow steps in a work process.",
+      "tags": [
+        "performance",
+        "engineering"
+      ]
+    },
+    {
+      "id": "2a87b3af-e3dc-5c3f-9ab8-668c158b919f",
+      "term": "scalability",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "The ability to handle more work by increasing resources.",
+      "turkishMeaning": "Artan yükü kaynak ekleyerek karşılayabilme yeteneği.",
+      "examples": [
+        "We tested the service's **scalability**.",
+        "Good **scalability** matters during traffic spikes."
+      ],
+      "ipaUS": "/ˌskeɪləˈbɪləti/",
+      "ipaUK": "/ˌskeɪləˈbɪləti/",
+      "note": "Distinguish from availability: capacity growth versus readiness.",
+      "tags": [
+        "cloud",
+        "architecture"
+      ]
+    },
+    {
+      "id": "9846b56f-a623-55df-a380-c8d51c1f95cd",
+      "term": "load balancer",
+      "partOfSpeech": "noun",
+      "cefr": "B2",
+      "definition": "A component that distributes incoming traffic across servers.",
+      "turkishMeaning": "Gelen trafiği sunuculara dağıtan bileşen.",
+      "examples": [
+        "The **load balancer** routes requests to healthy servers.",
+        "We placed a **load balancer** in front of the application."
+      ],
+      "ipaUS": "/ˈloʊd ˌbælənsər/",
+      "ipaUK": "/ˈləʊd ˌbælənsə/",
+      "note": "Two words; balancer is a countable noun.",
+      "tags": [
+        "cloud",
+        "networking"
+      ]
+    },
+    {
+      "id": "6839232a-4302-5650-b348-861f589142eb",
+      "term": "health check",
+      "partOfSpeech": "noun",
+      "cefr": "B2",
+      "definition": "A test that checks whether a service is working well enough to use.",
+      "turkishMeaning": "Bir hizmetin çalışır durumda olup olmadığını denetleyen test.",
+      "examples": [
+        "The **health check** failed after the restart.",
+        "Add a **health check** to the container."
+      ],
+      "ipaUS": "/ˈhelθ tʃek/",
+      "ipaUK": "/ˈhelθ tʃek/",
+      "note": "A passing check only confirms the conditions it tests.",
+      "tags": [
+        "devops",
+        "monitoring"
+      ]
+    },
+    {
+      "id": "9cbb5b24-d5ef-50cf-893b-9070cf2cd34e",
+      "term": "failover",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "Switching to a backup system when the primary system fails.",
+      "turkishMeaning": "Ana sistem arızalandığında yedek sisteme geçiş.",
+      "examples": [
+        "Automatic **failover** restored the service.",
+        "We tested **failover** in a staging environment."
+      ],
+      "ipaUS": "/ˈfeɪloʊvər/",
+      "ipaUK": "/ˈfeɪləʊvə/",
+      "note": "Noun: failover. Verb: fail over.",
+      "tags": [
+        "cloud",
+        "reliability"
+      ]
+    },
+    {
+      "id": "5ba8aaf9-f9af-5377-9562-dac0d31b29f2",
+      "term": "infrastructure as code",
+      "partOfSpeech": "noun phrase",
+      "cefr": "C1",
+      "definition": "Managing infrastructure through versioned machine-readable definitions.",
+      "turkishMeaning": "Altyapıyı sürümlenen kod tanımlarıyla yönetme.",
+      "examples": [
+        "We use **infrastructure as code** to manage our environments.",
+        "**Infrastructure as code** makes changes easier to review."
+      ],
+      "ipaUS": "/ˈɪnfrəˌstrʌktʃər æz koʊd/",
+      "ipaUK": "/ˈɪnfrəˌstrʌktʃə æz kəʊd/",
+      "note": "Often abbreviated to IaC.",
+      "tags": [
+        "devops",
+        "infrastructure"
+      ]
+    },
+    {
+      "id": "b4836a73-4618-504b-89a9-ef46d632fccf",
+      "term": "least privilege",
+      "partOfSpeech": "noun phrase",
+      "cefr": "C1",
+      "definition": "Giving only the access needed to perform a task.",
+      "turkishMeaning": "Yalnızca görev için gereken en az yetkiyi verme ilkesi.",
+      "examples": [
+        "This role follows the principle of **least privilege**.",
+        "We applied **least privilege** to the service account."
+      ],
+      "ipaUS": "/liːst ˈprɪvəlɪdʒ/",
+      "ipaUK": "/liːst ˈprɪvəlɪdʒ/",
+      "note": "Privilege refers to permission here.",
+      "tags": [
+        "cloud",
+        "security",
+        "aws"
+      ]
+    },
+    {
+      "id": "9a88603e-21a9-5c21-84e7-0bcb1b05ddc4",
+      "term": "secret",
+      "partOfSpeech": "noun",
+      "cefr": "B2",
+      "definition": "Sensitive data such as a password, token, or private key.",
+      "turkishMeaning": "Parola, belirteç veya özel anahtar gibi hassas veri.",
+      "examples": [
+        "Never commit a **secret** to the repository.",
+        "Rotate the **secret** after a suspected leak."
+      ],
+      "ipaUS": "/ˈsiːkrət/",
+      "ipaUK": "/ˈsiːkrət/",
+      "note": "A secret is sensitive even when stored in an environment variable.",
+      "tags": [
+        "security",
+        "devops"
+      ]
+    },
+    {
+      "id": "c0138091-bdff-587f-a2e3-af335aa2102f",
+      "term": "pull request",
+      "partOfSpeech": "noun",
+      "cefr": "B2",
+      "definition": "A proposal to review and merge changes into a codebase.",
+      "turkishMeaning": "Kod değişikliklerini inceleme ve birleştirme önerisi.",
+      "examples": [
+        "Could you review my **pull request**?",
+        "This **pull request** fixes the timeout."
+      ],
+      "ipaUS": "/pʊl rɪˈkwest/",
+      "ipaUK": "/pʊl rɪˈkwest/",
+      "note": "Commonly shortened to PR.",
+      "tags": [
+        "engineering",
+        "code-review"
+      ]
+    },
+    {
+      "id": "1bde1b14-e304-51a3-8cbb-01fabe976bd1",
+      "term": "Could you take a look at",
+      "partOfSpeech": "polite request",
+      "cefr": "B1",
+      "definition": "Used to ask someone to examine something.",
+      "turkishMeaning": "… bir göz atabilir misin?",
+      "examples": [
+        "**Could you take a look at** my pull request?",
+        "**Could you take a look at** these logs?"
+      ],
+      "ipaUS": "/kʊd juː teɪk ə lʊk æt/",
+      "ipaUK": "/kʊd juː teɪk ə lʊk æt/",
+      "note": "Give context and say what kind of feedback you need.",
+      "tags": [
+        "work",
+        "code-review"
+      ]
+    },
+    {
+      "id": "aa5c8795-9e70-525f-85fd-05d343946dbe",
+      "term": "I'm blocked by",
+      "partOfSpeech": "phrase",
+      "cefr": "B2",
+      "definition": "I cannot continue because of a specific obstacle.",
+      "turkishMeaning": "… nedeniyle ilerleyemiyorum.",
+      "examples": [
+        "**I'm blocked by** a missing permission.",
+        "**I'm blocked by** the failing integration test."
+      ],
+      "ipaUS": "/aɪm blɑːkt baɪ/",
+      "ipaUK": "/aɪm blɒkt baɪ/",
+      "note": "Useful in stand-ups; name the obstacle clearly.",
+      "tags": [
+        "work",
+        "meeting"
+      ]
+    },
+    {
+      "id": "813e93d7-cfc1-529d-9757-27f0f95ede99",
+      "term": "follow up on",
+      "partOfSpeech": "phrasal verb",
+      "cefr": "B2",
+      "definition": "Check progress or take further action about something.",
+      "turkishMeaning": "Bir konunun takibini yapmak.",
+      "examples": [
+        "I'll **follow up on** the support ticket.",
+        "Can you **follow up on** yesterday's action items?"
+      ],
+      "ipaUS": "/ˈfɑːloʊ ʌp ɑːn/",
+      "ipaUK": "/ˈfɒləʊ ʌp ɒn/",
+      "note": "Verb: follow up. Noun/adjective: follow-up.",
+      "tags": [
+        "work",
+        "email"
+      ]
+    },
+    {
+      "id": "f752587a-80c1-500f-a6ba-c0842e773acc",
+      "term": "keep you posted",
+      "partOfSpeech": "phrase",
+      "cefr": "B2",
+      "definition": "Continue giving you updates.",
+      "turkishMeaning": "Seni gelişmelerden haberdar etmek.",
+      "examples": [
+        "I'll **keep you posted** on the investigation.",
+        "We will **keep you posted** as we learn more."
+      ],
+      "ipaUS": "/kiːp juː ˈpoʊstɪd/",
+      "ipaUK": "/kiːp juː ˈpəʊstɪd/",
+      "note": "Useful during incidents; add a specific next update time.",
+      "tags": [
+        "work",
+        "incident"
+      ]
+    },
+    {
+      "id": "ce6a9457-6d2e-51f5-a20a-a38e31d5b947",
+      "term": "root cause",
+      "partOfSpeech": "noun",
+      "cefr": "B2",
+      "definition": "An underlying reason that a problem happened.",
+      "turkishMeaning": "Bir sorunun temel nedeni.",
+      "examples": [
+        "We are still investigating the **root cause**.",
+        "The report explains one **root cause** of the failure."
+      ],
+      "ipaUS": "/ruːt kɔːz/",
+      "ipaUK": "/ruːt kɔːz/",
+      "note": "Complex incidents may have several contributing causes.",
+      "tags": [
+        "devops",
+        "incident"
+      ]
+    },
+    {
+      "id": "700b2db2-e878-5288-aeb2-db3d96e18875",
+      "term": "workaround",
+      "partOfSpeech": "noun",
+      "cefr": "B2",
+      "definition": "A temporary way to avoid a problem without fully fixing it.",
+      "turkishMeaning": "Kalıcı çözüm yerine kullanılan geçici yöntem.",
+      "examples": [
+        "Restarting the worker is a temporary **workaround**.",
+        "We documented the **workaround** for support."
+      ],
+      "ipaUS": "/ˈwɜːrkəraʊnd/",
+      "ipaUK": "/ˈwɜːkəraʊnd/",
+      "note": "One word as a noun; work around is a verb phrase.",
+      "tags": [
+        "work",
+        "incident"
+      ]
+    },
+    {
+      "id": "8465f47d-d309-582b-ab04-79692d6462d4",
+      "term": "trade-off",
+      "partOfSpeech": "noun",
+      "cefr": "B2",
+      "definition": "A choice that gains one benefit while giving up another.",
+      "turkishMeaning": "Bir avantaj için başka bir avantajdan ödün verme.",
+      "examples": [
+        "There is a **trade-off** between cost and speed.",
+        "Explain the **trade-off** in your design proposal."
+      ],
+      "ipaUS": "/ˈtreɪd ɔːf/",
+      "ipaUK": "/ˈtreɪd ɒf/",
+      "note": "Also written tradeoff, especially in American English.",
+      "tags": [
+        "architecture",
+        "interview"
+      ]
+    },
+    {
+      "id": "98aedd5d-ac4e-5a7f-a108-682263e258ef",
+      "term": "backward compatible",
+      "partOfSpeech": "adjective phrase",
+      "cefr": "C1",
+      "definition": "Able to work with older versions or existing users of an interface.",
+      "turkishMeaning": "Önceki sürümlerle uyumlu.",
+      "examples": [
+        "The new API is **backward compatible**.",
+        "We must keep the file format **backward compatible**."
+      ],
+      "ipaUS": "/ˈbækwərd kəmˈpætəbəl/",
+      "ipaUK": "/ˈbækwəd kəmˈpætəbəl/",
+      "note": "Before a noun, use a hyphen: a backward-compatible change.",
+      "tags": [
+        "engineering",
+        "api"
+      ]
+    },
+    {
+      "id": "b9df50f9-f8f1-5e9b-9d5e-02e1b8f54e53",
+      "term": "deprecate",
+      "partOfSpeech": "verb",
+      "cefr": "C1",
+      "definition": "Mark a feature as discouraged and potentially removable later.",
+      "turkishMeaning": "Bir özelliğin kullanımını artık önermemek ve kaldırılabileceğini belirtmek.",
+      "examples": [
+        "We plan to **deprecate** the old endpoint.",
+        "Do not **deprecate** this option without a migration guide."
+      ],
+      "ipaUS": "/ˈdeprəkeɪt/",
+      "ipaUK": "/ˈdeprəkeɪt/",
+      "note": "Deprecated does not necessarily mean removed or broken.",
+      "tags": [
+        "engineering",
+        "api"
+      ]
+    },
+    {
+      "id": "99d3e3e6-9f81-56bc-ac1b-d3b9ce389858",
+      "term": "acceptance criteria",
+      "partOfSpeech": "plural noun",
+      "cefr": "B2",
+      "definition": "Conditions that must be met for work to be accepted.",
+      "turkishMeaning": "İşin kabul edilmesi için karşılanması gereken koşullar.",
+      "examples": [
+        "The ticket needs clear **acceptance criteria**.",
+        "We checked the **acceptance criteria** before closing the task."
+      ],
+      "ipaUS": "/əkˈseptəns kraɪˈtɪriə/",
+      "ipaUK": "/əkˈseptəns kraɪˈtɪəriə/",
+      "note": "Criteria is plural; the singular is criterion.",
+      "tags": [
+        "work",
+        "planning"
+      ]
+    },
+    {
+      "id": "decaf6cd-d73f-5cbe-a1a3-d6b0f8d45885",
+      "term": "Could you clarify",
+      "partOfSpeech": "polite request",
+      "cefr": "B1",
+      "definition": "Used to ask someone to explain something more clearly.",
+      "turkishMeaning": "… açıklığa kavuşturabilir misiniz?",
+      "examples": [
+        "**Could you clarify** the expected behavior?",
+        "**Could you clarify** which environment is affected?"
+      ],
+      "ipaUS": "/kʊd juː ˈklærəfaɪ/",
+      "ipaUK": "/kʊd juː ˈklærəfaɪ/",
+      "note": "Ask a specific question to avoid ambiguity.",
+      "tags": [
+        "work",
+        "meeting",
+        "interview"
+      ]
+    },
+    {
+      "id": "008bbbb4-2b8b-51ec-b1e8-0e7fde6f20a8",
+      "term": "In my previous role",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Used to introduce experience from an earlier job.",
+      "turkishMeaning": "Önceki görevimde.",
+      "examples": [
+        "**In my previous role**, I maintained deployment pipelines.",
+        "**In my previous role**, I helped reduce incident response time."
+      ],
+      "ipaUS": "/ɪn maɪ ˈpriːviəs roʊl/",
+      "ipaUK": "/ɪn maɪ ˈpriːviəs rəʊl/",
+      "note": "In interviews, follow with a concrete action and result.",
+      "tags": [
+        "work",
+        "interview"
+      ]
+    }
+  ]
+}

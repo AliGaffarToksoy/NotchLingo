@@ -1,0 +1,50 @@
+name: Build and package macOS app
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test-and-package:
+    runs-on: macos-15
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify toolchain
+        run: |
+          xcode-select -p
+          swift --version
+      - name: Unit and persistence tests
+        run: swift test
+      - name: Validate bundled decks
+        run: swift run NotchLingoValidate
+      - name: Build application
+        run: bash Scripts/package.sh
+      - name: Upload application
+        uses: actions/upload-artifact@v4
+        with:
+          name: NotchLingo-macOS-arm64
+          path: |
+            dist/NotchLingo-macOS-arm64.zip
+            dist/SHA256SUMS.txt
+  release:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: test-and-package
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: NotchLingo-macOS-arm64
+          path: dist
+      - name: Publish downloadable build
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          COMMIT: ${{ github.sha }}
+          RUN: ${{ github.run_number }}
+        run: |
+          gh release create "v0.1.${RUN}" dist/NotchLingo-macOS-arm64.zip dist/SHA256SUMS.txt --target "$COMMIT" --title "NotchLingo 0.1.${RUN}" --notes "Apple Silicon · macOS 14+. Unzip and drag NotchLingo.app to Applications. No Xcode needed. Ad-hoc signed, not Apple-notarized; approve first launch in System Settings → Privacy & Security. / ZIP'i açıp uygulamayı Uygulamalar klasörüne taşıyın. İlk açılışta Gizlilik ve Güvenlik ekranından onay gerekebilir."

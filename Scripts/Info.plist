@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+<key>CFBundleExecutable</key><string>NotchLingo</string>
+<key>CFBundleIdentifier</key><string>org.notchlingo.app</string>
+<key>CFBundleName</key><string>NotchLingo</string>
+<key>CFBundleDisplayName</key><string>NotchLingo</string>
+<key>CFBundlePackageType</key><string>APPL</string>
+<key>CFBundleShortVersionString</key><string>0.1.0</string>
+<key>CFBundleVersion</key><string>1</string>
+<key>CFBundleIconFile</key><string>AppIcon</string>
+<key>LSMinimumSystemVersion</key><string>14.0</string>
+<key>NSHighResolutionCapable</key><true/>
+<key>NSMicrophoneUsageDescription</key><string>NotchLingo uses your microphone only for speaking practice. Audio is processed on this Mac and is not saved. / Mikrofon yalnızca konuşma çalışması için kullanılır; ses kaydedilmez.</string>
+<key>NSSpeechRecognitionUsageDescription</key><string>NotchLingo transcribes English practice on-device to compare words. Unsupported offline recognition is disabled. / İngilizce alıştırmalar cihazda yazıya çevrilir.</string>
+<key>NSAppTransportSecurity</key><dict><key>NSAllowsLocalNetworking</key><true/></dict>
+<key>CFBundleLocalizations</key><array><string>tr</string><string>en</string></array>
+<key>NSPrincipalClass</key><string>NSApplication</string>
+</dict></plist>
