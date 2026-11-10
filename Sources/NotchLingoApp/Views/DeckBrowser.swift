@@ -18,9 +18,13 @@ struct DeckBrowser: View {
     }
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
-            Text(model.t("Your English library", "İngilizce kütüphanen")).font(.largeTitle.bold())
+            Text(model.t("Words for every part of your day.", "Günün her anı için kelimeler.")).font(.title.bold())
+            HStack(spacing: 8) {
+                Image(systemName: "magnifyingglass").foregroundStyle(.secondary)
+                TextField(model.t("Search words or meanings", "Kelime veya anlam ara"), text: $search).textFieldStyle(.plain)
+            }.padding(10).background(LingoStyle.surface, in: RoundedRectangle(cornerRadius: 8))
+                .overlay(RoundedRectangle(cornerRadius: 8).strokeBorder(LingoStyle.separator, lineWidth: 0.5))
             HStack {
-                TextField(model.t("Search words or meanings", "Kelime veya anlam ara"), text: $search).textFieldStyle(.roundedBorder)
                 Picker(model.t("Deck", "Deste"), selection: $deck) {
                     Text(model.t("All decks", "Tüm desteler")).tag("")
                     ForEach(model.decks) { Text($0.name).tag($0.id.uuidString) }
@@ -29,6 +33,7 @@ struct DeckBrowser: View {
                     Text(model.t("All tags", "Tüm etiketler")).tag("")
                     ForEach(Array(Set(entries.flatMap { $0.content.tags })).sorted(), id: \.self) { Text($0).tag($0) }
                 }.frame(maxWidth: 200)
+                Spacer()
             }
             HStack {
                 Text("\(visible.count) " + model.t("cards", "kart")).foregroundStyle(.secondary)
@@ -41,12 +46,15 @@ struct DeckBrowser: View {
                     }
                 }
             }
-            LazyVStack(spacing: 12) {
+            if visible.isEmpty {
+                ContentUnavailableView.search(text: search)
+            }
+            LazyVStack(spacing: 8) {
                 ForEach(visible, id: \.stored.id) { entry in
                     DisclosureGroup {
                         VStack(alignment: .leading, spacing: 10) {
                             Text(entry.content.definition)
-                            Text(entry.content.turkishMeaning).foregroundStyle(.mint)
+                            Text(entry.content.turkishMeaning).foregroundStyle(LingoStyle.accent)
                             ForEach(entry.content.examples, id: \.self) { example in
                                 Text((try? AttributedString(markdown: example)) ?? AttributedString(example))
                             }
@@ -60,7 +68,7 @@ struct DeckBrowser: View {
                             }
                         }.padding(.top, 12).frame(maxWidth: .infinity, alignment: .leading).textSelection(.enabled)
                     } label: {
-                        HStack { Text(entry.content.term).font(.headline); Spacer(); Text(entry.content.cefr.rawValue).font(.caption).foregroundStyle(.mint) }
+                        HStack { Text(entry.content.term).font(.headline); Spacer(); Text(entry.content.cefr.rawValue).font(.caption).foregroundStyle(LingoStyle.accent) }
                     }.cardSurface()
                 }
             }

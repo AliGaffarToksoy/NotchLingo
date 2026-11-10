@@ -44,7 +44,7 @@ struct SettingsView: View {
             GroupBox(model.t("Gentle reminders", "Küçük hatırlatmalar")) {
                 VStack(alignment: .leading, spacing: 16) {
                     Toggle(model.t("Enable reminders", "Hatırlatmaları aç"), isOn: $model.preferences.pings)
-                        .onChange(of: model.preferences.pings) { enabled in if enabled { NotificationService.request(model: model) } }
+                        .onChange(of: model.preferences.pings) { _, enabled in if enabled { NotificationService.request(model: model) } }
                     Stepper(model.t("Every ", "Her ") + "\(model.preferences.interval) " + model.t("minutes", "dakikada"), value: $model.preferences.interval, in: 15...240, step: 15)
                     HStack {
                         Picker(model.t("From", "Başlangıç"), selection: $model.preferences.startHour) { ForEach(0..<24) { Text(String(format: "%02d:00", $0)).tag($0) } }
@@ -85,7 +85,7 @@ struct OnboardingView: View {
     @ObservedObject var model: AppModel
     var body: some View {
         VStack(alignment: .leading, spacing: 22) {
-            Image(systemName: "text.bubble.fill").font(.system(size: 48)).foregroundStyle(.mint)
+            Image(systemName: "text.bubble.fill").font(.system(size: 48)).foregroundStyle(LingoStyle.accent)
             Text(model.t("Welcome to NotchLingo", "NotchLingo'ya hoş geldin")).font(.largeTitle.bold())
             Picker("Dil / Language", selection: $model.preferences.language) { Text("Türkçe").tag("tr"); Text("English").tag("en") }.pickerStyle(.segmented)
             Text(model.t("Learn in small moments: open the top pill, study a few cards, then get back to your day.", "Kısa aralarda öğren: üstteki çentiği aç, birkaç kart çalış ve gününe devam et."))
@@ -93,7 +93,7 @@ struct OnboardingView: View {
             Label(model.t("Reminders are off until you enable them. You can snooze anytime.", "Hatırlatmalar sen açana kadar kapalıdır. İstediğin zaman erteleyebilirsin."), systemImage: "bell")
             Label(model.t("All progress is stored locally. Optional AI is off by default.", "Tüm ilerleme yerelde saklanır. İsteğe bağlı yapay zekâ varsayılan olarak kapalıdır."), systemImage: "lock.shield")
             Button(model.t("Let's begin", "Başlayalım")) { model.preferences.onboarding = true; model.showOnboarding = false }
-                .buttonStyle(.borderedProminent).tint(.mint).controlSize(.large)
-        }.padding(36).frame(width: 520).preferredColorScheme(.dark)
+                .buttonStyle(.borderedProminent).tint(LingoStyle.accent).controlSize(.large)
+        }.padding(36).frame(width: 520)
     }
 }

@@ -168,7 +168,7 @@ import NotchLingoStorage
         do {
             try store.record(correct ? .good : .again, for: stored, duration: 15)
             pingCorrect = correct; pingAnswered = true; try reload()
-        } catch { error = error.localizedDescription }
+        } catch { self.error = error.localizedDescription }
     }
     func pause(minutes: Int = 60) { preferences.pauseUntil = Date().addingTimeInterval(Double(minutes * 60)); pingVisible = false }
     func importFile() {

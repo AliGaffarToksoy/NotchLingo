@@ -20,7 +20,7 @@ struct AIWorkshopView: View {
                 VStack(spacing: 14) {
                     Picker(model.t("Provider", "Sağlayıcı"), selection: $model.preferences.aiProvider) {
                         Text("Ollama · local").tag("ollama"); Text("OpenAI").tag("openai"); Text("Anthropic").tag("anthropic")
-                    }.onChange(of: model.preferences.aiProvider) { provider in
+                    }.onChange(of: model.preferences.aiProvider) { _, provider in
                         key = ""; model.preferences.aiModel = provider == "ollama" ? "llama3.2" : ""
                     }
                     TextField(model.t("Model name from your provider", "Sağlayıcındaki model adı"), text: $model.preferences.aiModel).textFieldStyle(.roundedBorder)
@@ -51,7 +51,7 @@ struct AIWorkshopView: View {
                 .accessibilityLabel(model.t("Sentence or topic", "Cümle veya konu"))
             HStack {
                 Button(model.t("Send to selected provider", "Seçili sağlayıcıya gönder")) { run() }
-                    .buttonStyle(.borderedProminent).tint(.mint).disabled(!model.preferences.aiEnabled || input.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty || busy)
+                    .buttonStyle(.borderedProminent).tint(LingoStyle.accent).disabled(!model.preferences.aiEnabled || input.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty || busy)
                 if busy {
                     ProgressView().controlSize(.small)
                     Button(model.t("Cancel", "İptal")) { work?.cancel(); busy = false }

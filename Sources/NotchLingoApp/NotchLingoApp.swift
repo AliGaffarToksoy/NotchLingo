@@ -50,20 +50,28 @@ import UserNotifications
         }
     }
     private func installApplicationMenu() {
+        let t: (String, String) -> String = { [weak self] en, tr in self?.model?.t(en, tr) ?? en }
         let main = NSMenu()
         let appItem = NSMenuItem(); let appMenu = NSMenu()
-        appMenu.addItem(withTitle: "Quit NotchLingo", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q")
+        appMenu.addItem(withTitle: t("About NotchLingo", "NotchLingo Hakkında"), action: #selector(NSApplication.orderFrontStandardAboutPanel(_:)), keyEquivalent: "")
+        appMenu.addItem(.separator())
+        let settings = NSMenuItem(title: t("Settings…", "Ayarlar…"), action: #selector(openSettings), keyEquivalent: ",")
+        settings.target = self; appMenu.addItem(settings)
+        appMenu.addItem(.separator())
+        appMenu.addItem(withTitle: t("Hide NotchLingo", "NotchLingo’yu Gizle"), action: #selector(NSApplication.hide(_:)), keyEquivalent: "h")
+        appMenu.addItem(withTitle: t("Quit NotchLingo", "NotchLingo’dan Çık"), action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q")
         appItem.submenu = appMenu; main.addItem(appItem)
-        let editItem = NSMenuItem(); let edit = NSMenu(title: "Edit")
-        edit.addItem(withTitle: "Undo", action: Selector(("undo:")), keyEquivalent: "z")
-        edit.addItem(withTitle: "Cut", action: #selector(NSText.cut(_:)), keyEquivalent: "x")
-        edit.addItem(withTitle: "Copy", action: #selector(NSText.copy(_:)), keyEquivalent: "c")
-        edit.addItem(withTitle: "Paste", action: #selector(NSText.paste(_:)), keyEquivalent: "v")
-        edit.addItem(withTitle: "Select All", action: #selector(NSText.selectAll(_:)), keyEquivalent: "a")
+        let editItem = NSMenuItem(); let edit = NSMenu(title: t("Edit", "Düzen"))
+        edit.addItem(withTitle: t("Undo", "Geri Al"), action: Selector(("undo:")), keyEquivalent: "z")
+        edit.addItem(withTitle: t("Cut", "Kes"), action: #selector(NSText.cut(_:)), keyEquivalent: "x")
+        edit.addItem(withTitle: t("Copy", "Kopyala"), action: #selector(NSText.copy(_:)), keyEquivalent: "c")
+        edit.addItem(withTitle: t("Paste", "Yapıştır"), action: #selector(NSText.paste(_:)), keyEquivalent: "v")
+        edit.addItem(withTitle: t("Select All", "Tümünü Seç"), action: #selector(NSText.selectAll(_:)), keyEquivalent: "a")
         editItem.submenu = edit; main.addItem(editItem); NSApp.mainMenu = main
     }
     private func refreshPreferences() {
         guard let model else { return }
+        installApplicationMenu()
         let menu = NSMenu()
         func item(_ title: String, _ action: Selector) {
             let entry = NSMenuItem(title: title, action: action, keyEquivalent: ""); entry.target = self; menu.addItem(entry)
@@ -85,9 +93,10 @@ import UserNotifications
     @objc func openDashboard() {
         guard let model else { return }
         if window == nil {
-            let window = NSWindow(contentRect: NSRect(x: 0, y: 0, width: 1100, height: 800),
+            let window = NSWindow(contentRect: NSRect(x: 0, y: 0, width: 1060, height: 760),
                                   styleMask: [.titled, .closable, .miniaturizable, .resizable], backing: .buffered, defer: false)
             window.title = "NotchLingo"; window.isReleasedWhenClosed = false
+            window.titlebarAppearsTransparent = true; window.toolbarStyle = .unified
             window.contentView = NSHostingView(rootView: DashboardView(model: model))
             window.center(); window.setFrameAutosaveName("NotchLingoDashboard"); self.window = window
         }

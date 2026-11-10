@@ -6,9 +6,9 @@ struct ExerciseView: View {
     @ObservedObject var audio: AudioService
     @FocusState private var typing: Bool
     var body: some View {
-        VStack(alignment: .leading, spacing: 16) {
+        VStack(alignment: .leading, spacing: 14) {
             HStack {
-                Label(model.title(model.kind), systemImage: symbol).font(.caption.weight(.semibold)).foregroundStyle(.mint)
+                Label(model.title(model.kind), systemImage: symbol).font(.caption.weight(.semibold)).foregroundStyle(.teal)
                 Spacer()
                 Text("\(model.sessionCount) · \(model.secondsLeft / 60):\(String(format: "%02d", model.secondsLeft % 60))")
                     .font(.caption.monospacedDigit()).foregroundStyle(.secondary)
@@ -17,7 +17,7 @@ struct ExerciseView: View {
             }
             if let card = model.content, let prompt = model.prompt {
                 HStack {
-                    Text(card.cefr.rawValue).font(.caption.bold()).padding(.horizontal, 8).padding(.vertical, 4).background(.white.opacity(0.1), in: Capsule())
+                    Text(card.cefr.rawValue).font(.system(size: 10, weight: .medium)).padding(.horizontal, 6).padding(.vertical, 3).background(.white.opacity(0.08), in: RoundedRectangle(cornerRadius: 4))
                     Text(card.partOfSpeech).font(.caption).foregroundStyle(.secondary)
                     Spacer()
                     if model.kind != .listening && model.kind != .cloze {
@@ -29,10 +29,10 @@ struct ExerciseView: View {
                 Group {
                     switch model.kind {
                     case .flashcard:
-                        Text(card.term).font(.system(size: 27, weight: .bold, design: .rounded))
+                        Text(card.term).font(.system(size: 25, weight: .semibold)).fixedSize(horizontal: false, vertical: true)
                         if !model.revealed {
                             Button(model.t("Reveal meaning", "Anlamı göster")) { model.revealed = true }
-                                .buttonStyle(.borderedProminent).tint(.mint).keyboardShortcut(.space, modifiers: [])
+                                .buttonStyle(.borderedProminent).tint(LingoStyle.accent).keyboardShortcut(.space, modifiers: [])
                         }
                     case .meaning, .natural:
                         Text(model.kind == .meaning ? card.term : model.t("Which sentence is natural?", "Hangi cümle doğal?"))
@@ -40,9 +40,9 @@ struct ExerciseView: View {
                         ForEach(model.options, id: \.self) { option in
                             Button { model.answer = option; model.checkAnswer() } label: {
                                 HStack { Text(option).multilineTextAlignment(.leading); Spacer()
-                                    if model.revealed && option == prompt.answer { Image(systemName: "checkmark.circle.fill").foregroundStyle(.mint) }
+                                    if model.revealed && option == prompt.answer { Image(systemName: "checkmark.circle.fill").foregroundStyle(.teal) }
                                 }.padding(10).frame(maxWidth: .infinity, alignment: .leading)
-                                    .background(model.answer == option ? Color.mint.opacity(0.16) : .white.opacity(0.05), in: RoundedRectangle(cornerRadius: 10))
+                                    .background(model.answer == option ? Color.teal.opacity(0.16) : .white.opacity(0.05), in: RoundedRectangle(cornerRadius: 10))
                             }.buttonStyle(.plain).disabled(model.revealed)
                         }
                     case .cloze:
@@ -53,7 +53,7 @@ struct ExerciseView: View {
                         Text(model.t("Listen, then type what you hear.", "Dinle ve duyduğunu yaz.")).font(.title3.bold())
                         Button { audio.speak(prompt.answer, locale: model.preferences.voice) } label: {
                             Label(model.t("Play sentence", "Cümleyi dinle"), systemImage: "waveform")
-                        }.buttonStyle(.borderedProminent).tint(.mint)
+                        }.buttonStyle(.borderedProminent).tint(LingoStyle.accent)
                         answerField
                     case .builder:
                         Text(model.t("Build the sentence", "Cümleyi oluştur")).font(.title3.bold())
@@ -92,7 +92,7 @@ struct ExerciseView: View {
                 if let error = audio.error { Text(error).font(.caption).foregroundStyle(.orange) }
                 if model.revealed { revealedContent(card) }
             }
-        }.onChange(of: model.current?.id) { _ in typing = false }
+        }.onChange(of: model.current?.id) { typing = false }
     }
     private var answerField: some View {
         HStack {
@@ -119,30 +119,41 @@ struct ExerciseView: View {
                 Text(model.prompt?.answer ?? "").font(.callout.weight(.semibold))
             }
             Divider()
-            Text(card.definition).font(.callout.weight(.semibold))
-            Text(card.turkishMeaning).font(.callout).foregroundStyle(.mint)
+            Text(card.definition).font(.system(size: 15, weight: .medium)).fixedSize(horizontal: false, vertical: true)
+            Text(card.turkishMeaning).font(.system(size: 14)).foregroundStyle(.secondary).fixedSize(horizontal: false, vertical: true)
             HStack {
                 Text(model.preferences.voice == "en-GB" ? card.ipaUK : card.ipaUS).font(.caption).foregroundStyle(.secondary)
                 Button { audio.speak(card.term, locale: model.preferences.voice) } label: { Image(systemName: "speaker.wave.2") }.buttonStyle(.plain)
             }
-            ForEach(card.examples, id: \.self) { example in
-                Text((try? AttributedString(markdown: example)) ?? AttributedString(example)).font(.callout)
+            if let example = card.examples.first {
+                Text((try? AttributedString(markdown: example)) ?? AttributedString(example))
+                    .font(.system(size: 13)).foregroundStyle(.white.opacity(0.8))
+                    .fixedSize(horizontal: false, vertical: true)
+                    .padding(.leading, 12).overlay(alignment: .leading) { RoundedRectangle(cornerRadius: 1).fill(.teal.opacity(0.6)).frame(width: 2) }
             }
-            if model.preferences.hints, let note = card.note { Text(note).font(.caption).foregroundStyle(.secondary) }
+            DisclosureGroup(model.t("More examples & notes", "Diğer örnekler ve notlar")) {
+                VStack(alignment: .leading, spacing: 8) {
+                    ForEach(Array(card.examples.dropFirst()), id: \.self) { example in
+                        Text((try? AttributedString(markdown: example)) ?? AttributedString(example)).fixedSize(horizontal: false, vertical: true)
+                    }
+                    if model.preferences.hints, let note = card.note { Text(note).foregroundStyle(.secondary).fixedSize(horizontal: false, vertical: true) }
+                }.font(.caption).padding(.top, 8).frame(maxWidth: .infinity, alignment: .leading)
+            }.font(.caption).foregroundStyle(.secondary)
+            Divider().padding(.top, 4)
             HStack(spacing: 8) {
                 ratingButton(.again, en: "Again", tr: "Tekrar", color: .red, key: "1")
                 ratingButton(.hard, en: "Hard", tr: "Zor", color: .orange, key: "2")
-                ratingButton(.good, en: "Good", tr: "İyi", color: .mint, key: "3")
+                ratingButton(.good, en: "Good", tr: "İyi", color: .teal, key: "3")
                 ratingButton(.easy, en: "Easy", tr: "Kolay", color: .cyan, key: "4")
             }.padding(.top, 6)
         }
     }
     private func ratingButton(_ rating: Rating, en: String, tr: String, color: Color, key: KeyEquivalent) -> some View {
         let due = model.current.map { SRSEngine().rate($0.schedule, as: rating, at: Date()).due.timeIntervalSinceNow } ?? 60
-        let duration = due < 3600 ? "\(max(1, Int((due / 60).rounded())))m" : "\(max(1, Int((due / 86400).rounded())))d"
+        let duration = due < 3600 ? "\(max(1, Int((due / 60).rounded()))) " + model.t("min", "dk") : "\(max(1, Int((due / 86400).rounded()))) " + model.t("days", "gün")
         return Button { model.rate(rating) } label: {
-            VStack(spacing: 4) { Text(model.t(en, tr)).bold(); Text(duration).font(.caption2) }.frame(maxWidth: .infinity)
-        }.buttonStyle(.bordered).tint(color).keyboardShortcut(key, modifiers: [])
+            VStack(spacing: 4) { Text(model.t(en, tr)).font(.system(size: 12, weight: .semibold)); Text(duration).font(.system(size: 10)).foregroundStyle(.secondary) }.frame(maxWidth: .infinity).frame(height: 46)
+        }.buttonStyle(ReviewRatingStyle(tint: color, primary: rating == .good)).keyboardShortcut(key, modifiers: [])
     }
     private var symbol: String {
         switch model.kind {
@@ -152,5 +163,17 @@ struct ExerciseView: View {
         case .builder: return "text.word.spacing"
         default: return "questionmark.circle"
         }
+    }
+}
+
+private struct ReviewRatingStyle: ButtonStyle {
+    let tint: Color
+    let primary: Bool
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .foregroundStyle(primary ? tint : Color.primary.opacity(0.85))
+            .background(primary ? tint.opacity(configuration.isPressed ? 0.28 : 0.16) : Color.white.opacity(configuration.isPressed ? 0.14 : 0.065), in: RoundedRectangle(cornerRadius: 10, style: .continuous))
+            .overlay(RoundedRectangle(cornerRadius: 10, style: .continuous).strokeBorder(primary ? tint.opacity(0.25) : .white.opacity(0.07), lineWidth: 0.5))
+            .contentShape(RoundedRectangle(cornerRadius: 10))
     }
 }
