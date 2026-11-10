@@ -40,7 +40,7 @@ final class LearningPanel: NSPanel {
         guard let screen = NSScreen.screens.first(where: { $0.safeAreaInsets.top > 0 }) ?? NSScreen.screens.first(where: { NSMouseInRect(NSEvent.mouseLocation, $0.frame, false) }) ?? NSScreen.main else { return }
         let inset = screen.safeAreaInsets.top
         let width: CGFloat = expanded ? (passive ? 430 : 560) : 360
-        let height: CGFloat = expanded ? (passive ? 200 : min(710, screen.frame.height - inset - 90)) + inset : 42 + inset
+        let height: CGFloat = expanded ? (passive ? 310 : min(710, screen.frame.height - inset - 90)) + inset : 42 + inset
         panel.contentView = NSHostingView(rootView: NotchView(model: model, safeTop: inset, passive: passive, close: { [weak self] in self?.collapse() }).preferredColorScheme(.dark))
         let rect = NSRect(x: screen.frame.midX - width/2, y: screen.frame.maxY - height, width: width, height: height)
         let animate = animated && !NSWorkspace.shared.accessibilityDisplayShouldReduceMotion
@@ -83,8 +83,17 @@ private struct NotchView: View {
                 ScrollView {
                     if passive {
                         VStack(alignment: .leading, spacing: 12) {
-                            Text(model.t("A tiny English break?", "Küçük bir İngilizce molası?" )).font(.headline)
-                            Text(model.wordOfDay?.term ?? "NotchLingo").font(.title2.bold())
+                            Text(model.t("What does this mean?", "Bu ne anlama geliyor?")).font(.headline)
+                            Text(model.pingContent?.term ?? "NotchLingo").font(.title2.bold())
+                            if model.pingAnswered {
+                                Label(model.pingContent?.definition ?? "", systemImage: model.pingCorrect ? "checkmark.circle.fill" : "arrow.clockwise.circle")
+                                    .foregroundStyle(model.pingCorrect ? .mint : .orange)
+                                Text(model.pingContent?.turkishMeaning ?? "").font(.callout)
+                            } else {
+                                ForEach(model.pingChoices, id: \.self) { choice in
+                                    Button(choice) { model.answerPing(choice) }.buttonStyle(.bordered)
+                                }
+                            }
                             HStack {
                                 Button(model.t("Start", "Başla")) { model.startSession() }.buttonStyle(.borderedProminent).tint(.mint)
                                 Button(model.t("Snooze 1h", "1 saat ertele")) { model.pause(); close() }.buttonStyle(.bordered)

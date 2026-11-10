@@ -11,7 +11,7 @@ final class StudyStoreTests: XCTestCase {
         try store.record(.again, for: card, at: Date(timeIntervalSince1970: 12345))
         try store.seedIfNeeded()
         XCTAssertEqual(try store.context.fetchCount(FetchDescriptor<StoredDeck>()), 2)
-        XCTAssertEqual(try store.context.fetchCount(FetchDescriptor<StoredCard>()), 60)
+        XCTAssertEqual(try store.context.fetchCount(FetchDescriptor<StoredCard>()), 300)
         XCTAssertEqual(try store.context.fetchCount(FetchDescriptor<StudyPreferences>()), 1)
         XCTAssertEqual(try store.context.fetchCount(FetchDescriptor<ReviewEvent>()), 1)
         XCTAssertEqual(card.schedule.state, .learning)

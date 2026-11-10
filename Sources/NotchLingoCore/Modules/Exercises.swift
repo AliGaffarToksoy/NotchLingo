@@ -77,11 +77,15 @@ public enum AnswerEvaluator {
         var missing: [String] = [], extra: [String] = []
         var i = a.count, j = b.count
         while i > 0 || j > 0 {
-            if i > 0 && j > 0 && dp[i][j] == dp[i-1][j-1] + (a[i-1] == b[j-1] ? 0 : 1) {
-                if a[i-1] != b[j-1] { missing.append(a[i-1]); extra.append(b[j-1]) }
+            if i > 0 && j > 0 && a[i-1] == b[j-1] {
                 i -= 1; j -= 1
-            } else if i > 0 && dp[i][j] == dp[i-1][j] + 1 { missing.append(a[i-1]); i -= 1 }
-            else { extra.append(b[j-1]); j -= 1 }
+            } else if i > 0 && dp[i][j] == dp[i-1][j] + 1 {
+                missing.append(a[i-1]); i -= 1
+            } else if j > 0 && dp[i][j] == dp[i][j-1] + 1 {
+                extra.append(b[j-1]); j -= 1
+            } else {
+                missing.append(a[i-1]); extra.append(b[j-1]); i -= 1; j -= 1
+            }
         }
         let divisor = max(a.count, b.count, 1)
         return AnswerComparison(score: max(0, 1 - Double(dp[a.count][b.count]) / Double(divisor)),

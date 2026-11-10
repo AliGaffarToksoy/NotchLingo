@@ -1,129 +1,115 @@
 # NotchLingo
 
-Offline English micro-learning for a Turkish-speaking engineer, built for macOS 14+.
-Swift 5.9+, SwiftUI, SwiftData. MIT licensed; no third-party packages or backend.
+**Türkçe ve İngilizce arayüzlü, çevrimdışı macOS İngilizce öğrenme uygulaması.**
+English micro-learning in your MacBook notch, with Turkish meanings and an optional English interface.
 
-**Phase 1 is implemented.** This is a compilable foundation, not the completed notch app.
-The executable opens a small window confirming that both seed decks have loaded locally.
-Notch UI, exercises, audio, notifications, import/export UI, and the full dashboard follow
-in the phases listed in [ROADMAP.md](ROADMAP.md).
+[Download the latest app / Uygulamayı indir](https://github.com/AliGaffarToksoy/NotchLingo/releases/latest)
 
-## Run
+## Install — no Xcode required
 
-On an Apple Silicon Mac with macOS 14+ and the full Xcode 15+ installation selected as the developer directory:
+1. Download `NotchLingo-macOS-arm64.dmg` from Releases (Apple Silicon, macOS 14+).
+2. Open the DMG and drag **NotchLingo** onto **Applications**.
+3. Open NotchLingo from Applications. The welcome guide appears; the menu bar and top pill stay available when the dashboard closes.
+4. This personal build is ad-hoc signed, **not Apple-notarized**. If macOS blocks it, open **System Settings → Privacy & Security → Open Anyway** after trying to launch it. Approve only the build you downloaded from this repository. No system-wide security changes are needed.
+
+ZIP is also available: extract it and drag `NotchLingo.app` to Applications. Check `SHA256SUMS.txt` if you want to verify the downloaded archive. Intel Macs are not included in this release.
+
+### Türkçe kurulum
+
+Releases sayfasından `.dmg` dosyasını indir, aç ve **NotchLingo** simgesini **Applications / Uygulamalar** klasörüne sürükle. Uygulamayı Uygulamalar'dan aç. Xcode, VS Code, terminal veya Python gerekmez. macOS ilk açılışı engellerse **Sistem Ayarları → Gizlilik ve Güvenlik → Yine de Aç** seçeneğini kullan. Bu sürüm Apple noter onayına sahip değildir.
+
+## What is included
+
+- Custom top-center notch panel: collapses to the word of the day, expands for exercises, and falls back to a floating pill without a notch. It prefers the notched built-in screen when available.
+- Turkish and English interface, bilingual definitions on every card, US/UK TTS selector, IPA, examples, notes, tags.
+- **300 original seed cards:** 150 Everyday English and 150 Tech / Work English (Cloud, DevOps, software, meetings, interviews).
+- Flashcards; meaning choices; cloze; natural-sentence selection; sentence builder; listening dictation; on-device speaking practice.
+- Four ratings: Again / Hard / Good / Easy. SM-2-inspired scheduling, 1-minute and 10-minute learning steps, daily new/review caps, track weights, leech practice.
+- 1/3/5-minute sessions; due short steps first, then due reviews, then new cards. Sessions stop after the chosen time; unfinished cards are not rated automatically.
+- Menu bar commands, configurable ⌥⌘L / ⌥⌘Space / ⌥⌘N global shortcut, pause for one hour, active hours, optional launch at login.
+- Optional 20-second passive notch quizzes with snooze and dismissal. Passive panels never request keyboard focus. User-opened sessions can accept typing.
+- Dashboard: daily goals, streak, recall, time spent, state counts, 30-day chart, weak words, searchable/tag-filtered deck browser.
+- JSON and RFC 4180 CSV import/export. Imports validate before saving and preserve existing progress. No cards are silently deleted.
+- Optional **OpenAI / Anthropic / local Ollama** workshop: feedback, new examples, and generated cards reviewed before import. Disabled by default; keys stored in macOS Keychain.
+- Keyboard navigation, VoiceOver labels, and Reduce Motion-aware panel resizing.
+
+## Privacy and platform limits
+
+Core learning has no account, telemetry, backend, or network requirement. SwiftData stores progress in
+`~/Library/Application Support/NotchLingo/NotchLingo.store`. Preferences use UserDefaults. CloudKit is disabled.
+Deleting the app does not delete learning progress. Do not delete the store to fix an ordinary startup error.
+
+Microphone/speech access is requested only when you begin speaking. Recognition explicitly requires on-device processing; unavailable device/language support produces an explanation, with no server fallback. Audio is not saved. Transcript comparison finds missing/different words; it is **not a phonetic pronunciation diagnosis**. Offline voice availability depends on voices installed in macOS; add voices in Accessibility settings if needed.
+
+Reminders are off initially. Standard notifications follow macOS Focus settings. Direct notch quizzes are a separate opt-in setting: macOS has no universal public Focus query, so **direct notch quizzes cannot guarantee Focus suppression**. Keep direct quizzes off for Focus-aware reminders. Sleeping the Mac stops the active session and resets reminder timing on wake.
+
+The AI workshop sends only the text explicitly submitted there to the selected provider. Cloud providers may charge the configured API account and apply their own data policies. OpenAI requests use `store: false`; this does not promise zero provider retention. Ollama URLs are restricted to loopback addresses. No API key is bundled. Provider model names are editable because account availability varies.
+
+The natural-sentence exercise uses original sentences and scrambled distractors. CEFR/IPA are editorial guidance, not official certification; language-teacher review is welcome. Notch behavior on different hardware and multiple monitors needs broader real-device testing.
+
+## Developer build
+
+Developers need full Xcode 15+ selected in Xcode → Settings → Locations → Command Line Tools.
+End users only need the downloaded application.
 
 ```sh
-cd /Users/alitoksoy/PycharmProjects/NotchLingo
+git clone https://github.com/AliGaffarToksoy/NotchLingo.git
+cd NotchLingo
 swift test
-swift run NotchLingo
+swift run NotchLingoValidate
+bash Scripts/package.sh
+open dist/NotchLingo.app
 ```
 
-After cloning elsewhere, change the `cd` path to your checkout. In Xcode, choose **File → Open**,
-select `Package.swift`, select the **NotchLingo** executable scheme and **My Mac**, then
-**Product → Run** (⌘R). Run tests with **Product → Test** (⌘U); select the NotchLingo-Package
-scheme if the executable scheme has no tests enabled. No signing team or API key is needed
-for the development executable. This phase is a Swift package executable; a distributable
-`.app`, permissions metadata, signing, and release packaging will be added in later phases.
+Open `Package.swift` in Xcode to edit. Use the NotchLingo executable scheme / My Mac.
+The unsandboxed development app uses public macOS APIs and requests only the needed permissions.
+`Scripts/package.sh` builds arm64, copies resource bundles, creates the icon/Info.plist, ad-hoc signs,
+verifies the signature, and produces ZIP and DMG archives. No signing certificate or Apple Developer
+subscription is required for this personal distribution.
 
-The local store is `~/Library/Application Support/NotchLingo/NotchLingo.store`
-(with SQLite companion files). CloudKit is explicitly disabled. Seed loading is idempotent,
-and startup errors are displayed without deleting the existing store. Tests use isolated
-in-memory stores or temporary directories, never your app's data.
-
-If `xcode-select -p` points to `/Library/Developer/CommandLineTools`, install full Xcode
-and select it in **Xcode → Settings → Locations → Command Line Tools**. Command-line tools
-alone can lack the SwiftData macro plug-in needed for `@Model`.
-
-For **core-only smoke validation** without full Xcode:
+For core smoke checks on machines without full Xcode:
 
 ```sh
 NOTCHLINGO_CORE_ONLY=1 swift run NotchLingoValidate
 ```
 
-This checks bundled content, JSON round trips and rejection, learning steps, lapse handling,
-leech detection, track balance, and budget bypass. If your toolchain also has XCTest, you can
-run `NOTCHLINGO_CORE_ONLY=1 swift test` for the core unit suite. This opt-in mode excludes
-the app, SwiftData storage target, and persistence tests. Leave the variable unset for ordinary
-development and all release checks.
+This does not replace full tests or build the GUI. `NOTCHLINGO_CORE_ONLY=1 swift test` also works if XCTest is available.
 
-### Verification on the development machine
+GitHub Actions runs unit and SwiftData persistence tests, validates all bundled cards, builds and packages
+on a hosted macOS runner, and publishes versioned releases only after success. Pull requests test/package
+without publishing. A failed build never produces a release.
 
-The core library and validator compiled with Apple Swift 6.4 in Swift 5 language mode,
-targeting arm64 macOS 14. The validator passed with all 60 cards. The full build stopped
-because the installed command-line tools lack `SwiftDataMacros`; the unit test run also
-stopped because they lack XCTest. **The full app and the 25 XCTest cases are not verified
-on this machine.** Full Xcode 15+ is required to finish those checks. No GUI launch or
-macOS 14 runtime test is claimed.
-
-## Delivered
-
-- 30 Everyday English and 30 Tech / Work English cards, all in editable bundled JSON.
-- English/Turkish meanings, CEFR, part of speech, two marked examples, US/UK IPA,
-  usage notes, and searchable tags ready for later UI.
-- Versioned JSON Schema and validated content-only JSON encoding/decoding.
-- SwiftData deck, card-progress, review-event, and preferences models.
-- SM-2-based Again/Hard/Good/Easy scheduling with 1-minute and 10-minute short steps.
-- Weighted due-first queue, daily budgets, leech flags, maturity, streak and retention helpers.
-- UI-independent `LearningModule` protocol for future modules.
-- XCTest coverage for scheduling, JSON parsing, seed integrity, statistics, and persistence.
-
-## Structure
+## Architecture
 
 ```text
-Package.swift
-Decks/                         # Canonical JSON copied into the resource bundle
+Decks/                         # Canonical bundled JSON, 150 cards per track
 Schema/deck.schema.json
-Sources/NotchLingoCore/
-  Content/                     # Portable DTOs, validation, JSON codec, seed loading
-  Scheduling/                  # Pure SRS, queue, statistics
-  Modules/                     # LearningModule contract
-Sources/NotchLingoStorage/      # SwiftData models and main-actor store
-Sources/NotchLingoApp/          # Minimal SwiftUI foundation window
-Sources/NotchLingoValidate/     # Command-line content and scheduler smoke checks
-Tests/NotchLingoCoreTests/
-Tests/NotchLingoStorageTests/
-docs/                          # Content contract and scheduling decisions
+Sources/NotchLingoCore/         # Pure SRS, planner, exercises, JSON/CSV codecs
+Sources/NotchLingoStorage/      # SwiftData models, atomic saves/imports
+Sources/NotchLingoApp/          # Observable view model, SwiftUI screens, AppKit panel
+  Services/                    # Speech/TTS, hotkey, notifications, AI/Keychain
+  Views/                       # Dashboard, decks, exercises, settings, AI workshop
+Sources/NotchLingoValidate/     # Content and domain smoke validator
+Tests/                         # Domain, parser, import, persistence tests
+Scripts/                       # App packaging and icon generation
+.github/workflows/build.yml    # Hosted macOS tests, build, release
 ```
 
-The core owns domain behavior, the storage target owns persistence, and the app owns presentation. MVVM view models
-will be introduced with interactive modules, rather than wrapping the static Phase 1 view.
-See [deck format](docs/DECK_FORMAT.md) for adding cards and the planned CSV contract,
-and [scheduling](docs/SCHEDULING.md) for exact transitions and budget semantics.
+`LearningModule` is the UI-independent exercise extension point. `AIProvider` is the opt-in generation
+interface. Content and progress are separate, so importing a newer deck does not reset review intervals.
+Read [deck format](docs/DECK_FORMAT.md), [scheduling policy](docs/SCHEDULING.md), and [CONTRIBUTING.md](CONTRIBUTING.md).
 
-## Platform decisions and risks
+A custom `NSPanel` gives direct control over focus, screen selection, and fallback behavior;
+[DynamicNotchKit](https://github.com/mrkai77/DynamicNotchKit) was considered as an alternative.
+We keep the app dependency-free and own the passive/interactive transition explicitly.
 
-DynamicNotchKit offers an existing notch UI built around macOS panels, but a custom NSPanel
-provides direct control over passive presentation, screen selection, and fallback behavior.
-We choose the custom approach to keep focus handling explicit and avoid third-party dependencies.
-Reference: [DynamicNotchKit source](https://github.com/mrkai77/DynamicNotchKit).
-
-Notch position, Spaces, full-screen windows, display scaling, and external displays need real-device
-verification in Phase 2. Passive pings must use a nonactivating panel and must not make it key;
-only an explicit user action may enter a keyboard-driven session. Public APIs do not offer a
-universal reliable Focus-state query, so future reminders need conservative notification-based
-behavior and a manual pause, without promising automatic Focus detection everywhere.
-
-Speech recognition is planned to require on-device recognition, with a clear unavailable state
-when the device or language lacks support; it must not silently fall back to a server. Local TTS
-voice availability varies and some voices require a system download. Transcript similarity can
-highlight missing words but cannot reliably diagnose individual phoneme pronunciation.
-CEFR and IPA content are editorial seed material and welcome review by language teachers.
-
-SwiftData uses a model container for local persistence:
-[Apple's documentation](https://developer.apple.com/documentation/swiftdata/modelcontainer).
-The minimum deployment target is macOS 14; this checkout should also be tested with the
-oldest supported Xcode before a release. There is no destructive migration fallback.
-
-## Permissions and privacy
-
-Phase 1 requests **no microphone, speech, or notification permission** and makes no network calls.
-Later phases will explain and request microphone/speech access only when speaking practice starts,
-and notification access only when reminders are enabled. Optional AI will be disabled by default;
-its network use must be explicit, and keys will go in Keychain. No AI implementation is included yet.
+API references: [Apple on-device speech](https://developer.apple.com/documentation/speech/sfspeechrecognizer/supportsondevicerecognition),
+[OpenAI Responses](https://developers.openai.com/api/docs/guides/migrate-to-responses),
+[Anthropic Messages](https://platform.claude.com/docs/en/api/messages/create),
+[Ollama API](https://github.com/ollama/ollama/blob/main/docs/api.md).
 
 ## Screenshots
 
-- [Placeholder: Phase 2 collapsed and expanded notch panel]
-- [Placeholder: Phase 5 dashboard and deck browser]
+Screenshots from the packaged app are added under `docs/` after local launch verification.
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) and [LICENSE](LICENSE).
+MIT licensed. See [LICENSE](LICENSE).

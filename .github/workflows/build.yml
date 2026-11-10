@@ -28,6 +28,7 @@ jobs:
           name: NotchLingo-macOS-arm64
           path: |
             dist/NotchLingo-macOS-arm64.zip
+            dist/NotchLingo-macOS-arm64.dmg
             dist/SHA256SUMS.txt
   release:
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
@@ -47,4 +48,4 @@ jobs:
           COMMIT: ${{ github.sha }}
           RUN: ${{ github.run_number }}
         run: |
-          gh release create "v0.1.${RUN}" dist/NotchLingo-macOS-arm64.zip dist/SHA256SUMS.txt --target "$COMMIT" --title "NotchLingo 0.1.${RUN}" --notes "Apple Silicon · macOS 14+. Unzip and drag NotchLingo.app to Applications. No Xcode needed. Ad-hoc signed, not Apple-notarized; approve first launch in System Settings → Privacy & Security. / ZIP'i açıp uygulamayı Uygulamalar klasörüne taşıyın. İlk açılışta Gizlilik ve Güvenlik ekranından onay gerekebilir."
+          gh release create "v0.1.${RUN}" dist/NotchLingo-macOS-arm64.zip dist/NotchLingo-macOS-arm64.dmg dist/SHA256SUMS.txt --target "$COMMIT" --title "NotchLingo 0.1.${RUN}" --notes "Apple Silicon · macOS 14+. Unzip and drag NotchLingo.app to Applications. No Xcode needed. Ad-hoc signed, not Apple-notarized; approve first launch in System Settings → Privacy & Security. / ZIP'i açıp uygulamayı Uygulamalar klasörüne taşıyın. İlk açılışta Gizlilik ve Güvenlik ekranından onay gerekebilir."

@@ -575,6 +575,2177 @@
         "work",
         "interview"
       ]
+    },
+    {
+      "id": "e08c41b1-e849-5ad8-b14c-dbf827da413b",
+      "term": "container",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A packaged environment that runs an application with its dependencies.",
+      "turkishMeaning": "Uygulamayı bağımlılıklarıyla çalıştıran paketlenmiş ortam.",
+      "examples": [
+        "The **container** starts in a few seconds.",
+        "We run the worker inside a **container**."
+      ],
+      "ipaUS": "/kənˈteɪnər/",
+      "ipaUK": "/kənˈteɪnə/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "19789f9a-2f24-5747-9681-14fdd70d95b6",
+      "term": "image",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A template used to create a container or machine.",
+      "turkishMeaning": "Konteyner veya makine oluşturmak için kullanılan kalıp.",
+      "examples": [
+        "Build the **image** before deployment.",
+        "The **image** contains the application and its libraries."
+      ],
+      "ipaUS": "/ˈɪmɪdʒ/",
+      "ipaUK": "/ˈɪmɪdʒ/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "48e31794-473b-50e7-b42e-8d9021aae0eb",
+      "term": "registry",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A service that stores and distributes software images or packages.",
+      "turkishMeaning": "Yazılım imajlarını veya paketlerini saklayıp dağıtan hizmet.",
+      "examples": [
+        "Push the image to the **registry**.",
+        "Our private **registry** requires authentication."
+      ],
+      "ipaUS": "/ˈredʒɪstri/",
+      "ipaUK": "/ˈredʒɪstri/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "cc94f3bd-1a4e-5900-826b-dea4a6559b57",
+      "term": "cluster",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A group of computers working together.",
+      "turkishMeaning": "Birlikte çalışan bilgisayar grubu.",
+      "examples": [
+        "The **cluster** has three nodes.",
+        "We added capacity to the **cluster**."
+      ],
+      "ipaUS": "/ˈklʌstər/",
+      "ipaUK": "/ˈklʌstə/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "8fc02fd7-47c2-5cf3-8094-869fc6141a7c",
+      "term": "node",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "One machine or participant in a distributed system.",
+      "turkishMeaning": "Dağıtık sistemdeki tek makine veya katılımcı.",
+      "examples": [
+        "This **node** is running out of memory.",
+        "The scheduler selected a healthy **node**."
+      ],
+      "ipaUS": "/noʊd/",
+      "ipaUK": "/nəʊd/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "d9a2d2b8-55db-544c-aa34-31565ed74707",
+      "term": "pod",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A Kubernetes unit containing one or more closely related containers.",
+      "turkishMeaning": "Kubernetes'te bir veya daha fazla ilişkili konteyner içeren birim.",
+      "examples": [
+        "The **pod** contains the app and a sidecar.",
+        "Check the events when a **pod** cannot start."
+      ],
+      "ipaUS": "/pɑːd/",
+      "ipaUK": "/pɒd/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "300622a3-7ba7-5ea6-b421-7a1948c8a828",
+      "term": "namespace",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A named scope used to organize and separate resources.",
+      "turkishMeaning": "Kaynakları düzenlemek ve ayırmak için adlandırılmış kapsam.",
+      "examples": [
+        "Create a **namespace** for the test environment.",
+        "The service lives in a different **namespace**."
+      ],
+      "ipaUS": "/ˈneɪmspeɪs/",
+      "ipaUK": "/ˈneɪmspeɪs/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "868feb6b-c690-5048-a53a-94fdc298fb59",
+      "term": "replica",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A copy of a running workload or stored data.",
+      "turkishMeaning": "Çalışan iş yükünün veya verinin kopyası.",
+      "examples": [
+        "One **replica** is still starting.",
+        "The database keeps a **replica** in another zone."
+      ],
+      "ipaUS": "/ˈreplɪkə/",
+      "ipaUK": "/ˈreplɪkə/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "99d45790-6078-5181-874a-2bbc125775bc",
+      "term": "manifest",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A file describing the intended configuration of a resource.",
+      "turkishMeaning": "Bir kaynağın istenen yapılandırmasını tanımlayan dosya.",
+      "examples": [
+        "Review the **manifest** before applying it.",
+        "The **manifest** declares two replicas."
+      ],
+      "ipaUS": "/ˈmænɪfest/",
+      "ipaUK": "/ˈmænɪfest/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "5aa67ebe-730e-5f03-8de9-9fb4656ac244",
+      "term": "ingress",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "Incoming traffic or a rule controlling traffic entering a system.",
+      "turkishMeaning": "Sisteme giren trafik veya bunu yöneten kural.",
+      "examples": [
+        "The **ingress** rule routes traffic by hostname.",
+        "Check **ingress** settings if the site is unreachable."
+      ],
+      "ipaUS": "/ˈɪnɡres/",
+      "ipaUK": "/ˈɪnɡres/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "827f1ba8-bd09-5f23-baa4-34ea68644f8d",
+      "term": "egress",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "Traffic leaving a network or service.",
+      "turkishMeaning": "Ağdan veya hizmetten çıkan trafik.",
+      "examples": [
+        "We restrict **egress** to approved destinations.",
+        "Cross-region **egress** can increase costs."
+      ],
+      "ipaUS": "/ˈiːɡres/",
+      "ipaUK": "/ˈiːɡres/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "5fc84a85-8c52-5fdc-a9a1-73362f73c2e2",
+      "term": "service discovery",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "Finding the network location of a service automatically.",
+      "turkishMeaning": "Bir hizmetin ağ konumunu otomatik bulma.",
+      "examples": [
+        "DNS supports our **service discovery**.",
+        "Broken **service discovery** prevents workers from connecting."
+      ],
+      "ipaUS": "/ˈsɜːrvɪs dɪˈskʌvəri/",
+      "ipaUK": "/ˈsɜːvɪs dɪˈskʌvəri/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "5daff2c2-0b58-5060-8eac-a964a9349f7c",
+      "term": "endpoint",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A specific address through which a service can be accessed.",
+      "turkishMeaning": "Bir hizmete erişilen belirli adres.",
+      "examples": [
+        "This **endpoint** returns account details.",
+        "The health **endpoint** does not require a login."
+      ],
+      "ipaUS": "/ˈendpɔɪnt/",
+      "ipaUK": "/ˈendpɔɪnt/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "a1192c42-4402-5c11-957d-9e982a762271",
+      "term": "firewall",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A system that filters network traffic using rules.",
+      "turkishMeaning": "Kurallarla ağ trafiğini süzen sistem.",
+      "examples": [
+        "The **firewall** blocks incoming connections.",
+        "Add a narrow rule to the **firewall**."
+      ],
+      "ipaUS": "/ˈfaɪərwɔːl/",
+      "ipaUK": "/ˈfaɪəwɔːl/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "00f2b5a0-710c-5c68-8532-bac5f1418da5",
+      "term": "subnet",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A smaller logical network within a larger network.",
+      "turkishMeaning": "Daha büyük bir ağ içindeki alt ağ.",
+      "examples": [
+        "Place the database in a private **subnet**.",
+        "Each zone uses a separate **subnet**."
+      ],
+      "ipaUS": "/ˈsʌbnet/",
+      "ipaUK": "/ˈsʌbnet/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "157c37f7-8168-5869-a545-39dccd815581",
+      "term": "routing",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "Choosing where network traffic should go.",
+      "turkishMeaning": "Ağ trafiğinin gideceği yolu seçme.",
+      "examples": [
+        "The **routing** table contains a default route.",
+        "Incorrect **routing** caused the connection failure."
+      ],
+      "ipaUS": "/ˈruːtɪŋ/",
+      "ipaUK": "/ˈruːtɪŋ/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "96b78e3b-487f-5a13-81e6-d7a0bd54dede",
+      "term": "domain name",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A readable name used to locate an internet resource.",
+      "turkishMeaning": "İnternet kaynağını bulmak için kullanılan okunabilir ad.",
+      "examples": [
+        "We registered a new **domain name**.",
+        "Point the **domain name** to the load balancer."
+      ],
+      "ipaUS": "/doʊˈmeɪn neɪm/",
+      "ipaUK": "/dəˈmeɪn neɪm/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "5866038c-3026-531f-9bb8-fe17fb812ace",
+      "term": "certificate",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A digital document used to verify identity and support secure connections.",
+      "turkishMeaning": "Kimliği doğrulayan ve güvenli bağlantıyı destekleyen dijital belge.",
+      "examples": [
+        "The TLS **certificate** expires next month.",
+        "Renew the **certificate** before it becomes invalid."
+      ],
+      "ipaUS": "/sərˈtɪfɪkət/",
+      "ipaUK": "/səˈtɪfɪkət/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "10a47b68-26cd-50e2-8dc7-7cd30e066685",
+      "term": "encryption",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "Transforming data so that only authorized parties can read it.",
+      "turkishMeaning": "Veriyi yalnızca yetkililerin okuyabileceği biçime dönüştürme.",
+      "examples": [
+        "Enable **encryption** for stored backups.",
+        "TLS provides **encryption** in transit."
+      ],
+      "ipaUS": "/ɪnˈkrɪpʃən/",
+      "ipaUK": "/ɪnˈkrɪpʃən/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "2e249cc7-041f-5b64-9ad7-478ab3cb9f27",
+      "term": "authentication",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "Checking who a user or system is.",
+      "turkishMeaning": "Kullanıcı veya sistem kimliğini doğrulama.",
+      "examples": [
+        "The service requires **authentication**.",
+        "Failed **authentication** should return a clear error."
+      ],
+      "ipaUS": "/ɔːˌθentɪˈkeɪʃən/",
+      "ipaUK": "/ɔːˌθentɪˈkeɪʃən/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "2f8bbce1-3e23-5de9-98e0-061a33ae1fd4",
+      "term": "authorization",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "Deciding what an identified user or system may do.",
+      "turkishMeaning": "Kimliği bilinen kişinin veya sistemin yetkilerini belirleme.",
+      "examples": [
+        "The **authorization** check denied the request.",
+        "Keep **authorization** separate from login logic."
+      ],
+      "ipaUS": "/ˌɔːθərəˈzeɪʃən/",
+      "ipaUK": "/ˌɔːθərəˈzeɪʃən/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "205fe25b-a6ce-5d4f-9cc5-3735da6e0477",
+      "term": "service account",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "An identity used by software rather than a person.",
+      "turkishMeaning": "İnsan yerine yazılım tarafından kullanılan kimlik.",
+      "examples": [
+        "The job runs under a **service account**.",
+        "Give the **service account** only the required permissions."
+      ],
+      "ipaUS": "/ˈsɜːrvɪs əˌkaʊnt/",
+      "ipaUK": "/ˈsɜːvɪs əˌkaʊnt/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "c51a7686-396d-56e7-b13e-cc5e201e7c26",
+      "term": "access policy",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "Rules describing which actions an identity may perform.",
+      "turkishMeaning": "Bir kimliğin yapabileceği işlemleri tanımlayan kurallar.",
+      "examples": [
+        "Review the **access policy** before granting permissions.",
+        "This **access policy** allows read-only access."
+      ],
+      "ipaUS": "/ˈækses ˌpɑːləsi/",
+      "ipaUK": "/ˈækses ˌpɒləsi/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "bd1595d8-2695-5764-9872-37e96618453e",
+      "term": "audit log",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A record of actions used to investigate access and changes.",
+      "turkishMeaning": "Erişim ve değişiklikleri incelemek için tutulan işlem kaydı.",
+      "examples": [
+        "The **audit log** shows who changed the policy.",
+        "Store the **audit log** in a protected location."
+      ],
+      "ipaUS": "/ˈɔːdɪt lɔːɡ/",
+      "ipaUK": "/ˈɔːdɪt lɒɡ/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "443512c6-6950-5139-92e4-f2eb91aa7c16",
+      "term": "vulnerability",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A weakness that could be used to compromise a system.",
+      "turkishMeaning": "Sistemin güvenliğini tehlikeye atabilecek zayıflık.",
+      "examples": [
+        "The scanner found a critical **vulnerability**.",
+        "Patch the **vulnerability** in the base image."
+      ],
+      "ipaUS": "/ˌvʌlnərəˈbɪləti/",
+      "ipaUK": "/ˌvʌlnərəˈbɪləti/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "4b7997fd-8a46-5de9-b9c5-2142130efb51",
+      "term": "patch",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A small software update that fixes a problem.",
+      "turkishMeaning": "Sorunu gideren küçük yazılım güncellemesi.",
+      "examples": [
+        "Apply the security **patch** tonight.",
+        "The **patch** fixes a memory leak."
+      ],
+      "ipaUS": "/pætʃ/",
+      "ipaUK": "/pætʃ/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "ea780852-3c12-51c2-939c-3c326da65d52",
+      "term": "dependency",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A component another component needs to work.",
+      "turkishMeaning": "Başka bir bileşenin çalışmak için ihtiyaç duyduğu bileşen.",
+      "examples": [
+        "We upgraded the database **dependency**.",
+        "A missing **dependency** caused the build to fail."
+      ],
+      "ipaUS": "/dɪˈpendənsi/",
+      "ipaUK": "/dɪˈpendənsi/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "f6038165-cec4-5765-a243-19bc6f71d17a",
+      "term": "artifact",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A file produced by a build or other automated process.",
+      "turkishMeaning": "Derleme veya otomasyon sonucunda üretilen dosya.",
+      "examples": [
+        "Upload the build **artifact** after the tests pass.",
+        "The release **artifact** includes the executable."
+      ],
+      "ipaUS": "/ˈɑːrtɪfækt/",
+      "ipaUK": "/ˈɑːtɪfækt/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "940e1345-4367-58b5-a213-a86da83014e9",
+      "term": "pipeline",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A sequence of automated steps that process code or data.",
+      "turkishMeaning": "Kod veya veriyi işleyen otomatik adımlar dizisi.",
+      "examples": [
+        "The **pipeline** runs tests before deployment.",
+        "Our delivery **pipeline** stopped at the approval step."
+      ],
+      "ipaUS": "/ˈpaɪplaɪn/",
+      "ipaUK": "/ˈpaɪplaɪn/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "438bb0cd-0a96-5b11-a3fa-1d444a22c5c8",
+      "term": "build",
+      "partOfSpeech": "noun",
+      "cefr": "B2",
+      "definition": "The process or result of turning source code into runnable software.",
+      "turkishMeaning": "Kaynak kodu çalışabilir yazılıma dönüştürme işlemi veya çıktısı.",
+      "examples": [
+        "The **build** failed because of a syntax error.",
+        "Download the latest successful **build**."
+      ],
+      "ipaUS": "/bɪld/",
+      "ipaUK": "/bɪld/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "a4965f36-1100-5be5-8190-0ce4d116e56d",
+      "term": "release",
+      "partOfSpeech": "noun",
+      "cefr": "B2",
+      "definition": "A version of software made available to users.",
+      "turkishMeaning": "Kullanıcılara sunulan yazılım sürümü.",
+      "examples": [
+        "This **release** adds dark mode.",
+        "We delayed the **release** to fix a bug."
+      ],
+      "ipaUS": "/rɪˈliːs/",
+      "ipaUK": "/rɪˈliːs/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "1b32b6cc-a3aa-5944-9d14-60b568c02dba",
+      "term": "staging",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "An environment used to test changes before production.",
+      "turkishMeaning": "Canlıya çıkmadan önce değişiklikleri sınayan ortam.",
+      "examples": [
+        "Deploy the change to **staging** first.",
+        "The issue also occurs in **staging**."
+      ],
+      "ipaUS": "/ˈsteɪdʒɪŋ/",
+      "ipaUK": "/ˈsteɪdʒɪŋ/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "1882a7a9-f855-5fe6-9c19-c6ce3ecda982",
+      "term": "production",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "The live environment used by real customers.",
+      "turkishMeaning": "Gerçek kullanıcıların kullandığı canlı ortam.",
+      "examples": [
+        "The fix is now in **production**.",
+        "Avoid testing destructive changes in **production**."
+      ],
+      "ipaUS": "/prəˈdʌkʃən/",
+      "ipaUK": "/prəˈdʌkʃən/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "947fc9c0-02fe-5905-afc5-ec163d6cfd8d",
+      "term": "sandbox",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "An isolated environment for safer experimentation.",
+      "turkishMeaning": "Daha güvenli denemeler için yalıtılmış ortam.",
+      "examples": [
+        "Try the script in a **sandbox**.",
+        "The **sandbox** has no production credentials."
+      ],
+      "ipaUS": "/ˈsændbɑːks/",
+      "ipaUK": "/ˈsændbɒks/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "d9467055-c44f-55b4-9cd6-eadf1b34882a",
+      "term": "configuration drift",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A difference between actual and intended configuration over time.",
+      "turkishMeaning": "Gerçek ve amaçlanan yapılandırmanın zamanla farklılaşması.",
+      "examples": [
+        "Manual changes caused **configuration drift**.",
+        "Our nightly check detects **configuration drift**."
+      ],
+      "ipaUS": "/kənˌfɪɡjəˈreɪʃən drɪft/",
+      "ipaUK": "/kənˌfɪɡjəˈreɪʃən drɪft/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "99097dc2-55f4-5c18-a4f8-627f72a8e3c5",
+      "term": "state file",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A file recording the resources managed by an infrastructure tool.",
+      "turkishMeaning": "Altyapı aracının yönettiği kaynakları kaydeden dosya.",
+      "examples": [
+        "Protect the **state file** because it may contain sensitive data.",
+        "Use locking when updating the **state file**."
+      ],
+      "ipaUS": "/steɪt faɪl/",
+      "ipaUK": "/steɪt faɪl/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "636d1fa0-5d9a-5641-b0e8-32e1381bf076",
+      "term": "immutable",
+      "partOfSpeech": "adjective",
+      "cefr": "C1",
+      "definition": "Not changed after creation.",
+      "turkishMeaning": "Oluşturulduktan sonra değiştirilmeyen.",
+      "examples": [
+        "We deploy **immutable** images.",
+        "An **immutable** object cannot be modified in place."
+      ],
+      "ipaUS": "/ɪˈmjuːtəbəl/",
+      "ipaUK": "/ɪˈmjuːtəbəl/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "04f3da77-d8a3-5e75-9b49-e8932130d8b0",
+      "term": "reproducible",
+      "partOfSpeech": "adjective",
+      "cefr": "C1",
+      "definition": "Able to be repeated with the same result.",
+      "turkishMeaning": "Aynı sonuçla yeniden üretilebilen.",
+      "examples": [
+        "We need a **reproducible** test case.",
+        "Pin dependencies to make builds more **reproducible**."
+      ],
+      "ipaUS": "/ˌriːprəˈduːsəbəl/",
+      "ipaUK": "/ˌriːprəˈdjuːsəbəl/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "d571e5e1-c148-5630-9349-891f4c17fa14",
+      "term": "resilient",
+      "partOfSpeech": "adjective",
+      "cefr": "C1",
+      "definition": "Able to keep working or recover after a failure.",
+      "turkishMeaning": "Arıza karşısında çalışmayı sürdürebilen veya toparlanabilen.",
+      "examples": [
+        "A **resilient** service handles temporary failures.",
+        "We designed a more **resilient** messaging system."
+      ],
+      "ipaUS": "/rɪˈzɪliənt/",
+      "ipaUK": "/rɪˈzɪliənt/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "d8b84d87-6340-5c51-9913-7f7d8298c825",
+      "term": "fault tolerant",
+      "partOfSpeech": "adjective",
+      "cefr": "C1",
+      "definition": "Able to continue operating when some components fail.",
+      "turkishMeaning": "Bazı bileşenler arızalansa da çalışabilen.",
+      "examples": [
+        "The storage system is **fault tolerant**.",
+        "Redundancy helps make the service **fault tolerant**."
+      ],
+      "ipaUS": "/fɔːlt ˈtɑːlərənt/",
+      "ipaUK": "/fɔːlt ˈtɒlərənt/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "367aedd3-4daf-5bab-bd0f-72e1cad2f324",
+      "term": "redundancy",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "Extra components that can take over if others fail.",
+      "turkishMeaning": "Arızalarda devreye girebilen yedek bileşenler.",
+      "examples": [
+        "We added **redundancy** across two zones.",
+        "Without **redundancy**, one failed server can stop the service."
+      ],
+      "ipaUS": "/rɪˈdʌndənsi/",
+      "ipaUK": "/rɪˈdʌndənsi/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "eb15edba-4db6-57d2-81bf-e61f9557e1e1",
+      "term": "single point of failure",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "One component whose failure can stop the whole system.",
+      "turkishMeaning": "Arızası tüm sistemi durdurabilecek tek bileşen.",
+      "examples": [
+        "The shared database is a **single point of failure**.",
+        "Remove this **single point of failure** before launch."
+      ],
+      "ipaUS": "/ˈsɪŋɡəl pɔɪnt əv ˈfeɪljər/",
+      "ipaUK": "/ˈsɪŋɡəl pɔɪnt əv ˈfeɪljə/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "5f84ec13-acbe-5668-8600-1467578db44e",
+      "term": "backup",
+      "partOfSpeech": "noun",
+      "cefr": "B2",
+      "definition": "A separate copy of data kept for recovery.",
+      "turkishMeaning": "Kurtarma amacıyla tutulan ayrı veri kopyası.",
+      "examples": [
+        "Test the **backup** by restoring it.",
+        "We create a **backup** every night."
+      ],
+      "ipaUS": "/ˈbækʌp/",
+      "ipaUK": "/ˈbækʌp/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "5d773876-90e1-5fea-a74d-e94ce100f2d3",
+      "term": "restore",
+      "partOfSpeech": "verb",
+      "cefr": "B2",
+      "definition": "Bring data or a system back from a saved copy.",
+      "turkishMeaning": "Veriyi veya sistemi kaydedilmiş kopyadan geri yüklemek.",
+      "examples": [
+        "We can **restore** the database from yesterday's backup.",
+        "How long does it take to **restore** the service?"
+      ],
+      "ipaUS": "/rɪˈstɔːr/",
+      "ipaUK": "/rɪˈstɔː/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "df22c28b-7d6d-550a-a05f-982fca0d3168",
+      "term": "disaster recovery",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "Plans and procedures for recovering from a major outage.",
+      "turkishMeaning": "Büyük kesintiden kurtulma plan ve süreçleri.",
+      "examples": [
+        "Test the **disaster recovery** plan regularly.",
+        "Our **disaster recovery** exercise revealed a missing dependency."
+      ],
+      "ipaUS": "/dɪˈzæstər rɪˈkʌvəri/",
+      "ipaUK": "/dɪˈzɑːstə rɪˈkʌvəri/",
+      "tags": [
+        "tech",
+        "cloud"
+      ]
+    },
+    {
+      "id": "8c679dd1-eb28-527f-8148-be1429c1b79e",
+      "term": "recovery time objective",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "The target maximum time to restore a service.",
+      "turkishMeaning": "Hizmeti geri getirmek için hedeflenen azami süre.",
+      "examples": [
+        "Our **recovery time objective** is one hour.",
+        "The **recovery time objective** guides the recovery plan."
+      ],
+      "ipaUS": "/rɪˈkʌvəri taɪm əbˈdʒektɪv/",
+      "ipaUK": "/rɪˈkʌvəri taɪm əbˈdʒektɪv/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "406de901-0c08-5e06-984d-33a4b80237b2",
+      "term": "recovery point objective",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "The maximum acceptable age of data lost during recovery.",
+      "turkishMeaning": "Kurtarmada kaybedilmesi kabul edilen verinin azami yaş aralığı.",
+      "examples": [
+        "The **recovery point objective** is fifteen minutes.",
+        "Frequent backups help meet the **recovery point objective**."
+      ],
+      "ipaUS": "/rɪˈkʌvəri pɔɪnt əbˈdʒektɪv/",
+      "ipaUK": "/rɪˈkʌvəri pɔɪnt əbˈdʒektɪv/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "78cc33c5-9b64-5af7-aefd-7e0993c0892d",
+      "term": "uptime",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "Time during which a system is operating.",
+      "turkishMeaning": "Sistemin çalışır durumda olduğu süre.",
+      "examples": [
+        "The dashboard reports service **uptime**.",
+        "Maintenance may reduce measured **uptime**."
+      ],
+      "ipaUS": "/ˈʌptaɪm/",
+      "ipaUK": "/ˈʌptaɪm/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "b3c9195c-8db2-5e03-b016-764a3368ffae",
+      "term": "downtime",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "Time during which a service is unavailable.",
+      "turkishMeaning": "Hizmetin kullanılamadığı süre.",
+      "examples": [
+        "The outage caused ten minutes of **downtime**.",
+        "We aim to deploy without **downtime**."
+      ],
+      "ipaUS": "/ˈdaʊntaɪm/",
+      "ipaUK": "/ˈdaʊntaɪm/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "a8e7523b-a777-57a6-be87-ec28437ffb8a",
+      "term": "incident",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "An event that disrupts or threatens normal service.",
+      "turkishMeaning": "Normal hizmeti bozan veya tehdit eden olay.",
+      "examples": [
+        "We opened an **incident** after the error rate increased.",
+        "Assign an owner to the **incident**."
+      ],
+      "ipaUS": "/ˈɪnsɪdənt/",
+      "ipaUK": "/ˈɪnsɪdənt/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "89ffa86e-032a-5860-aa7e-a47f298dbb54",
+      "term": "outage",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A period when a service is not available.",
+      "turkishMeaning": "Hizmet kesintisi.",
+      "examples": [
+        "The **outage** affected one region.",
+        "We published a summary of the **outage**."
+      ],
+      "ipaUS": "/ˈaʊtɪdʒ/",
+      "ipaUK": "/ˈaʊtɪdʒ/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "147d4ae4-95d0-58f1-bc44-14637ff9c8f1",
+      "term": "severity",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A measure of how serious a problem is.",
+      "turkishMeaning": "Sorunun ne kadar ciddi olduğunu belirten ölçü.",
+      "examples": [
+        "Set the incident **severity** based on user impact.",
+        "The team lowered the **severity** after recovery."
+      ],
+      "ipaUS": "/səˈverəti/",
+      "ipaUK": "/səˈverəti/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "a87c33bc-c144-5c36-8ac8-ea08e774782b",
+      "term": "escalation",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "Sending an issue to someone with more expertise or authority.",
+      "turkishMeaning": "Sorunu daha yetkili veya uzman kişiye aktarma.",
+      "examples": [
+        "The alert triggered an **escalation**.",
+        "Follow the **escalation** policy if nobody responds."
+      ],
+      "ipaUS": "/ˌeskəˈleɪʃən/",
+      "ipaUK": "/ˌeskəˈleɪʃən/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "4804d3a4-6538-5bef-8976-65ec1f01f10c",
+      "term": "mitigation",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "An action that reduces the impact of a problem.",
+      "turkishMeaning": "Sorunun etkisini azaltan önlem.",
+      "examples": [
+        "Rate limiting was our first **mitigation**.",
+        "The **mitigation** restored most requests."
+      ],
+      "ipaUS": "/ˌmɪtɪˈɡeɪʃən/",
+      "ipaUK": "/ˌmɪtɪˈɡeɪʃən/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "9d977c37-0732-52ab-8d7e-46ea0c2fe0ba",
+      "term": "remediation",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "Work that fixes the underlying problem.",
+      "turkishMeaning": "Temel sorunu gideren düzeltici çalışma.",
+      "examples": [
+        "The team scheduled permanent **remediation**.",
+        "Track the **remediation** tasks after the incident."
+      ],
+      "ipaUS": "/rɪˌmiːdiˈeɪʃən/",
+      "ipaUK": "/rɪˌmiːdiˈeɪʃən/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "d94bfd79-d6c4-511b-be90-3ba97baa2039",
+      "term": "runbook",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "Written steps for performing an operational task.",
+      "turkishMeaning": "Operasyonel görevin yazılı uygulama adımları.",
+      "examples": [
+        "Follow the **runbook** to restart the service.",
+        "Update the **runbook** after discovering a missing step."
+      ],
+      "ipaUS": "/ˈrʌnbʊk/",
+      "ipaUK": "/ˈrʌnbʊk/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "019a1959-0554-51d7-b694-850d69806c16",
+      "term": "playbook",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A guide describing actions for a particular situation.",
+      "turkishMeaning": "Belirli durum için yapılacakları anlatan rehber.",
+      "examples": [
+        "The incident **playbook** defines communication roles.",
+        "Use the **playbook** during the exercise."
+      ],
+      "ipaUS": "/ˈpleɪbʊk/",
+      "ipaUK": "/ˈpleɪbʊk/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "80b28cb9-bb73-5cbf-8486-bea511667ec0",
+      "term": "alert",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A notification that a condition needs attention.",
+      "turkishMeaning": "İlgilenilmesi gereken durumu bildiren uyarı.",
+      "examples": [
+        "The **alert** fired when latency increased.",
+        "This **alert** has a link to the runbook."
+      ],
+      "ipaUS": "/əˈlɜːrt/",
+      "ipaUK": "/əˈlɜːt/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "93be5d15-cdc6-5702-b41a-7fef5f087d03",
+      "term": "threshold",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A limit that triggers an action when crossed.",
+      "turkishMeaning": "Aşıldığında işlem başlatan eşik.",
+      "examples": [
+        "The error rate exceeded the **threshold**.",
+        "Adjust the **threshold** to reduce false alarms."
+      ],
+      "ipaUS": "/ˈθreʃhoʊld/",
+      "ipaUK": "/ˈθreʃhəʊld/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "2b04c838-6650-5de5-ac98-95650d85bc7a",
+      "term": "false positive",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "An alert or result that incorrectly reports a problem.",
+      "turkishMeaning": "Olmayan sorunu var gösteren sonuç.",
+      "examples": [
+        "The security alert was a **false positive**.",
+        "We tuned the rule after another **false positive**."
+      ],
+      "ipaUS": "/fɔːls ˈpɑːzətɪv/",
+      "ipaUK": "/fɔːls ˈpɒzətɪv/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "89ae537c-8bd9-5365-ae53-b8f977272600",
+      "term": "observability",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "The ability to understand internal system behavior from its outputs.",
+      "turkishMeaning": "Sistem davranışını ürettiği verilerden anlayabilme.",
+      "examples": [
+        "Better **observability** shortened the investigation.",
+        "Logs, metrics, and traces support **observability**."
+      ],
+      "ipaUS": "/əbˌzɜːrvəˈbɪləti/",
+      "ipaUK": "/əbˌzɜːvəˈbɪləti/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "c161ab96-7f55-550a-91f2-79aca6318b9f",
+      "term": "metric",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A numerical measurement of a system.",
+      "turkishMeaning": "Sisteme ait sayısal ölçüm.",
+      "examples": [
+        "This **metric** tracks failed requests.",
+        "Choose a **metric** that reflects user experience."
+      ],
+      "ipaUS": "/ˈmetrɪk/",
+      "ipaUK": "/ˈmetrɪk/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "4f356aca-c555-55ff-95c4-60aee51e4d43",
+      "term": "trace",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A record of one request's path through a system.",
+      "turkishMeaning": "Bir isteğin sistemde izlediği yolun kaydı.",
+      "examples": [
+        "The **trace** shows a slow database call.",
+        "Use the request ID to find the **trace**."
+      ],
+      "ipaUS": "/treɪs/",
+      "ipaUK": "/treɪs/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "73db110a-3c8e-50a2-8bc4-02f82bba62d3",
+      "term": "span",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "One timed operation within a distributed trace.",
+      "turkishMeaning": "Dağıtık iz içindeki süreli tek işlem.",
+      "examples": [
+        "This **span** represents the database query.",
+        "The parent **span** includes two child operations."
+      ],
+      "ipaUS": "/spæn/",
+      "ipaUK": "/spæn/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "8f3a7daf-6884-5dbe-b681-afa29f6ad842",
+      "term": "log aggregation",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "Collecting logs from many sources in one place.",
+      "turkishMeaning": "Birçok kaynaktan günlükleri tek yerde toplama.",
+      "examples": [
+        "Centralized **log aggregation** helps investigations.",
+        "Our **log aggregation** service receives container output."
+      ],
+      "ipaUS": "/lɔːɡ ˌæɡrɪˈɡeɪʃən/",
+      "ipaUK": "/lɒɡ ˌæɡrɪˈɡeɪʃən/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "c55674f6-413c-565e-b370-312b6c355895",
+      "term": "service level objective",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A measurable target for service reliability.",
+      "turkishMeaning": "Hizmet güvenilirliği için ölçülebilir hedef.",
+      "examples": [
+        "The **service level objective** covers successful requests.",
+        "Review the **service level objective** with the product team."
+      ],
+      "ipaUS": "/ˈsɜːrvɪs ˈlevəl əbˈdʒektɪv/",
+      "ipaUK": "/ˈsɜːvɪs ˈlevəl əbˈdʒektɪv/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "1d73ee56-fa50-5e98-acb5-fd8b60b39cad",
+      "term": "error budget",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "The amount of unreliability allowed by a service objective.",
+      "turkishMeaning": "Hizmet hedefinin izin verdiği güvenilirlik kaybı payı.",
+      "examples": [
+        "We used most of the **error budget** this month.",
+        "A depleted **error budget** can pause risky releases."
+      ],
+      "ipaUS": "/ˈerər ˌbʌdʒɪt/",
+      "ipaUK": "/ˈerə ˌbʌdʒɪt/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "f03c8a23-5085-5ab2-9e24-d1305dd27e23",
+      "term": "rate limiting",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "Restricting how many requests may be made in a period.",
+      "turkishMeaning": "Belirli sürede yapılabilecek istek sayısını sınırlama.",
+      "examples": [
+        "Enable **rate limiting** on public endpoints.",
+        "The client must handle responses from **rate limiting**."
+      ],
+      "ipaUS": "/reɪt ˈlɪmɪtɪŋ/",
+      "ipaUK": "/reɪt ˈlɪmɪtɪŋ/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "4017bfe4-e1a9-5c81-9180-2bd9ce28fc56",
+      "term": "throttling",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "Reducing or restricting the rate of work.",
+      "turkishMeaning": "İşlem hızını azaltma veya sınırlama.",
+      "examples": [
+        "CPU **throttling** slowed the container.",
+        "The API uses **throttling** to protect shared resources."
+      ],
+      "ipaUS": "/ˈθrɑːtlɪŋ/",
+      "ipaUK": "/ˈθrɒtlɪŋ/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "a322a0fd-79ac-58aa-9786-fc8fcce3651f",
+      "term": "retry",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "An additional attempt after a failure.",
+      "turkishMeaning": "Başarısızlık sonrası yeniden deneme.",
+      "examples": [
+        "A **retry** may succeed after a temporary error.",
+        "Limit the number of **retry** attempts."
+      ],
+      "ipaUS": "/ˌriːˈtraɪ/",
+      "ipaUK": "/ˌriːˈtraɪ/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "1da8588f-b291-5b13-8c7e-b469f6cb5cea",
+      "term": "exponential backoff",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "Increasing the delay between repeated attempts by a multiplying factor.",
+      "turkishMeaning": "Tekrarlanan denemelerde bekleme süresini katlayarak artırma.",
+      "examples": [
+        "Use **exponential backoff** for transient failures.",
+        "Adding jitter improves **exponential backoff**."
+      ],
+      "ipaUS": "/ˌekspəˈnenʃəl ˈbækɔːf/",
+      "ipaUK": "/ˌekspəˈnenʃəl ˈbækɒf/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "f90b446d-fecb-52c1-9f9d-f235edddbdea",
+      "term": "circuit breaker",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A mechanism that temporarily stops calls to a failing dependency.",
+      "turkishMeaning": "Arızalı bağımlılığa çağrıları geçici durduran mekanizma.",
+      "examples": [
+        "The **circuit breaker** opened after repeated failures.",
+        "A **circuit breaker** gives the downstream service time to recover."
+      ],
+      "ipaUS": "/ˈsɜːrkɪt ˌbreɪkər/",
+      "ipaUK": "/ˈsɜːkɪt ˌbreɪkə/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "99b04d48-a24c-5419-a81e-970ba4dbd1af",
+      "term": "timeout",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A limit on how long an operation may wait.",
+      "turkishMeaning": "İşlemin bekleyebileceği süre sınırı.",
+      "examples": [
+        "Set a reasonable **timeout** for each request.",
+        "The database call exceeded its **timeout**."
+      ],
+      "ipaUS": "/ˈtaɪmaʊt/",
+      "ipaUK": "/ˈtaɪmaʊt/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "ac826e11-3a5e-5137-9e2c-74bdb43644df",
+      "term": "deadlock",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A state where operations wait for each other and cannot proceed.",
+      "turkishMeaning": "İşlemlerin birbirini bekleyerek ilerleyemediği durum.",
+      "examples": [
+        "The transaction ended in a **deadlock**.",
+        "Consistent lock ordering can prevent a **deadlock**."
+      ],
+      "ipaUS": "/ˈdedlɑːk/",
+      "ipaUK": "/ˈdedlɒk/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "3d221a84-2871-5da1-8365-1def511251fc",
+      "term": "race condition",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A bug whose outcome depends on the timing of concurrent operations.",
+      "turkishMeaning": "Sonucu eşzamanlı işlemlerin zamanlamasına bağlı hata.",
+      "examples": [
+        "The intermittent failure came from a **race condition**.",
+        "A lock protects this update from a **race condition**."
+      ],
+      "ipaUS": "/reɪs kənˈdɪʃən/",
+      "ipaUK": "/reɪs kənˈdɪʃən/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "10bfc75c-c726-5ead-ad36-5371bac435fe",
+      "term": "memory leak",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "Memory that is no longer needed but is not released.",
+      "turkishMeaning": "Gereksiz hâle geldiği halde serbest bırakılmayan bellek.",
+      "examples": [
+        "The **memory leak** caused gradual growth.",
+        "A profiler helped us locate the **memory leak**."
+      ],
+      "ipaUS": "/ˈmeməri liːk/",
+      "ipaUK": "/ˈmeməri liːk/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "9f04eea9-b6b9-5cff-b273-da72858e6d2e",
+      "term": "garbage collection",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "Automatic recovery of memory no longer used by a program.",
+      "turkishMeaning": "Programın kullanmadığı belleğin otomatik geri kazanımı.",
+      "examples": [
+        "A long **garbage collection** pause increased latency.",
+        "The runtime handles **garbage collection**."
+      ],
+      "ipaUS": "/ˈɡɑːrbɪdʒ kəˈlekʃən/",
+      "ipaUK": "/ˈɡɑːbɪdʒ kəˈlekʃən/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "c0a47cf9-beac-57e9-8f46-571e01c04069",
+      "term": "caching",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "Keeping reusable results for faster future access.",
+      "turkishMeaning": "Sonuçları daha hızlı yeniden erişim için saklama.",
+      "examples": [
+        "**Caching** reduced database traffic.",
+        "Incorrect **caching** can show outdated data."
+      ],
+      "ipaUS": "/ˈkæʃɪŋ/",
+      "ipaUK": "/ˈkæʃɪŋ/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "ab25b8ec-f5e6-56e7-ba34-1f06bd8483c9",
+      "term": "cache invalidation",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "Removing or marking cached data as no longer valid.",
+      "turkishMeaning": "Önbellekteki veriyi kaldırma veya geçersiz işaretleme.",
+      "examples": [
+        "The bug was caused by missing **cache invalidation**.",
+        "Use an expiration policy for **cache invalidation**."
+      ],
+      "ipaUS": "/kæʃ ɪnˌvælɪˈdeɪʃən/",
+      "ipaUK": "/kæʃ ɪnˌvælɪˈdeɪʃən/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "a4818bc4-608e-5602-ae98-8d68f1bb7854",
+      "term": "eventual consistency",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A model where copies become consistent after updates stop.",
+      "turkishMeaning": "Güncellemeler durunca kopyaların zamanla tutarlı olduğu model.",
+      "examples": [
+        "The store provides **eventual consistency**.",
+        "With **eventual consistency**, a recent write may not appear immediately."
+      ],
+      "ipaUS": "/ɪˈventʃuəl kənˈsɪstənsi/",
+      "ipaUK": "/ɪˈventʃuəl kənˈsɪstənsi/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "331a7b27-54d5-5c9f-bc98-698648f8d422",
+      "term": "transaction",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A group of operations treated as one logical unit.",
+      "turkishMeaning": "Tek mantıksal birim olarak ele alınan işlem grubu.",
+      "examples": [
+        "The **transaction** updates both accounts.",
+        "Roll back the **transaction** if validation fails."
+      ],
+      "ipaUS": "/trænˈzækʃən/",
+      "ipaUK": "/trænˈzækʃən/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "52d415f6-2166-5909-9ce3-604ca482727a",
+      "term": "schema migration",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A controlled change to a database structure.",
+      "turkishMeaning": "Veritabanı yapısına kontrollü değişiklik.",
+      "examples": [
+        "Test the **schema migration** on a copy of the data.",
+        "This **schema migration** adds a nullable column."
+      ],
+      "ipaUS": "/ˈskiːmə maɪˈɡreɪʃən/",
+      "ipaUK": "/ˈskiːmə maɪˈɡreɪʃən/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "6e21c8e2-ea5b-5027-b885-8380f0cd2397",
+      "term": "index",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A data structure that makes certain lookups faster.",
+      "turkishMeaning": "Belirli aramaları hızlandıran veri yapısı.",
+      "examples": [
+        "The query needs an **index** on the date column.",
+        "An **index** can add overhead to writes."
+      ],
+      "ipaUS": "/ˈɪndeks/",
+      "ipaUK": "/ˈɪndeks/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "23fd7c8d-1e7e-56c0-8dfe-2f1bf230645b",
+      "term": "query",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A request to retrieve or manipulate data.",
+      "turkishMeaning": "Veriyi alma veya değiştirme isteği.",
+      "examples": [
+        "The **query** scans the whole table.",
+        "Optimize the **query** before adding more hardware."
+      ],
+      "ipaUS": "/ˈkwɪri/",
+      "ipaUK": "/ˈkwɪəri/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "acd640d1-c4e5-5109-84dc-546d2fa7993f",
+      "term": "sharding",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "Splitting data across multiple databases or machines.",
+      "turkishMeaning": "Veriyi birden fazla veritabanına veya makineye bölme.",
+      "examples": [
+        "**Sharding** distributes the storage load.",
+        "Choose a good partition key before using **sharding**."
+      ],
+      "ipaUS": "/ˈʃɑːrdɪŋ/",
+      "ipaUK": "/ˈʃɑːdɪŋ/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "ef7dbca5-6fe7-5877-ba18-002cf51ee0d3",
+      "term": "message queue",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A system that holds messages until consumers process them.",
+      "turkishMeaning": "İletileri tüketiciler işleyene kadar tutan sistem.",
+      "examples": [
+        "The worker reads from a **message queue**.",
+        "A **message queue** separates producers from consumers."
+      ],
+      "ipaUS": "/ˈmesɪdʒ kjuː/",
+      "ipaUK": "/ˈmesɪdʒ kjuː/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "f95643d8-914e-56f2-9c75-b59db098ec57",
+      "term": "dead-letter queue",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A queue holding messages that could not be processed successfully.",
+      "turkishMeaning": "İşlenemeyen iletileri tutan kuyruk.",
+      "examples": [
+        "The failed message moved to the **dead-letter queue**.",
+        "Inspect the **dead-letter queue** before replaying messages."
+      ],
+      "ipaUS": "/ded ˈletər kjuː/",
+      "ipaUK": "/ded ˈletə kjuː/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "960b2531-e4d2-5dd3-b296-8f801f8c4a38",
+      "term": "consumer",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A component that receives and processes messages or data.",
+      "turkishMeaning": "İleti veya veriyi alıp işleyen bileşen.",
+      "examples": [
+        "The **consumer** acknowledges each message.",
+        "A slow **consumer** can increase the queue length."
+      ],
+      "ipaUS": "/kənˈsuːmər/",
+      "ipaUK": "/kənˈsjuːmə/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "10db1d34-da90-5781-8595-014b0da21f92",
+      "term": "producer",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A component that creates and sends messages or data.",
+      "turkishMeaning": "İleti veya veri üretip gönderen bileşen.",
+      "examples": [
+        "The **producer** publishes an event after checkout.",
+        "Each **producer** must handle connection errors."
+      ],
+      "ipaUS": "/prəˈduːsər/",
+      "ipaUK": "/prəˈdjuːsə/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "5992a768-30ff-5229-bfc5-ec5ebff3ad39",
+      "term": "webhook",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "An HTTP notification sent automatically when an event occurs.",
+      "turkishMeaning": "Bir olay olduğunda otomatik gönderilen HTTP bildirimi.",
+      "examples": [
+        "The **webhook** starts a build after a push.",
+        "Verify the signature of each **webhook**."
+      ],
+      "ipaUS": "/ˈwebhʊk/",
+      "ipaUK": "/ˈwebhʊk/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "3843db39-1343-56b6-837b-16b4cab76705",
+      "term": "feature flag",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A setting that enables or disables a feature without a new deployment.",
+      "turkishMeaning": "Yeni dağıtım olmadan özelliği açıp kapatan ayar.",
+      "examples": [
+        "The **feature flag** is off by default.",
+        "Use a **feature flag** for a gradual rollout."
+      ],
+      "ipaUS": "/ˈfiːtʃər flæɡ/",
+      "ipaUK": "/ˈfiːtʃə flæɡ/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "8dd61af3-6515-5d02-8810-330b5f187eb7",
+      "term": "canary release",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "A release exposed to a small group before wider deployment.",
+      "turkishMeaning": "Genel dağıtımdan önce küçük gruba sunulan sürüm.",
+      "examples": [
+        "The **canary release** receives five percent of traffic.",
+        "Compare errors during the **canary release**."
+      ],
+      "ipaUS": "/kəˈneri rɪˈliːs/",
+      "ipaUK": "/kəˈneəri rɪˈliːs/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "4fa7f1c8-4257-5de4-8dd9-655514ab8ad3",
+      "term": "rolling update",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "Replacing instances gradually while others keep serving traffic.",
+      "turkishMeaning": "Diğer örnekler çalışırken örnekleri aşamalı değiştirme.",
+      "examples": [
+        "The **rolling update** replaces one pod at a time.",
+        "Set readiness checks before a **rolling update**."
+      ],
+      "ipaUS": "/ˈroʊlɪŋ ˈʌpdeɪt/",
+      "ipaUK": "/ˈrəʊlɪŋ ˈʌpdeɪt/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "ea1dbd1e-5441-5762-b889-52bf439aafce",
+      "term": "blue-green deployment",
+      "partOfSpeech": "noun",
+      "cefr": "C1",
+      "definition": "Releasing by switching traffic between two prepared environments.",
+      "turkishMeaning": "Trafiği hazır iki ortam arasında değiştirerek dağıtma.",
+      "examples": [
+        "A **blue-green deployment** makes switching back easier.",
+        "Database changes complicate **blue-green deployment**."
+      ],
+      "ipaUS": "/bluː ɡriːn dɪˈplɔɪmənt/",
+      "ipaUK": "/bluː ɡriːn dɪˈplɔɪmənt/",
+      "tags": [
+        "tech",
+        "devops"
+      ]
+    },
+    {
+      "id": "e8864792-a88e-5eb2-aa63-62a08964f418",
+      "term": "merge conflict",
+      "partOfSpeech": "noun",
+      "cefr": "B2",
+      "definition": "A change that Git cannot combine automatically.",
+      "turkishMeaning": "Git'in otomatik birleştiremediği değişiklik çakışması.",
+      "examples": [
+        "Resolve the **merge conflict** before merging.",
+        "Both branches edited the same line, causing a **merge conflict**."
+      ],
+      "ipaUS": "/mɜːrdʒ ˈkɑːnflɪkt/",
+      "ipaUK": "/mɜːdʒ ˈkɒnflɪkt/",
+      "tags": [
+        "tech",
+        "work"
+      ]
+    },
+    {
+      "id": "cd4061dd-6553-57db-96fb-b46a4b578827",
+      "term": "code review",
+      "partOfSpeech": "noun",
+      "cefr": "B2",
+      "definition": "Examining code changes before accepting them.",
+      "turkishMeaning": "Kod değişikliklerini kabulden önce inceleme.",
+      "examples": [
+        "The **code review** caught an edge case.",
+        "Keep the **code review** focused on behavior and clarity."
+      ],
+      "ipaUS": "/koʊd rɪˈvjuː/",
+      "ipaUK": "/kəʊd rɪˈvjuː/",
+      "tags": [
+        "tech",
+        "work"
+      ]
+    },
+    {
+      "id": "a0566049-a1b1-52f6-9cb6-b7adcfe5e090",
+      "term": "edge case",
+      "partOfSpeech": "noun",
+      "cefr": "B2",
+      "definition": "An unusual input or condition near a boundary.",
+      "turkishMeaning": "Sınırda oluşan sıra dışı girdi veya durum.",
+      "examples": [
+        "An empty list is an important **edge case**.",
+        "Add a test for this **edge case**."
+      ],
+      "ipaUS": "/edʒ keɪs/",
+      "ipaUK": "/edʒ keɪs/",
+      "tags": [
+        "tech",
+        "work"
+      ]
+    },
+    {
+      "id": "7892e9f8-5482-5036-a228-a01ab6b14afc",
+      "term": "regression",
+      "partOfSpeech": "noun",
+      "cefr": "B2",
+      "definition": "A new change that breaks behavior that previously worked.",
+      "turkishMeaning": "Önceden çalışan davranışın yeni değişiklikle bozulması.",
+      "examples": [
+        "The test caught a **regression** in search.",
+        "We reverted the change that caused the **regression**."
+      ],
+      "ipaUS": "/rɪˈɡreʃən/",
+      "ipaUK": "/rɪˈɡreʃən/",
+      "tags": [
+        "tech",
+        "work"
+      ]
+    },
+    {
+      "id": "fafe34fd-5081-5b36-86a0-8b2dbb67c457",
+      "term": "unit test",
+      "partOfSpeech": "noun",
+      "cefr": "B2",
+      "definition": "A test of a small, isolated piece of behavior.",
+      "turkishMeaning": "Küçük ve yalıtılmış davranışın testi.",
+      "examples": [
+        "Write a **unit test** for the date calculation.",
+        "The **unit test** uses a fixed clock."
+      ],
+      "ipaUS": "/ˈjuːnɪt test/",
+      "ipaUK": "/ˈjuːnɪt test/",
+      "tags": [
+        "tech",
+        "work"
+      ]
+    },
+    {
+      "id": "65879287-0a16-5106-9e2c-b5e9256d770a",
+      "term": "integration test",
+      "partOfSpeech": "noun",
+      "cefr": "B2",
+      "definition": "A test that checks how components work together.",
+      "turkishMeaning": "Bileşenlerin birlikte çalışmasını sınayan test.",
+      "examples": [
+        "The **integration test** uses a temporary database.",
+        "An **integration test** caught the serialization mismatch."
+      ],
+      "ipaUS": "/ˌɪntɪˈɡreɪʃən test/",
+      "ipaUK": "/ˌɪntɪˈɡreɪʃən test/",
+      "tags": [
+        "tech",
+        "work"
+      ]
+    },
+    {
+      "id": "b09378ef-bfbc-5929-88c9-dff6d8e73bd7",
+      "term": "flaky test",
+      "partOfSpeech": "noun",
+      "cefr": "B2",
+      "definition": "A test that sometimes passes and sometimes fails without relevant changes.",
+      "turkishMeaning": "İlgili değişiklik olmadan bazen geçen bazen kalan test.",
+      "examples": [
+        "The **flaky test** depends on network timing.",
+        "Fix the **flaky test** instead of ignoring all failures."
+      ],
+      "ipaUS": "/ˈfleɪki test/",
+      "ipaUK": "/ˈfleɪki test/",
+      "tags": [
+        "tech",
+        "work"
+      ]
+    },
+    {
+      "id": "73dd5e77-a588-5f23-9f9a-8e589ec67ff3",
+      "term": "technical debt",
+      "partOfSpeech": "noun",
+      "cefr": "B2",
+      "definition": "Future work created by shortcuts or aging technical choices.",
+      "turkishMeaning": "Kısayolların veya eski teknik tercihlerin yarattığı gelecek iş yükü.",
+      "examples": [
+        "We reserved time to reduce **technical debt**.",
+        "This shortcut adds **technical debt**."
+      ],
+      "ipaUS": "/ˈteknɪkəl det/",
+      "ipaUK": "/ˈteknɪkəl det/",
+      "tags": [
+        "tech",
+        "work"
+      ]
+    },
+    {
+      "id": "9227e716-7bd8-54d0-84da-ed9182a1e849",
+      "term": "refactoring",
+      "partOfSpeech": "noun",
+      "cefr": "B2",
+      "definition": "Changing code structure without intentionally changing behavior.",
+      "turkishMeaning": "Davranışı değiştirmeden kod yapısını düzenleme.",
+      "examples": [
+        "The **refactoring** makes the parser easier to test.",
+        "Run the tests after **refactoring**."
+      ],
+      "ipaUS": "/ˌriːˈfæktərɪŋ/",
+      "ipaUK": "/ˌriːˈfæktərɪŋ/",
+      "tags": [
+        "tech",
+        "work"
+      ]
+    },
+    {
+      "id": "a450cdb0-0c8b-578c-9a0e-f8b58e9632fd",
+      "term": "backlog",
+      "partOfSpeech": "noun",
+      "cefr": "B2",
+      "definition": "An ordered list of work that has not been completed.",
+      "turkishMeaning": "Henüz tamamlanmamış işlerin sıralı listesi.",
+      "examples": [
+        "Add the improvement to the **backlog**.",
+        "We reviewed the **backlog** before planning."
+      ],
+      "ipaUS": "/ˈbæklɔːɡ/",
+      "ipaUK": "/ˈbæklɒɡ/",
+      "tags": [
+        "tech",
+        "work"
+      ]
+    },
+    {
+      "id": "6428aac6-0f6f-5422-95e6-3daa679133a4",
+      "term": "scope",
+      "partOfSpeech": "noun",
+      "cefr": "B2",
+      "definition": "The agreed boundaries of a task or project.",
+      "turkishMeaning": "Görev veya projenin kararlaştırılmış kapsamı.",
+      "examples": [
+        "This change is outside the current **scope**.",
+        "Clarify the **scope** before estimating."
+      ],
+      "ipaUS": "/skoʊp/",
+      "ipaUK": "/skəʊp/",
+      "tags": [
+        "tech",
+        "work"
+      ]
+    },
+    {
+      "id": "7b635313-8dee-5ff5-a385-eb0040af9f16",
+      "term": "estimate",
+      "partOfSpeech": "noun",
+      "cefr": "B2",
+      "definition": "An approximate calculation of effort, cost, or time.",
+      "turkishMeaning": "Emek, maliyet veya zaman için yaklaşık hesap.",
+      "examples": [
+        "My **estimate** includes testing time.",
+        "The **estimate** may change after investigation."
+      ],
+      "ipaUS": "/ˈestɪmət/",
+      "ipaUK": "/ˈestɪmət/",
+      "tags": [
+        "tech",
+        "work"
+      ],
+      "note": "This card is the noun /ˈestɪmət/. The verb is /ˈestɪmeɪt/."
+    },
+    {
+      "id": "fc441d30-c549-5811-8742-6678ed4efd84",
+      "term": "deadline",
+      "partOfSpeech": "noun",
+      "cefr": "B2",
+      "definition": "The latest agreed time for completing something.",
+      "turkishMeaning": "Bir işi tamamlamak için son tarih.",
+      "examples": [
+        "We need to discuss the **deadline**.",
+        "The **deadline** is Friday afternoon."
+      ],
+      "ipaUS": "/ˈdedlaɪn/",
+      "ipaUK": "/ˈdedlaɪn/",
+      "tags": [
+        "tech",
+        "work"
+      ]
+    },
+    {
+      "id": "9143c5e2-46b7-5ec3-8426-67565ca67932",
+      "term": "deliverable",
+      "partOfSpeech": "noun",
+      "cefr": "B2",
+      "definition": "A concrete result that must be provided.",
+      "turkishMeaning": "Teslim edilmesi gereken somut çıktı.",
+      "examples": [
+        "The main **deliverable** is a working prototype.",
+        "Define each **deliverable** in the proposal."
+      ],
+      "ipaUS": "/dɪˈlɪvərəbəl/",
+      "ipaUK": "/dɪˈlɪvərəbəl/",
+      "tags": [
+        "tech",
+        "work"
+      ]
+    },
+    {
+      "id": "262ec54a-c967-5d79-a8d8-0c7dd97b07ed",
+      "term": "stakeholder",
+      "partOfSpeech": "noun",
+      "cefr": "B2",
+      "definition": "A person or group affected by a project or decision.",
+      "turkishMeaning": "Proje veya karardan etkilenen kişi ya da grup.",
+      "examples": [
+        "Invite a **stakeholder** from customer support.",
+        "Each **stakeholder** may have different priorities."
+      ],
+      "ipaUS": "/ˈsteɪkhoʊldər/",
+      "ipaUK": "/ˈsteɪkhəʊldə/",
+      "tags": [
+        "tech",
+        "work"
+      ]
+    },
+    {
+      "id": "b2d0c8ec-45f0-53ae-8f1f-eaace87f4bc7",
+      "term": "action item",
+      "partOfSpeech": "noun",
+      "cefr": "B2",
+      "definition": "A specific task agreed during a discussion.",
+      "turkishMeaning": "Görüşmede kararlaştırılan belirli görev.",
+      "examples": [
+        "Assign an owner to each **action item**.",
+        "The final **action item** is to update the documentation."
+      ],
+      "ipaUS": "/ˈækʃən ˌaɪtəm/",
+      "ipaUK": "/ˈækʃən ˌaɪtəm/",
+      "tags": [
+        "tech",
+        "work"
+      ]
+    },
+    {
+      "id": "9baa647a-ab3c-5e40-87c1-ea86781c5d3a",
+      "term": "handoff",
+      "partOfSpeech": "noun",
+      "cefr": "B2",
+      "definition": "Transferring work or responsibility to another person.",
+      "turkishMeaning": "İşi veya sorumluluğu başkasına devretme.",
+      "examples": [
+        "The shift **handoff** includes current incidents.",
+        "A clear **handoff** prevents missed tasks."
+      ],
+      "ipaUS": "/ˈhændɔːf/",
+      "ipaUK": "/ˈhændɒf/",
+      "tags": [
+        "tech",
+        "work"
+      ]
+    },
+    {
+      "id": "14a24b62-5db5-5c31-ab50-6e072bfd3fe7",
+      "term": "Could we align on",
+      "partOfSpeech": "phrase",
+      "cefr": "B2",
+      "definition": "A request to agree on a shared understanding.",
+      "turkishMeaning": "… konusunda ortak anlayışa varabilir miyiz?",
+      "examples": [
+        "**Could we align on** the priorities?",
+        "**Could we align on** the release criteria?"
+      ],
+      "ipaUS": "/kʊd wiː əˈlaɪn ɑːn/",
+      "ipaUK": "/kʊd wiː əˈlaɪn ɒn/",
+      "tags": [
+        "tech",
+        "work",
+        "meeting"
+      ]
+    },
+    {
+      "id": "b1eb7851-84f1-579d-b2d4-73df637e0284",
+      "term": "Let me walk you through",
+      "partOfSpeech": "phrase",
+      "cefr": "B2",
+      "definition": "I will explain something step by step.",
+      "turkishMeaning": "Sana adım adım anlatayım.",
+      "examples": [
+        "**Let me walk you through** the architecture.",
+        "**Let me walk you through** the deployment process."
+      ],
+      "ipaUS": "/let miː wɔːk juː θruː/",
+      "ipaUK": "/let miː wɔːk juː θruː/",
+      "tags": [
+        "tech",
+        "work",
+        "meeting"
+      ]
+    },
+    {
+      "id": "03ab886c-b759-522f-a23b-3ec8d069673f",
+      "term": "Could you elaborate on",
+      "partOfSpeech": "phrase",
+      "cefr": "B2",
+      "definition": "A request for more detail about something.",
+      "turkishMeaning": "… konusunu biraz açabilir misiniz?",
+      "examples": [
+        "**Could you elaborate on** the failure scenario?",
+        "**Could you elaborate on** your previous experience?"
+      ],
+      "ipaUS": "/kʊd juː ɪˈlæbəreɪt ɑːn/",
+      "ipaUK": "/kʊd juː ɪˈlæbəreɪt ɒn/",
+      "tags": [
+        "tech",
+        "work",
+        "meeting"
+      ]
+    },
+    {
+      "id": "c7fb44db-ca9e-53d0-a0d8-14c69e29993f",
+      "term": "I have a concern about",
+      "partOfSpeech": "phrase",
+      "cefr": "B2",
+      "definition": "Used to raise a possible problem politely.",
+      "turkishMeaning": "… konusunda bir endişem var.",
+      "examples": [
+        "**I have a concern about** the timeout setting.",
+        "**I have a concern about** exposing this endpoint."
+      ],
+      "ipaUS": "/aɪ hæv ə kənˈsɜːrn əˈbaʊt/",
+      "ipaUK": "/aɪ hæv ə kənˈsɜːn əˈbaʊt/",
+      "tags": [
+        "tech",
+        "work",
+        "meeting"
+      ]
+    },
+    {
+      "id": "7fceccbe-bccd-52ff-a034-5bfedad5fbb7",
+      "term": "Let's take this offline",
+      "partOfSpeech": "phrase",
+      "cefr": "B2",
+      "definition": "Suggest discussing a detail separately after the meeting.",
+      "turkishMeaning": "Bunu toplantı dışında ayrıca konuşalım.",
+      "examples": [
+        "**Let's take this offline** and compare the options.",
+        "**Let's take this offline** so the stand-up stays short."
+      ],
+      "ipaUS": "/lets teɪk ðɪs ˈɔːflaɪn/",
+      "ipaUK": "/lets teɪk ðɪs ˈɒflaɪn/",
+      "tags": [
+        "tech",
+        "work",
+        "meeting"
+      ],
+      "note": "In meetings, offline means outside this discussion; it does not necessarily mean without the internet."
+    },
+    {
+      "id": "49d77826-644a-5803-bf85-4ae35a665cbb",
+      "term": "Thanks for flagging this",
+      "partOfSpeech": "phrase",
+      "cefr": "B2",
+      "definition": "Thank you for drawing attention to this issue.",
+      "turkishMeaning": "Buna dikkat çektiğin için teşekkürler.",
+      "examples": [
+        "**Thanks for flagging this**; I'll investigate.",
+        "**Thanks for flagging this** before the release."
+      ],
+      "ipaUS": "/θæŋks fər ˈflæɡɪŋ ðɪs/",
+      "ipaUK": "/θæŋks fə ˈflæɡɪŋ ðɪs/",
+      "tags": [
+        "tech",
+        "work",
+        "meeting"
+      ]
+    },
+    {
+      "id": "46834017-e0d2-5820-be8e-d68909d4a140",
+      "term": "We are investigating",
+      "partOfSpeech": "phrase",
+      "cefr": "B2",
+      "definition": "We are working to understand a reported problem.",
+      "turkishMeaning": "Sorunu araştırıyoruz.",
+      "examples": [
+        "**We are investigating** elevated error rates.",
+        "**We are investigating** and will update you in fifteen minutes."
+      ],
+      "ipaUS": "/wiː ɑːr ɪnˈvestɪɡeɪtɪŋ/",
+      "ipaUK": "/wiː ɑː ɪnˈvestɪɡeɪtɪŋ/",
+      "tags": [
+        "tech",
+        "work",
+        "meeting"
+      ]
+    },
+    {
+      "id": "6c1f9f5d-88b4-566e-92d3-10575db71221",
+      "term": "The service has recovered",
+      "partOfSpeech": "phrase",
+      "cefr": "B2",
+      "definition": "The service is working again after a disruption.",
+      "turkishMeaning": "Hizmet yeniden çalışır durumda.",
+      "examples": [
+        "**The service has recovered**, and we are monitoring it.",
+        "**The service has recovered** after the rollback."
+      ],
+      "ipaUS": "/ðə ˈsɜːrvɪs hæz rɪˈkʌvərd/",
+      "ipaUK": "/ðə ˈsɜːvɪs hæz rɪˈkʌvəd/",
+      "tags": [
+        "tech",
+        "work",
+        "meeting"
+      ]
+    },
+    {
+      "id": "5bc8abad-82be-5950-bb94-3182fd784612",
+      "term": "What would success look like",
+      "partOfSpeech": "phrase",
+      "cefr": "B2",
+      "definition": "A question asking how a good result will be measured.",
+      "turkishMeaning": "Başarılı sonuç nasıl görünecek; nasıl ölçülecek?",
+      "examples": [
+        "**What would success look like** for this project?",
+        "**What would success look like** in my first three months?"
+      ],
+      "ipaUS": "/wɑːt wʊd səkˈses lʊk laɪk/",
+      "ipaUK": "/wɒt wʊd səkˈses lʊk laɪk/",
+      "tags": [
+        "tech",
+        "work",
+        "meeting"
+      ]
     }
   ]
 }

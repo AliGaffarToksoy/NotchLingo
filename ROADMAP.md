@@ -1,18 +1,16 @@
-# Delivery roadmap
+# Roadmap
 
-1. **Delivered:** Swift package, SwiftData models and store, 30 cards per track,
-   versioned JSON contract, SM-2-based scheduler, daily budget/streak helpers, unit tests,
-   and a minimal foundation window.
-2. **Next, on request:** custom notch panel, collapsed/expanded state, display fallback,
-   menu bar commands, configurable global hotkey, and flashcard module end to end.
-3. Quiz modules (cloze, multiple choice, meaning/naturalness selection, sentence builder),
-   passive pop-quiz scheduler, active hours, snooze, and best-effort Focus handling.
-4. Speaking/listening, local TTS, on-device-only speech recognition where supported,
-   similarity feedback (not a clinical or phonetic pronunciation score), permissions onboarding.
-5. Dashboard and charts, settings, deck browser, JSON/CSV import/export UI,
-   150+ cards per track, weighted session orchestration across enabled modules.
-6. Optional disabled-by-default AI provider interface and Keychain integration,
-   accessibility/Reduce Motion polish, app bundle/signing, release packaging instructions.
+The six original phases are implemented together at the user's request: foundation, notch and flashcards,
+quiz modules and reminders, speech/listening, dashboard/settings/import/export and 300-card content,
+optional AI and downloadable packaging.
 
-Each phase stops for review. No server, account, telemetry, or network dependency is needed
-for the core app. Opt-in remote AI would send only explicitly submitted content to a selected provider.
+Further improvements:
+- Human editorial review of IPA, CEFR levels, and Turkish explanations.
+- Broader macOS 14+ and multiple-display/Spaces hardware testing.
+- More sophisticated natural-sentence distractors and speaking situation prompts.
+- Long-term adaptive module selection and optional FSRS migration with local review history.
+- Signed and notarized distribution if an Apple Developer identity is provided.
+- Intel/universal binaries if requested.
+
+Current limitations are documented in README. On-device speech availability and Focus restrictions
+are platform constraints, not hidden server fallbacks. No backend is required for core learning.

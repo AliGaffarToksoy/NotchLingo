@@ -13,9 +13,14 @@ for bundle in "$BIN_DIR"/*.bundle; do
 done
 /usr/libexec/PlistBuddy -c 'Print CFBundleIdentifier' "$APP/Contents/Info.plist" >/dev/null 2>&1 || cp Scripts/Info.plist "$APP/Contents/Info.plist"
 /usr/libexec/PlistBuddy -c "Set CFBundleShortVersionString $VERSION" "$APP/Contents/Info.plist"
-if [ -f Scripts/AppIcon.icns ]; then cp Scripts/AppIcon.icns "$APP/Contents/Resources/AppIcon.icns"; fi
+swift Scripts/Icon.swift "$PWD/dist/AppIcon.iconset"
+iconutil -c icns "$PWD/dist/AppIcon.iconset" -o "$APP/Contents/Resources/AppIcon.icns"
 codesign --force --deep --sign - "$APP"
 codesign --verify --deep --strict "$APP"
 ditto -c -k --sequesterRsrc --keepParent "$APP" "dist/NotchLingo-macOS-arm64.zip"
-shasum -a 256 dist/NotchLingo-macOS-arm64.zip > dist/SHA256SUMS.txt
+mkdir -p dist/dmg-stage
+ditto "$APP" dist/dmg-stage/NotchLingo.app
+ln -sfn /Applications dist/dmg-stage/Applications
+hdiutil create -volname NotchLingo -srcfolder dist/dmg-stage -ov -format UDZO dist/NotchLingo-macOS-arm64.dmg
+shasum -a 256 dist/NotchLingo-macOS-arm64.zip dist/NotchLingo-macOS-arm64.dmg > dist/SHA256SUMS.txt
 printf 'Packaged %s\n' "$APP"

@@ -26,7 +26,7 @@ daily budgets use an injected calendar (user-local by default), not rolling 24-h
 Queue priority: due short learning/relearning steps, due review cards, then new cards.
 Only already-due non-new cards enter the queue. Short steps ignore daily caps so forgotten
 cards can return soon. Recompute the queue after every answer and when the next due time
-arrives; the Phase 2 session UI will own that timer. New cards and review cards consume
+arrives; the session view model owns that timer. New cards and review cards consume
 separate daily budgets. Review budgets count distinct cards reviewed today; repeated
 learning attempts do not consume extra review slots.
 

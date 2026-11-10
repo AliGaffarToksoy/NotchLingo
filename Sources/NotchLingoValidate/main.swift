@@ -8,7 +8,7 @@ func require(_ condition: Bool, _ message: String) throws {
 }
 
 let decks = try SeedDecks.load()
-try require(decks.count == 2 && decks.allSatisfy { $0.cards.count >= 30 }, "Seed deck counts are incorrect.")
+try require(decks.count == 2 && decks.allSatisfy { $0.cards.count >= 150 }, "Seed deck counts are incorrect.")
 try require(Set(decks.flatMap(\.cards).map(\.id)).count == decks.flatMap(\.cards).count, "Cross-deck duplicate IDs.")
 for deck in decks {
     try require(try DeckCodec.decode(DeckCodec.encode(deck)) == deck, "JSON round trip failed.")
@@ -45,3 +45,10 @@ let shortQueue = SessionPlanner().queue(candidates + [step], at: failed.due,
 try require(shortQueue.map(\.id) == [step.id], "Learning steps must bypass exhausted daily budgets.")
 print("PASS: \(decks.flatMap(\.cards).count) cards, JSON round trips, duplicate rejection, SRS smoke checks, track balance, and learning budget bypass.")
 print("Full app, SwiftData, and XCTest verification still require full Xcode.")
+
+let csv = try CSVCodec.encode(decks)
+try require(try CSVCodec.decode(csv) == decks, "CSV round trip failed.")
+let spoken = AnswerEvaluator.compare(expected: "Could you review my pull request?", actual: "could you review my request")
+try require(spoken.missedWords == ["pull"] && spoken.score > 0.8, "Transcript alignment failed.")
+try require(AnswerEvaluator.compare(expected: "Hello!", actual: "hello").score == 1, "Case/punctuation matching failed.")
+print("PASS: CSV round trip and transcript alignment.")

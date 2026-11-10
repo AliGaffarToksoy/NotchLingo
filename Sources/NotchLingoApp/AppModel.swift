@@ -32,6 +32,10 @@ import NotchLingoStorage
     @Published var showOnboarding = false
     @Published var panelExpanded = false
     @Published var pingVisible = false
+    @Published var pingContent: CardContent?
+    @Published var pingChoices: [String] = []
+    @Published var pingAnswered = false
+    @Published var pingCorrect = false
     var preferencesChanged: (() -> Void)?
     var expandPanel: ((Bool) -> Void)?
     var showDashboard: (() -> Void)?
@@ -148,6 +152,23 @@ import NotchLingoStorage
             if secondsLeft == 0 { endSession() }
             else if current == nil && !queue().isEmpty { nextCard() }
         }
+    }
+    func preparePing() {
+        guard let candidate = queue().first, let stored = cards.first(where: { $0.id == candidate.id }),
+              let card = try? stored.content() else { return }
+        pingContent = card; pingAnswered = false; pingCorrect = false
+        let others = Array(Set(cards.filter { $0.id != card.id }.compactMap { try? $0.content().definition }))
+            .filter { $0 != card.definition }.shuffled().prefix(2)
+        pingChoices = ([card.definition] + others).shuffled()
+        pingVisible = true
+    }
+    func answerPing(_ value: String) {
+        guard !pingAnswered, let card = pingContent, let stored = cards.first(where: { $0.id == card.id }) else { return }
+        let correct = value == card.definition
+        do {
+            try store.record(correct ? .good : .again, for: stored, duration: 15)
+            pingCorrect = correct; pingAnswered = true; try reload()
+        } catch { error = error.localizedDescription }
     }
     func pause(minutes: Int = 60) { preferences.pauseUntil = Date().addingTimeInterval(Double(minutes * 60)); pingVisible = false }
     func importFile() {

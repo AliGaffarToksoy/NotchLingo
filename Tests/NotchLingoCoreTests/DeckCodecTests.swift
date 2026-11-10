@@ -2,11 +2,11 @@ import XCTest
 @testable import NotchLingoCore
 
 final class DeckCodecTests: XCTestCase {
-    func testSeedsHaveThirtyUniqueCompleteCardsPerTrack() throws {
+    func testSeedsHave150UniqueCompleteCardsPerTrack() throws {
         let decks = try SeedDecks.load()
         XCTAssertEqual(Set(decks.map(\.track)), Set(Track.allCases))
-        XCTAssertEqual(decks.map { $0.cards.count }, [30, 30])
-        XCTAssertEqual(Set(decks.flatMap(\.cards).map(\.id)).count, 60)
+        XCTAssertEqual(decks.map { $0.cards.count }, [150, 150])
+        XCTAssertEqual(Set(decks.flatMap(\.cards).map(\.id)).count, 300)
         for deck in decks { try DeckCodec.validate(deck) }
     }
     func testRoundTripPreservesUnicodeAndContent() throws {

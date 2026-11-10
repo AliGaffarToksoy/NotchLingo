@@ -21,14 +21,14 @@ To add a seed card, copy a card object, generate a UUID with `uuidgen`, replace 
 and run `swift test`. Rebuild the app: the new card is added on launch. Seeding does not
 replace existing stored content or progress. During development, use a fresh test store to
 check changes to existing seeds; do not delete personal progress. A content-update/import
-workflow will be implemented in Phase 5. Keep IDs stable across content revisions.
+workflow is available in the deck browser. Keep IDs stable across content revisions.
 
 JSON export is content-only. Scheduler state and review history are local records, not
 part of a shared deck. `DeckCodec.encode`/`decode` support round trips now; file selection,
-merge policy, cross-deck conflict resolution, and user import/export arrive in Phase 5.
+merge policy, cross-deck conflict resolution, and user import/export are implemented in the deck browser.
 Within-document duplicate IDs are rejected now; imports must also reject IDs owned by another deck.
 
-## CSV contract reserved for Phase 5
+## CSV import/export contract
 
 CSV is UTF-8, comma-separated, RFC 4180 quoting (embedded quotes doubled), with a header:
 
@@ -40,5 +40,4 @@ One card per row; deck metadata repeats on each row and must agree for a given d
 `example3` and `note` may be empty. `tags` contains a JSON string array inside a properly
 quoted CSV cell; this preserves commas and punctuation in tags without a second delimiter.
 Example: the logical value `["daily","meeting"]` is written as `"[""daily"",""meeting""]"`.
-Newlines and commas inside text must be quoted. CSV parsing/export is deliberately not
-implemented in Phase 1; tests here cover the delivered JSON codec.
+Newlines and commas inside text must be quoted. CSV parsing/export is implemented by CSVCodec and covered by round-trip, quoting, Unicode, and rejection tests.

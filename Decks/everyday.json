@@ -573,6 +573,2178 @@
         "daily",
         "communication"
       ]
+    },
+    {
+      "id": "c70651d1-f55f-501c-bbab-06f08d3a50bb",
+      "term": "break the ice",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Make people feel relaxed at the start of a conversation.",
+      "turkishMeaning": "Sohbetin başında ortamı yumuşatmak.",
+      "examples": [
+        "A simple question can **break the ice**.",
+        "I told a short story to **break the ice**."
+      ],
+      "ipaUS": "/breɪk ði aɪs/",
+      "ipaUK": "/breɪk ði aɪs/",
+      "tags": [
+        "daily",
+        "conversation"
+      ]
+    },
+    {
+      "id": "16958ca2-978d-5690-8954-b2e57a359b57",
+      "term": "call it a day",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Stop working for the day.",
+      "turkishMeaning": "O günkü işi bitirmek.",
+      "examples": [
+        "Let's **call it a day** and rest.",
+        "We can **call it a day** after this task."
+      ],
+      "ipaUS": "/kɔːl ɪt ə deɪ/",
+      "ipaUK": "/kɔːl ɪt ə deɪ/",
+      "tags": [
+        "daily",
+        "conversation"
+      ]
+    },
+    {
+      "id": "f7953896-c808-53a4-90b5-1c32e818b69f",
+      "term": "hang out",
+      "partOfSpeech": "phrasal verb",
+      "cefr": "B1",
+      "definition": "Spend relaxed time with other people.",
+      "turkishMeaning": "Birlikte vakit geçirmek; takılmak.",
+      "examples": [
+        "We **hang out** at the park.",
+        "Do you want to **hang out** after class?"
+      ],
+      "ipaUS": "/hæŋ aʊt/",
+      "ipaUK": "/hæŋ aʊt/",
+      "tags": [
+        "daily",
+        "phrasal-verb"
+      ]
+    },
+    {
+      "id": "e6dde7ec-e36e-5eb4-8d22-89bd27c683e0",
+      "term": "show up",
+      "partOfSpeech": "phrasal verb",
+      "cefr": "B1",
+      "definition": "Arrive or appear somewhere.",
+      "turkishMeaning": "Gelmek; ortaya çıkmak.",
+      "examples": [
+        "Please **show up** before six.",
+        "Only five people could **show up**."
+      ],
+      "ipaUS": "/ʃoʊ ʌp/",
+      "ipaUK": "/ʃəʊ ʌp/",
+      "tags": [
+        "daily",
+        "phrasal-verb"
+      ]
+    },
+    {
+      "id": "6df6c061-19b8-53cf-bc2c-c9d5e5a9c072",
+      "term": "find out",
+      "partOfSpeech": "phrasal verb",
+      "cefr": "B1",
+      "definition": "Learn information you did not know.",
+      "turkishMeaning": "Öğrenmek; keşfetmek.",
+      "examples": [
+        "I'll **find out** when the shop opens.",
+        "We need to **find out** who called."
+      ],
+      "ipaUS": "/faɪnd aʊt/",
+      "ipaUK": "/faɪnd aʊt/",
+      "tags": [
+        "daily",
+        "phrasal-verb"
+      ]
+    },
+    {
+      "id": "67b01051-6652-5c13-93af-a0b6f3019190",
+      "term": "pick up",
+      "partOfSpeech": "phrasal verb",
+      "cefr": "B1",
+      "definition": "Collect a person or thing from a place.",
+      "turkishMeaning": "Birini veya bir şeyi gidip almak.",
+      "examples": [
+        "Can you **pick up** the children?",
+        "I'll **pick up** the parcel tomorrow."
+      ],
+      "ipaUS": "/pɪk ʌp/",
+      "ipaUK": "/pɪk ʌp/",
+      "tags": [
+        "daily",
+        "phrasal-verb"
+      ]
+    },
+    {
+      "id": "ca16dc42-77ad-5371-88be-1a3592a2f55c",
+      "term": "drop off",
+      "partOfSpeech": "phrasal verb",
+      "cefr": "B1",
+      "definition": "Take someone or something to a place and leave them there.",
+      "turkishMeaning": "Birini veya bir şeyi bir yere bırakmak.",
+      "examples": [
+        "Can you **drop off** the keys?",
+        "I'll **drop off** your bag at home."
+      ],
+      "ipaUS": "/drɑːp ɔːf/",
+      "ipaUK": "/drɒp ɒf/",
+      "tags": [
+        "daily",
+        "phrasal-verb"
+      ]
+    },
+    {
+      "id": "8edf0f60-1d33-529f-8fcc-5cab53e54f2e",
+      "term": "come across",
+      "partOfSpeech": "phrasal verb",
+      "cefr": "B1",
+      "definition": "Find something by chance.",
+      "turkishMeaning": "Tesadüfen rastlamak.",
+      "examples": [
+        "You may **come across** unfamiliar words.",
+        "Did you **come across** my notebook?"
+      ],
+      "ipaUS": "/kʌm əˈkrɔːs/",
+      "ipaUK": "/kʌm əˈkrɒs/",
+      "tags": [
+        "daily",
+        "phrasal-verb"
+      ]
+    },
+    {
+      "id": "ddb0c6d6-21c2-5866-8f07-d9c6e4df2953",
+      "term": "bring up",
+      "partOfSpeech": "phrasal verb",
+      "cefr": "B1",
+      "definition": "Start talking about a topic.",
+      "turkishMeaning": "Bir konuyu açmak.",
+      "examples": [
+        "Don't **bring up** that argument again.",
+        "I'll **bring up** the idea at dinner."
+      ],
+      "ipaUS": "/brɪŋ ʌp/",
+      "ipaUK": "/brɪŋ ʌp/",
+      "tags": [
+        "daily",
+        "phrasal-verb"
+      ]
+    },
+    {
+      "id": "488f5258-e779-53ca-9d18-6462a89e3ea2",
+      "term": "carry on",
+      "partOfSpeech": "phrasal verb",
+      "cefr": "B1",
+      "definition": "Continue doing something.",
+      "turkishMeaning": "Devam etmek.",
+      "examples": [
+        "Please **carry on** with your story.",
+        "We can **carry on** after lunch."
+      ],
+      "ipaUS": "/ˈkæri ɑːn/",
+      "ipaUK": "/ˈkæri ɒn/",
+      "tags": [
+        "daily",
+        "phrasal-verb"
+      ]
+    },
+    {
+      "id": "88e43866-3a16-5867-a89e-964e1483f71a",
+      "term": "give up",
+      "partOfSpeech": "phrasal verb",
+      "cefr": "B1",
+      "definition": "Stop trying to do something.",
+      "turkishMeaning": "Vazgeçmek; pes etmek.",
+      "examples": [
+        "Don't **give up** after one mistake.",
+        "I won't **give up** learning English."
+      ],
+      "ipaUS": "/ɡɪv ʌp/",
+      "ipaUK": "/ɡɪv ʌp/",
+      "tags": [
+        "daily",
+        "phrasal-verb"
+      ]
+    },
+    {
+      "id": "4f8bc4b5-bb4d-5924-ab47-dd4c9e803e3f",
+      "term": "calm down",
+      "partOfSpeech": "phrasal verb",
+      "cefr": "B1",
+      "definition": "Become less angry or worried.",
+      "turkishMeaning": "Sakinleşmek.",
+      "examples": [
+        "Take a breath and **calm down**.",
+        "A short walk helps me **calm down**."
+      ],
+      "ipaUS": "/kɑːm daʊn/",
+      "ipaUK": "/kɑːm daʊn/",
+      "tags": [
+        "daily",
+        "phrasal-verb"
+      ]
+    },
+    {
+      "id": "58be1631-d0d0-5432-beaa-8f14a96e5959",
+      "term": "check in",
+      "partOfSpeech": "phrasal verb",
+      "cefr": "B1",
+      "definition": "Register your arrival at a hotel or airport.",
+      "turkishMeaning": "Giriş işlemlerini yapmak.",
+      "examples": [
+        "We can **check in** after two.",
+        "Please **check in** online before your flight."
+      ],
+      "ipaUS": "/tʃek ɪn/",
+      "ipaUK": "/tʃek ɪn/",
+      "tags": [
+        "daily",
+        "phrasal-verb"
+      ]
+    },
+    {
+      "id": "bc1df4a1-df52-5317-affe-5afb8f7339a4",
+      "term": "check out",
+      "partOfSpeech": "phrasal verb",
+      "cefr": "B1",
+      "definition": "Leave a hotel after paying your bill.",
+      "turkishMeaning": "Otelden çıkış yapmak.",
+      "examples": [
+        "We must **check out** by eleven.",
+        "Can we **check out** a little later?"
+      ],
+      "ipaUS": "/tʃek aʊt/",
+      "ipaUK": "/tʃek aʊt/",
+      "tags": [
+        "daily",
+        "phrasal-verb"
+      ]
+    },
+    {
+      "id": "b9f6dd2b-b3b4-5852-aa64-626e044830e6",
+      "term": "look for",
+      "partOfSpeech": "phrasal verb",
+      "cefr": "B1",
+      "definition": "Try to find someone or something.",
+      "turkishMeaning": "Aramak.",
+      "examples": [
+        "I'll **look for** my glasses.",
+        "Can you **look for** a quiet café?"
+      ],
+      "ipaUS": "/lʊk fɔːr/",
+      "ipaUK": "/lʊk fɔː/",
+      "tags": [
+        "daily",
+        "phrasal-verb"
+      ]
+    },
+    {
+      "id": "dd9b2946-327c-5a76-8492-c7684926b3c0",
+      "term": "look up",
+      "partOfSpeech": "phrasal verb",
+      "cefr": "B1",
+      "definition": "Find information in a reference source.",
+      "turkishMeaning": "Bir bilgiyi kaynaktan arayıp bulmak.",
+      "examples": [
+        "You can **look up** the word in a dictionary.",
+        "I'll **look up** the train times."
+      ],
+      "ipaUS": "/lʊk ʌp/",
+      "ipaUK": "/lʊk ʌp/",
+      "tags": [
+        "daily",
+        "phrasal-verb"
+      ]
+    },
+    {
+      "id": "4a09c185-e148-5c14-9825-17aa7d325e99",
+      "term": "try on",
+      "partOfSpeech": "phrasal verb",
+      "cefr": "B1",
+      "definition": "Put on clothing to see if it fits.",
+      "turkishMeaning": "Kıyafet denemek.",
+      "examples": [
+        "May I **try on** this jacket?",
+        "You should **try on** both sizes."
+      ],
+      "ipaUS": "/traɪ ɑːn/",
+      "ipaUK": "/traɪ ɒn/",
+      "tags": [
+        "daily",
+        "phrasal-verb"
+      ]
+    },
+    {
+      "id": "f5d7f04e-b38d-5927-9952-01759aeda776",
+      "term": "fill in",
+      "partOfSpeech": "phrasal verb",
+      "cefr": "B1",
+      "definition": "Write the required information in empty spaces.",
+      "turkishMeaning": "Boşlukları doldurmak.",
+      "examples": [
+        "Please **fill in** your address.",
+        "Can you **fill in** this form?"
+      ],
+      "ipaUS": "/fɪl ɪn/",
+      "ipaUK": "/fɪl ɪn/",
+      "tags": [
+        "daily",
+        "phrasal-verb"
+      ]
+    },
+    {
+      "id": "20676eda-61e8-524f-a6bd-ab840fa601e4",
+      "term": "get over",
+      "partOfSpeech": "phrasal verb",
+      "cefr": "B1",
+      "definition": "Recover from an illness or difficult experience.",
+      "turkishMeaning": "Atlatmak; iyileşmek.",
+      "examples": [
+        "It took a week to **get over** the cold.",
+        "She needs time to **get over** the disappointment."
+      ],
+      "ipaUS": "/ɡet ˈoʊvər/",
+      "ipaUK": "/ɡet ˈəʊvə/",
+      "tags": [
+        "daily",
+        "phrasal-verb"
+      ]
+    },
+    {
+      "id": "5134de4a-f106-531c-bf6b-0ed5ac281468",
+      "term": "work out",
+      "partOfSpeech": "phrasal verb",
+      "cefr": "B1",
+      "definition": "Exercise to improve your fitness.",
+      "turkishMeaning": "Egzersiz yapmak.",
+      "examples": [
+        "I **work out** three times a week.",
+        "We can **work out** together tomorrow."
+      ],
+      "ipaUS": "/wɜːrk aʊt/",
+      "ipaUK": "/wɜːk aʊt/",
+      "tags": [
+        "daily",
+        "phrasal-verb"
+      ]
+    },
+    {
+      "id": "8ebd7b4d-bd95-5754-8401-3571ba75fcc0",
+      "term": "set off",
+      "partOfSpeech": "phrasal verb",
+      "cefr": "B1",
+      "definition": "Start a journey.",
+      "turkishMeaning": "Yola çıkmak.",
+      "examples": [
+        "We should **set off** before sunrise.",
+        "What time will you **set off**?"
+      ],
+      "ipaUS": "/set ɔːf/",
+      "ipaUK": "/set ɒf/",
+      "tags": [
+        "daily",
+        "phrasal-verb"
+      ]
+    },
+    {
+      "id": "981cfe42-4acd-56ec-ad7d-8ee14eca1c31",
+      "term": "get back",
+      "partOfSpeech": "phrasal verb",
+      "cefr": "B1",
+      "definition": "Return to a place.",
+      "turkishMeaning": "Geri dönmek.",
+      "examples": [
+        "When will you **get back** from Ankara?",
+        "I need to **get back** home before dark."
+      ],
+      "ipaUS": "/ɡet bæk/",
+      "ipaUK": "/ɡet bæk/",
+      "tags": [
+        "daily",
+        "phrasal-verb"
+      ]
+    },
+    {
+      "id": "818df6c6-aeaf-5ec1-80e5-366e98ff51f3",
+      "term": "put away",
+      "partOfSpeech": "phrasal verb",
+      "cefr": "B1",
+      "definition": "Return something to its usual storage place.",
+      "turkishMeaning": "Yerine kaldırmak.",
+      "examples": [
+        "Please **put away** your clothes.",
+        "Let's **put away** the dishes together."
+      ],
+      "ipaUS": "/pʊt əˈweɪ/",
+      "ipaUK": "/pʊt əˈweɪ/",
+      "tags": [
+        "daily",
+        "phrasal-verb"
+      ]
+    },
+    {
+      "id": "354b11ab-66ee-5fa1-8149-a8a62c961ea1",
+      "term": "throw away",
+      "partOfSpeech": "phrasal verb",
+      "cefr": "B1",
+      "definition": "Get rid of something you no longer need.",
+      "turkishMeaning": "Atmak; çöpe atmak.",
+      "examples": [
+        "Don't **throw away** the receipt.",
+        "We should **throw away** the broken cup."
+      ],
+      "ipaUS": "/θroʊ əˈweɪ/",
+      "ipaUK": "/θrəʊ əˈweɪ/",
+      "tags": [
+        "daily",
+        "phrasal-verb"
+      ]
+    },
+    {
+      "id": "5034cb2b-3ad0-5a1b-b878-211b1474f18e",
+      "term": "turn on",
+      "partOfSpeech": "phrasal verb",
+      "cefr": "B1",
+      "definition": "Start a machine or light.",
+      "turkishMeaning": "Açmak; çalıştırmak.",
+      "examples": [
+        "Could you **turn on** the lamp?",
+        "Please **turn on** the heating."
+      ],
+      "ipaUS": "/tɜːrn ɑːn/",
+      "ipaUK": "/tɜːn ɒn/",
+      "tags": [
+        "daily",
+        "phrasal-verb"
+      ]
+    },
+    {
+      "id": "abb472b9-78c9-5a6c-b736-2cb4c3e8b190",
+      "term": "turn off",
+      "partOfSpeech": "phrasal verb",
+      "cefr": "B1",
+      "definition": "Stop a machine or light.",
+      "turkishMeaning": "Kapatmak.",
+      "examples": [
+        "Remember to **turn off** the oven.",
+        "Please **turn off** your phone during the film."
+      ],
+      "ipaUS": "/tɜːrn ɔːf/",
+      "ipaUK": "/tɜːn ɒf/",
+      "tags": [
+        "daily",
+        "phrasal-verb"
+      ]
+    },
+    {
+      "id": "42e66cc7-1f9e-5782-8814-f544e1a7e1e5",
+      "term": "sort out",
+      "partOfSpeech": "phrasal verb",
+      "cefr": "B1",
+      "definition": "Deal with a problem or organize something.",
+      "turkishMeaning": "Çözmek; düzene sokmak.",
+      "examples": [
+        "We need to **sort out** the payment.",
+        "I'll **sort out** my papers tonight."
+      ],
+      "ipaUS": "/sɔːrt aʊt/",
+      "ipaUK": "/sɔːt aʊt/",
+      "tags": [
+        "daily",
+        "phrasal-verb"
+      ]
+    },
+    {
+      "id": "adf44eda-e36b-5467-8f6b-b44b22af513d",
+      "term": "count on",
+      "partOfSpeech": "phrasal verb",
+      "cefr": "B1",
+      "definition": "Trust someone to help or do what they promised.",
+      "turkishMeaning": "Güvenmek; bel bağlamak.",
+      "examples": [
+        "You can **count on** me.",
+        "We **count on** each other in difficult times."
+      ],
+      "ipaUS": "/kaʊnt ɑːn/",
+      "ipaUK": "/kaʊnt ɒn/",
+      "tags": [
+        "daily",
+        "phrasal-verb"
+      ]
+    },
+    {
+      "id": "333f4be6-9606-5050-9c4c-e1c24fe9f07d",
+      "term": "put up with",
+      "partOfSpeech": "phrasal verb",
+      "cefr": "B1",
+      "definition": "Accept something unpleasant without complaining too much.",
+      "turkishMeaning": "Katlanmak.",
+      "examples": [
+        "I can't **put up with** this noise.",
+        "Why do you **put up with** rude behavior?"
+      ],
+      "ipaUS": "/pʊt ʌp wɪð/",
+      "ipaUK": "/pʊt ʌp wɪð/",
+      "tags": [
+        "daily",
+        "phrasal-verb"
+      ]
+    },
+    {
+      "id": "6af48319-9590-565c-8364-88cf81a777b0",
+      "term": "look forward to",
+      "partOfSpeech": "phrasal verb",
+      "cefr": "B1",
+      "definition": "Feel pleased about a future event.",
+      "turkishMeaning": "Dört gözle beklemek.",
+      "examples": [
+        "We **look forward to** seeing you.",
+        "I **look forward to** the holidays."
+      ],
+      "ipaUS": "/lʊk ˈfɔːrwərd tuː/",
+      "ipaUK": "/lʊk ˈfɔːwəd tuː/",
+      "tags": [
+        "daily",
+        "phrasal-verb"
+      ],
+      "note": "Use a noun or -ing form after to: look forward to meeting, not meet."
+    },
+    {
+      "id": "1a33166c-8257-5e2b-94f8-dc1b905a6117",
+      "term": "make a decision",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Choose what to do.",
+      "turkishMeaning": "Karar vermek.",
+      "examples": [
+        "We need to **make a decision** today.",
+        "Take time before you **make a decision**."
+      ],
+      "ipaUS": "/meɪk ə dɪˈsɪʒən/",
+      "ipaUK": "/meɪk ə dɪˈsɪʒən/",
+      "tags": [
+        "daily",
+        "conversation"
+      ]
+    },
+    {
+      "id": "2c2da588-63e8-5140-823f-2f67712df03e",
+      "term": "take a break",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Stop an activity briefly to rest.",
+      "turkishMeaning": "Mola vermek.",
+      "examples": [
+        "Let's **take a break** for ten minutes.",
+        "You should **take a break** from the screen."
+      ],
+      "ipaUS": "/teɪk ə breɪk/",
+      "ipaUK": "/teɪk ə breɪk/",
+      "tags": [
+        "daily",
+        "conversation"
+      ]
+    },
+    {
+      "id": "1a5266ed-5b52-5fd8-b5c8-c675a45cd861",
+      "term": "pay attention",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Watch or listen carefully.",
+      "turkishMeaning": "Dikkat etmek.",
+      "examples": [
+        "Please **pay attention** to the signs.",
+        "I find it easier to **pay attention** in a quiet room."
+      ],
+      "ipaUS": "/peɪ əˈtenʃən/",
+      "ipaUK": "/peɪ əˈtenʃən/",
+      "tags": [
+        "daily",
+        "conversation"
+      ]
+    },
+    {
+      "id": "7d304d47-4966-5ee9-b671-28ee0614bc1a",
+      "term": "make an effort",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Try hard to do something.",
+      "turkishMeaning": "Çaba göstermek.",
+      "examples": [
+        "I **make an effort** to learn every day.",
+        "Please **make an effort** to arrive early."
+      ],
+      "ipaUS": "/meɪk ən ˈefərt/",
+      "ipaUK": "/meɪk ən ˈefət/",
+      "tags": [
+        "daily",
+        "conversation"
+      ]
+    },
+    {
+      "id": "019e9114-bc55-5450-a835-7f2f410a690b",
+      "term": "keep a promise",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Do what you said you would do.",
+      "turkishMeaning": "Sözünü tutmak.",
+      "examples": [
+        "It is important to **keep a promise**.",
+        "I always try to **keep a promise**."
+      ],
+      "ipaUS": "/kiːp ə ˈprɑːmɪs/",
+      "ipaUK": "/kiːp ə ˈprɒmɪs/",
+      "tags": [
+        "daily",
+        "conversation"
+      ]
+    },
+    {
+      "id": "5bbf9580-104c-504c-944e-44bf61a7620e",
+      "term": "change your mind",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Decide something different from before.",
+      "turkishMeaning": "Fikrini değiştirmek.",
+      "examples": [
+        "You can **change your mind** later.",
+        "What made you **change your mind**?"
+      ],
+      "ipaUS": "/tʃeɪndʒ jʊr maɪnd/",
+      "ipaUK": "/tʃeɪndʒ jɔː maɪnd/",
+      "tags": [
+        "daily",
+        "conversation"
+      ]
+    },
+    {
+      "id": "a0fbd0f2-81e1-5fa4-9a52-4b5cded00335",
+      "term": "lose track of time",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Forget how much time has passed.",
+      "turkishMeaning": "Zamanın nasıl geçtiğini fark etmemek.",
+      "examples": [
+        "I **lose track of time** when I read.",
+        "Don't **lose track of time** before your appointment."
+      ],
+      "ipaUS": "/luːz træk əv taɪm/",
+      "ipaUK": "/luːz træk əv taɪm/",
+      "tags": [
+        "daily",
+        "conversation"
+      ]
+    },
+    {
+      "id": "0af7180f-7e55-517c-8ad3-555bc6af9403",
+      "term": "make yourself at home",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Relax and feel comfortable as a guest.",
+      "turkishMeaning": "Kendini evinde hisset.",
+      "examples": [
+        "Please **make yourself at home**.",
+        "Come in and **make yourself at home**."
+      ],
+      "ipaUS": "/meɪk jərˈself æt hoʊm/",
+      "ipaUK": "/meɪk jɔːˈself æt həʊm/",
+      "tags": [
+        "daily",
+        "conversation"
+      ]
+    },
+    {
+      "id": "bef29f8a-c836-5295-97d4-fa86cd67c425",
+      "term": "have a good time",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Enjoy an activity or event.",
+      "turkishMeaning": "İyi vakit geçirmek.",
+      "examples": [
+        "I hope you **have a good time** at the party.",
+        "We always **have a good time** together."
+      ],
+      "ipaUS": "/hæv ə ɡʊd taɪm/",
+      "ipaUK": "/hæv ə ɡʊd taɪm/",
+      "tags": [
+        "daily",
+        "conversation"
+      ]
+    },
+    {
+      "id": "4a6b5b04-a0b7-5669-acfa-7e6fc4ba99fd",
+      "term": "get some rest",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Spend time relaxing or sleeping.",
+      "turkishMeaning": "Biraz dinlenmek.",
+      "examples": [
+        "You should **get some rest** tonight.",
+        "I'll **get some rest** before the trip."
+      ],
+      "ipaUS": "/ɡet sʌm rest/",
+      "ipaUK": "/ɡet sʌm rest/",
+      "tags": [
+        "daily",
+        "conversation"
+      ]
+    },
+    {
+      "id": "2b9d975c-0fa9-5225-906e-1dec306e4ca0",
+      "term": "keep an eye on",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Watch something to make sure it is safe or working.",
+      "turkishMeaning": "Göz kulak olmak; takip etmek.",
+      "examples": [
+        "Please **keep an eye on** my bag.",
+        "I'll **keep an eye on** the soup."
+      ],
+      "ipaUS": "/kiːp ən aɪ ɑːn/",
+      "ipaUK": "/kiːp ən aɪ ɒn/",
+      "tags": [
+        "daily",
+        "conversation"
+      ]
+    },
+    {
+      "id": "b3c9d269-a318-5344-be4b-815d03119a55",
+      "term": "in a hurry",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Needing to do something quickly.",
+      "turkishMeaning": "Acelesi olmak; aceleyle.",
+      "examples": [
+        "I'm **in a hurry** this morning.",
+        "Don't eat **in a hurry**."
+      ],
+      "ipaUS": "/ɪn ə ˈhɜːri/",
+      "ipaUK": "/ɪn ə ˈhʌri/",
+      "tags": [
+        "daily",
+        "conversation"
+      ]
+    },
+    {
+      "id": "4615450e-0213-596c-a8a2-7e9191fd8364",
+      "term": "on purpose",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Intentionally, rather than by accident.",
+      "turkishMeaning": "Bilerek; kasıtlı olarak.",
+      "examples": [
+        "I didn't break it **on purpose**.",
+        "She left early **on purpose**."
+      ],
+      "ipaUS": "/ɑːn ˈpɜːrpəs/",
+      "ipaUK": "/ɒn ˈpɜːpəs/",
+      "tags": [
+        "daily",
+        "conversation"
+      ]
+    },
+    {
+      "id": "4e82057b-27f0-5978-926d-613f38b8af78",
+      "term": "by accident",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Without intending to.",
+      "turkishMeaning": "Yanlışlıkla; kazara.",
+      "examples": [
+        "I called you **by accident**.",
+        "He took my coat **by accident**."
+      ],
+      "ipaUS": "/baɪ ˈæksɪdənt/",
+      "ipaUK": "/baɪ ˈæksɪdənt/",
+      "tags": [
+        "daily",
+        "conversation"
+      ]
+    },
+    {
+      "id": "758f10f7-1435-5e32-9f0f-47e6225f9e06",
+      "term": "in advance",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Before an event happens.",
+      "turkishMeaning": "Önceden.",
+      "examples": [
+        "Book your tickets **in advance**.",
+        "Please tell me **in advance** if you cannot come."
+      ],
+      "ipaUS": "/ɪn ədˈvæns/",
+      "ipaUK": "/ɪn ədˈvɑːns/",
+      "tags": [
+        "daily",
+        "conversation"
+      ]
+    },
+    {
+      "id": "bec5c4c3-4918-5267-b027-9f31f7ecb2a4",
+      "term": "at least",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Not less than a particular amount.",
+      "turkishMeaning": "En az; en azından.",
+      "examples": [
+        "Bring **at least** two bottles of water.",
+        "**At least** we arrived safely."
+      ],
+      "ipaUS": "/æt liːst/",
+      "ipaUK": "/æt liːst/",
+      "tags": [
+        "daily",
+        "conversation"
+      ]
+    },
+    {
+      "id": "d00681af-1236-56d7-9641-23015088b35f",
+      "term": "at the moment",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Now, during the present period.",
+      "turkishMeaning": "Şu anda.",
+      "examples": [
+        "I'm busy **at the moment**.",
+        "She is staying with friends **at the moment**."
+      ],
+      "ipaUS": "/æt ðə ˈmoʊmənt/",
+      "ipaUK": "/æt ðə ˈməʊmənt/",
+      "tags": [
+        "daily",
+        "conversation"
+      ]
+    },
+    {
+      "id": "f2b69070-0d6c-578d-86f9-44b21da3f644",
+      "term": "so far",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Until now.",
+      "turkishMeaning": "Şimdiye kadar.",
+      "examples": [
+        "Everything is going well **so far**.",
+        "I've read three chapters **so far**."
+      ],
+      "ipaUS": "/soʊ fɑːr/",
+      "ipaUK": "/səʊ fɑː/",
+      "tags": [
+        "daily",
+        "conversation"
+      ]
+    },
+    {
+      "id": "c25a41ad-1df6-5205-9e57-050d249aaf48",
+      "term": "from time to time",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Occasionally.",
+      "turkishMeaning": "Zaman zaman.",
+      "examples": [
+        "We meet **from time to time**.",
+        "I still think about that trip **from time to time**."
+      ],
+      "ipaUS": "/frəm taɪm tə taɪm/",
+      "ipaUK": "/frəm taɪm tə taɪm/",
+      "tags": [
+        "daily",
+        "conversation"
+      ]
+    },
+    {
+      "id": "34cf7b5d-2abc-542a-8c64-547a83e24241",
+      "term": "in the long run",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Over a long period in the future.",
+      "turkishMeaning": "Uzun vadede.",
+      "examples": [
+        "Practice helps **in the long run**.",
+        "Buying a good coat saves money **in the long run**."
+      ],
+      "ipaUS": "/ɪn ðə lɔːŋ rʌn/",
+      "ipaUK": "/ɪn ðə lɒŋ rʌn/",
+      "tags": [
+        "daily",
+        "conversation"
+      ]
+    },
+    {
+      "id": "cd908549-3943-5bc3-bb44-d9ed06bcca72",
+      "term": "just in case",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "To prepare for something that might happen.",
+      "turkishMeaning": "Her ihtimale karşı.",
+      "examples": [
+        "Take an umbrella **just in case**.",
+        "I'll bring extra cash **just in case**."
+      ],
+      "ipaUS": "/dʒʌst ɪn keɪs/",
+      "ipaUK": "/dʒʌst ɪn keɪs/",
+      "tags": [
+        "daily",
+        "conversation"
+      ]
+    },
+    {
+      "id": "de529e56-b82a-5bba-b142-fe1a34e307c2",
+      "term": "all of a sudden",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Quickly and unexpectedly.",
+      "turkishMeaning": "Birdenbire.",
+      "examples": [
+        "**All of a sudden**, the lights went out.",
+        "It started raining **all of a sudden**."
+      ],
+      "ipaUS": "/ɔːl əv ə ˈsʌdən/",
+      "ipaUK": "/ɔːl əv ə ˈsʌdən/",
+      "tags": [
+        "daily",
+        "conversation"
+      ]
+    },
+    {
+      "id": "7f8d3b8c-8fe4-5c2d-b7f3-1e58b9d2feda",
+      "term": "sooner or later",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "At some time in the future, even if delayed.",
+      "turkishMeaning": "Er ya da geç.",
+      "examples": [
+        "You'll understand it **sooner or later**.",
+        "We must talk about it **sooner or later**."
+      ],
+      "ipaUS": "/ˈsuːnər ɔːr ˈleɪtər/",
+      "ipaUK": "/ˈsuːnə ɔː ˈleɪtə/",
+      "tags": [
+        "daily",
+        "conversation"
+      ]
+    },
+    {
+      "id": "c24b7b87-3066-55cf-bf08-ffb82129e7e0",
+      "term": "as soon as possible",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "At the earliest time you can.",
+      "turkishMeaning": "Mümkün olan en kısa sürede.",
+      "examples": [
+        "Please call me **as soon as possible**.",
+        "I'll send the form **as soon as possible**."
+      ],
+      "ipaUS": "/æz suːn æz ˈpɑːsəbəl/",
+      "ipaUK": "/æz suːn æz ˈpɒsəbəl/",
+      "tags": [
+        "daily",
+        "conversation"
+      ]
+    },
+    {
+      "id": "4023eb30-3e83-5249-9a9f-0a76c254cd49",
+      "term": "in other words",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Used to explain the same idea more clearly.",
+      "turkishMeaning": "Başka bir deyişle.",
+      "examples": [
+        "The room is full; **in other words**, we need another space.",
+        "She is bilingual; **in other words**, she speaks two languages."
+      ],
+      "ipaUS": "/ɪn ˈʌðər wɜːrdz/",
+      "ipaUK": "/ɪn ˈʌðə wɜːdz/",
+      "tags": [
+        "daily",
+        "conversation"
+      ]
+    },
+    {
+      "id": "2ef69026-b6d7-512a-b90e-e9d4fc44099d",
+      "term": "for instance",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "For example.",
+      "turkishMeaning": "Örneğin.",
+      "examples": [
+        "Try a new hobby, **for instance**, painting.",
+        "Some fruit, **for instance**, apples, travels well."
+      ],
+      "ipaUS": "/fɔːr ˈɪnstəns/",
+      "ipaUK": "/fɔː ˈɪnstəns/",
+      "tags": [
+        "daily",
+        "conversation"
+      ]
+    },
+    {
+      "id": "65030481-60e1-5d24-ad8a-9054106513e2",
+      "term": "as a result",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Because of what happened before.",
+      "turkishMeaning": "Sonuç olarak.",
+      "examples": [
+        "The bus was late. **As a result**, I missed the train.",
+        "She practiced daily and improved **as a result**."
+      ],
+      "ipaUS": "/æz ə rɪˈzʌlt/",
+      "ipaUK": "/æz ə rɪˈzʌlt/",
+      "tags": [
+        "daily",
+        "conversation"
+      ]
+    },
+    {
+      "id": "f7e0d0d9-e5be-599a-b358-194c3e3adcbb",
+      "term": "after all",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Used to give a reason someone should remember.",
+      "turkishMeaning": "Ne de olsa; sonuçta.",
+      "examples": [
+        "Don't worry; it was only a game, **after all**.",
+        "We should help him. **After all**, he helped us."
+      ],
+      "ipaUS": "/ˈæftər ɔːl/",
+      "ipaUK": "/ˈɑːftə ɔːl/",
+      "tags": [
+        "daily",
+        "conversation"
+      ]
+    },
+    {
+      "id": "3c9d2e2f-4e0e-5002-a074-5ca3ff59e0bc",
+      "term": "even though",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Despite the fact that.",
+      "turkishMeaning": "… olmasına rağmen.",
+      "examples": [
+        "I went walking **even though** it was raining.",
+        "She smiled **even though** she was tired."
+      ],
+      "ipaUS": "/ˈiːvən ðoʊ/",
+      "ipaUK": "/ˈiːvən ðəʊ/",
+      "tags": [
+        "daily",
+        "conversation"
+      ]
+    },
+    {
+      "id": "de9e5fd7-7936-592d-aa8c-a39a5920f19d",
+      "term": "as long as",
+      "partOfSpeech": "phrase",
+      "cefr": "B2",
+      "definition": "On the condition that.",
+      "turkishMeaning": "… olduğu sürece; şartıyla.",
+      "examples": [
+        "You can stay **as long as** you help clean up.",
+        "I'll come **as long as** the meeting ends early."
+      ],
+      "ipaUS": "/æz lɔːŋ æz/",
+      "ipaUK": "/æz lɒŋ æz/",
+      "tags": [
+        "daily",
+        "conversation"
+      ]
+    },
+    {
+      "id": "6dcadf20-837b-5758-83ed-a1b383a2aa75",
+      "term": "Would you like",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Used to offer something politely.",
+      "turkishMeaning": "… ister misiniz?",
+      "examples": [
+        "**Would you like** some tea?",
+        "**Would you like** to join us?"
+      ],
+      "ipaUS": "/wʊd juː laɪk/",
+      "ipaUK": "/wʊd juː laɪk/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "cbfab9be-3698-5461-8cce-66bf1924faa8",
+      "term": "I'd rather",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "I would prefer to.",
+      "turkishMeaning": "… tercih ederim.",
+      "examples": [
+        "**I'd rather** stay home tonight.",
+        "**I'd rather** walk than take a taxi."
+      ],
+      "ipaUS": "/aɪd ˈræðər/",
+      "ipaUK": "/aɪd ˈrɑːðə/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "fd44cfa4-20a6-5f9f-bdeb-d3b661e7ad78",
+      "term": "Do you happen to know",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "A polite way to ask if someone has information.",
+      "turkishMeaning": "Acaba biliyor musunuz?",
+      "examples": [
+        "**Do you happen to know** the time?",
+        "**Do you happen to know** where the museum is?"
+      ],
+      "ipaUS": "/duː juː ˈhæpən tə noʊ/",
+      "ipaUK": "/duː juː ˈhæpən tə nəʊ/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "a3fc8acd-336d-5a2e-9740-efeb352649d0",
+      "term": "May I ask",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Used to introduce a polite question.",
+      "turkishMeaning": "Sorabilir miyim?",
+      "examples": [
+        "**May I ask** your name?",
+        "**May I ask** why the train is delayed?"
+      ],
+      "ipaUS": "/meɪ aɪ æsk/",
+      "ipaUK": "/meɪ aɪ ɑːsk/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "77f86eac-4256-5601-ae60-e39c7cc13fca",
+      "term": "I'm afraid",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Used to give disappointing information politely.",
+      "turkishMeaning": "Maalesef; üzgünüm ama.",
+      "examples": [
+        "**I'm afraid** the shop is closed.",
+        "**I'm afraid** I can't join you."
+      ],
+      "ipaUS": "/aɪm əˈfreɪd/",
+      "ipaUK": "/aɪm əˈfreɪd/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "3fa4fc4b-fc31-5a2c-b9b2-b9cb547a329b",
+      "term": "I'm sorry to hear that",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Used to show sympathy about bad news.",
+      "turkishMeaning": "Bunu duyduğuma üzüldüm.",
+      "examples": [
+        "You lost your wallet? **I'm sorry to hear that**.",
+        "**I'm sorry to hear that** your trip was canceled."
+      ],
+      "ipaUS": "/aɪm ˈsɑːri tə hɪr ðæt/",
+      "ipaUK": "/aɪm ˈsɒri tə hɪə ðæt/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "c96a0c60-7d74-50ba-9874-e93a91717971",
+      "term": "That sounds great",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "I like the idea you have suggested.",
+      "turkishMeaning": "Kulağa harika geliyor.",
+      "examples": [
+        "A picnic on Sunday? **That sounds great**.",
+        "**That sounds great**; let's book it."
+      ],
+      "ipaUS": "/ðæt saʊndz ɡreɪt/",
+      "ipaUK": "/ðæt saʊndz ɡreɪt/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "10d7a26e-b977-5586-ade9-f6c5eb24e44a",
+      "term": "I couldn't agree more",
+      "partOfSpeech": "phrase",
+      "cefr": "B2",
+      "definition": "I agree completely.",
+      "turkishMeaning": "Kesinlikle katılıyorum.",
+      "examples": [
+        "We need more practice. **I couldn't agree more**.",
+        "**I couldn't agree more** with your conclusion."
+      ],
+      "ipaUS": "/aɪ ˈkʊdənt əˈɡriː mɔːr/",
+      "ipaUK": "/aɪ ˈkʊdənt əˈɡriː mɔː/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "e37902e7-3005-51e6-9c60-6b917d7c92e3",
+      "term": "I'm not convinced",
+      "partOfSpeech": "phrase",
+      "cefr": "B2",
+      "definition": "I do not yet believe the idea is right.",
+      "turkishMeaning": "İkna olmuş değilim.",
+      "examples": [
+        "**I'm not convinced** that we should move.",
+        "The price is low, but **I'm not convinced**."
+      ],
+      "ipaUS": "/aɪm nɑːt kənˈvɪnst/",
+      "ipaUK": "/aɪm nɒt kənˈvɪnst/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "b447f029-6f0c-559d-9796-3abd1e92aeee",
+      "term": "That's a good point",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "That is a useful or sensible idea.",
+      "turkishMeaning": "İyi bir noktaya değindin.",
+      "examples": [
+        "**That's a good point**; we need to check the weather.",
+        "We might be late? **That's a good point**."
+      ],
+      "ipaUS": "/ðæts ə ɡʊd pɔɪnt/",
+      "ipaUK": "/ðæts ə ɡʊd pɔɪnt/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "3d3cc8c0-b36e-5b43-bb54-737524878ecb",
+      "term": "If I were you",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Used to give advice based on someone's situation.",
+      "turkishMeaning": "Senin yerinde olsam.",
+      "examples": [
+        "**If I were you**, I'd take the earlier train.",
+        "I'd ask for help **if I were you**."
+      ],
+      "ipaUS": "/ɪf aɪ wɜːr juː/",
+      "ipaUK": "/ɪf aɪ wɜː juː/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "a45af793-f9ad-5161-be2c-0428fb1960e7",
+      "term": "It's up to you",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "You can make the decision.",
+      "turkishMeaning": "Sana kalmış.",
+      "examples": [
+        "We can eat here or outside. **It's up to you**.",
+        "**It's up to you** which film we watch."
+      ],
+      "ipaUS": "/ɪts ʌp tə juː/",
+      "ipaUK": "/ɪts ʌp tə juː/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "56273924-1fa9-52d9-bab1-62fcae581e9d",
+      "term": "Never mind",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Do not worry about or continue thinking about it.",
+      "turkishMeaning": "Boş ver; önemli değil.",
+      "examples": [
+        "**Never mind**, I found the answer.",
+        "You missed the bus? **Never mind**, another is coming."
+      ],
+      "ipaUS": "/ˈnevər maɪnd/",
+      "ipaUK": "/ˈnevə maɪnd/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "2035a1e2-a627-542e-b04a-226e9e4e1af0",
+      "term": "Not at all",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "A polite response meaning it is no trouble.",
+      "turkishMeaning": "Hiç sorun değil; rica ederim.",
+      "examples": [
+        "Would you mind waiting? **Not at all**.",
+        "Thank you for your help. **Not at all**."
+      ],
+      "ipaUS": "/nɑːt æt ɔːl/",
+      "ipaUK": "/nɒt æt ɔːl/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "a13456e8-8e83-5ff4-b9e6-3085c6ea550f",
+      "term": "Help yourself",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Take some of the food or drink offered.",
+      "turkishMeaning": "Buyur, kendin al.",
+      "examples": [
+        "**Help yourself** to some bread.",
+        "There is tea on the table; **help yourself**."
+      ],
+      "ipaUS": "/help jərˈself/",
+      "ipaUK": "/help jɔːˈself/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "cdf5937c-3774-5a5c-a2b4-57fdbd7bb278",
+      "term": "Be my guest",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "A friendly way to give permission.",
+      "turkishMeaning": "Buyur; tabii ki.",
+      "examples": [
+        "Can I use this chair? **Be my guest**.",
+        "**Be my guest** if you'd like to try it."
+      ],
+      "ipaUS": "/biː maɪ ɡest/",
+      "ipaUK": "/biː maɪ ɡest/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "b2d555c7-016f-5f40-9cb8-4fb77247515c",
+      "term": "What a pity",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Used to express disappointment about a situation.",
+      "turkishMeaning": "Ne yazık.",
+      "examples": [
+        "**What a pity** that you can't come.",
+        "The concert is canceled? **What a pity**."
+      ],
+      "ipaUS": "/wɑːt ə ˈpɪti/",
+      "ipaUK": "/wɒt ə ˈpɪti/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "15a1b3ef-e799-5bf3-94e2-283aa693a494",
+      "term": "Fingers crossed",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "I hope something goes well.",
+      "turkishMeaning": "Umarım iyi gider.",
+      "examples": [
+        "**Fingers crossed** for your interview.",
+        "I hope the weather stays dry. **Fingers crossed**."
+      ],
+      "ipaUS": "/ˈfɪŋɡərz krɔːst/",
+      "ipaUK": "/ˈfɪŋɡəz krɒst/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "37ae4114-8fd8-51a2-b2fb-ae098d488472",
+      "term": "Good for you",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Used to praise someone for a good achievement.",
+      "turkishMeaning": "Aferin sana.",
+      "examples": [
+        "You finished the course? **Good for you**!",
+        "**Good for you** for trying something new."
+      ],
+      "ipaUS": "/ɡʊd fɔːr juː/",
+      "ipaUK": "/ɡʊd fə juː/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "20ca30f0-fa76-534b-9f95-144c17571334",
+      "term": "I'll be right back",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "I will return very soon.",
+      "turkishMeaning": "Hemen döneceğim.",
+      "examples": [
+        "**I'll be right back** with your coffee.",
+        "Wait here; **I'll be right back**."
+      ],
+      "ipaUS": "/aɪl biː raɪt bæk/",
+      "ipaUK": "/aɪl biː raɪt bæk/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "aaa459cb-3696-51dd-b2ad-2773aeabfc61",
+      "term": "I'm on my way",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "I have started traveling to the destination.",
+      "turkishMeaning": "Yoldayım.",
+      "examples": [
+        "**I'm on my way** to the station.",
+        "Don't leave yet; **I'm on my way**."
+      ],
+      "ipaUS": "/aɪm ɑːn maɪ weɪ/",
+      "ipaUK": "/aɪm ɒn maɪ weɪ/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "db7a2638-1119-5389-a759-ce7bb138af00",
+      "term": "Sorry I'm late",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "An apology for arriving after the planned time.",
+      "turkishMeaning": "Geç kaldığım için özür dilerim.",
+      "examples": [
+        "**Sorry I'm late**; the bus broke down.",
+        "**Sorry I'm late**. Have you been waiting long?"
+      ],
+      "ipaUS": "/ˈsɑːri aɪm leɪt/",
+      "ipaUK": "/ˈsɒri aɪm leɪt/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "e525b0fc-3506-57c7-a2e8-58025de6d721",
+      "term": "Can I get back to you",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "May I answer you later after checking?",
+      "turkishMeaning": "Sana daha sonra dönebilir miyim?",
+      "examples": [
+        "**Can I get back to you** tomorrow?",
+        "**Can I get back to you** after I check my calendar?"
+      ],
+      "ipaUS": "/kæn aɪ ɡet bæk tə juː/",
+      "ipaUK": "/kæn aɪ ɡet bæk tə juː/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "887b6194-d13f-5a76-8703-62df231d102f",
+      "term": "Let me think",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Give me a moment to consider the answer.",
+      "turkishMeaning": "Bir düşüneyim.",
+      "examples": [
+        "**Let me think** about your offer.",
+        "**Let me think**; I may have another idea."
+      ],
+      "ipaUS": "/let miː θɪŋk/",
+      "ipaUK": "/let miː θɪŋk/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "4bd0d106-6f53-5279-a60a-98de0819c45b",
+      "term": "What do you mean",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Please explain what you are saying.",
+      "turkishMeaning": "Ne demek istiyorsun?",
+      "examples": [
+        "**What do you mean** by flexible hours?",
+        "**What do you mean** when you say it is complicated?"
+      ],
+      "ipaUS": "/wɑːt duː juː miːn/",
+      "ipaUK": "/wɒt də juː miːn/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "97a378c7-6ea0-56cb-a1da-8b289290946e",
+      "term": "Could you repeat that",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Please say the same thing again.",
+      "turkishMeaning": "Tekrar eder misiniz?",
+      "examples": [
+        "**Could you repeat that**, please?",
+        "The connection is poor. **Could you repeat that**?"
+      ],
+      "ipaUS": "/kʊd juː rɪˈpiːt ðæt/",
+      "ipaUK": "/kʊd juː rɪˈpiːt ðæt/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "505ea47d-8c18-57b2-883b-55d971b13661",
+      "term": "Could you speak more slowly",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "A polite request to reduce speaking speed.",
+      "turkishMeaning": "Daha yavaş konuşabilir misiniz?",
+      "examples": [
+        "**Could you speak more slowly**, please?",
+        "I'm learning English. **Could you speak more slowly**?"
+      ],
+      "ipaUS": "/kʊd juː spiːk mɔːr ˈsloʊli/",
+      "ipaUK": "/kʊd juː spiːk mɔː ˈsləʊli/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "e7be0419-2cff-5762-a237-b0924cd5a910",
+      "term": "How do you spell",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Used to ask which letters make a word.",
+      "turkishMeaning": "… nasıl yazılır?",
+      "examples": [
+        "**How do you spell** your surname?",
+        "**How do you spell** that street name?"
+      ],
+      "ipaUS": "/haʊ duː juː spel/",
+      "ipaUK": "/haʊ duː juː spel/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "978b7fe8-0cfd-5766-a894-8e4f050f632c",
+      "term": "What does it mean",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Used to ask for the meaning of something.",
+      "turkishMeaning": "Ne anlama geliyor?",
+      "examples": [
+        "I don't know this phrase. **What does it mean**?",
+        "The sign says detour. **What does it mean**?"
+      ],
+      "ipaUS": "/wɑːt dʌz ɪt miːn/",
+      "ipaUK": "/wɒt dʌz ɪt miːn/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "596d0357-0cd9-53b0-a755-1dbae33c0a33",
+      "term": "It's worth it",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "The benefit is good enough for the effort or cost.",
+      "turkishMeaning": "Buna değer.",
+      "examples": [
+        "The walk is long, but **it's worth it**.",
+        "Learning takes time, and **it's worth it**."
+      ],
+      "ipaUS": "/ɪts wɜːrθ ɪt/",
+      "ipaUK": "/ɪts wɜːθ ɪt/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "920c0b63-8c28-51e9-9deb-42e9a856243c",
+      "term": "better late than never",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Doing something late is better than not doing it.",
+      "turkishMeaning": "Geç olsun güç olmasın.",
+      "examples": [
+        "I finally called her; **better late than never**.",
+        "You started exercising? **Better late than never**."
+      ],
+      "ipaUS": "/ˈbetər leɪt ðæn ˈnevər/",
+      "ipaUK": "/ˈbetə leɪt ðæn ˈnevə/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "36af6795-a691-550a-974b-cbbdbd7e49a6",
+      "term": "practice makes perfect",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Repeating an activity helps you improve.",
+      "turkishMeaning": "Pratik yaptıkça ustalaşırsın.",
+      "examples": [
+        "Keep speaking; **practice makes perfect**.",
+        "Don't worry about mistakes: **practice makes perfect**."
+      ],
+      "ipaUS": "/ˈpræktɪs meɪks ˈpɜːrfɪkt/",
+      "ipaUK": "/ˈpræktɪs meɪks ˈpɜːfɪkt/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "28e873f1-6e4b-52f7-a3ad-4a4faa1bd1c0",
+      "term": "a bit",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "A small amount or degree.",
+      "turkishMeaning": "Biraz.",
+      "examples": [
+        "I'm **a bit** tired today.",
+        "Could you move **a bit** closer?"
+      ],
+      "ipaUS": "/ə bɪt/",
+      "ipaUK": "/ə bɪt/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "b9f99e2f-d3f3-5429-896f-831205290cd5",
+      "term": "plenty of",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "More than enough of something.",
+      "turkishMeaning": "Bol miktarda.",
+      "examples": [
+        "We have **plenty of** time.",
+        "There is **plenty of** food for everyone."
+      ],
+      "ipaUS": "/ˈplenti əv/",
+      "ipaUK": "/ˈplenti əv/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "d5457220-87ba-5272-9f21-d6bdbbb02a13",
+      "term": "a couple of",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Two or a small number of something.",
+      "turkishMeaning": "Birkaç; iki tane.",
+      "examples": [
+        "I'll be ready in **a couple of** minutes.",
+        "I bought **a couple of** books."
+      ],
+      "ipaUS": "/ə ˈkʌpəl əv/",
+      "ipaUK": "/ə ˈkʌpəl əv/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "a2680334-66ce-50e8-96c4-d828e1702ab0",
+      "term": "not really",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "A gentle way to say no or not very much.",
+      "turkishMeaning": "Pek sayılmaz.",
+      "examples": [
+        "Are you hungry? **Not really**.",
+        "I like the color, but **not really** the shape."
+      ],
+      "ipaUS": "/nɑːt ˈriːəli/",
+      "ipaUK": "/nɒt ˈrɪəli/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "a9c81477-f5d5-5dc2-b5f0-453bcd040426",
+      "term": "more or less",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Approximately or almost.",
+      "turkishMeaning": "Aşağı yukarı.",
+      "examples": [
+        "The room is **more or less** ready.",
+        "We arrived at **more or less** the same time."
+      ],
+      "ipaUS": "/mɔːr ɔːr les/",
+      "ipaUK": "/mɔːr ɔː les/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "1a6e0996-3490-5128-a976-8bc3e3bceb12",
+      "term": "not necessarily",
+      "partOfSpeech": "phrase",
+      "cefr": "B2",
+      "definition": "Not always true or required.",
+      "turkishMeaning": "Şart değil; her zaman öyle değil.",
+      "examples": [
+        "Expensive does **not necessarily** mean better.",
+        "A quiet person is **not necessarily** shy."
+      ],
+      "ipaUS": "/nɑːt ˌnesəˈserəli/",
+      "ipaUK": "/nɒt ˈnesəsərəli/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "0d81e140-f30d-554b-b9d6-a9bb9c5aa927",
+      "term": "I suppose so",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "I think that is probably true.",
+      "turkishMeaning": "Sanırım öyle.",
+      "examples": [
+        "Should we leave now? **I suppose so**.",
+        "Is the shop closed? **I suppose so**."
+      ],
+      "ipaUS": "/aɪ səˈpoʊz soʊ/",
+      "ipaUK": "/aɪ səˈpəʊz səʊ/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "48d0906f-9c45-5b5b-b860-d6bb6ddd4711",
+      "term": "Absolutely",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Used to strongly agree or confirm.",
+      "turkishMeaning": "Kesinlikle.",
+      "examples": [
+        "Would you recommend it? **Absolutely**.",
+        "**Absolutely**, I'd love to join you."
+      ],
+      "ipaUS": "/ˈæbsəluːtli/",
+      "ipaUK": "/ˈæbsəluːtli/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "74107c87-fb69-5c65-9b4f-15b49a6ec6e3",
+      "term": "No wonder",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "It is not surprising when you know the reason.",
+      "turkishMeaning": "Şaşırmamalı; demek bu yüzden.",
+      "examples": [
+        "You skipped lunch? **No wonder** you're hungry.",
+        "**No wonder** the room is cold; the window is open."
+      ],
+      "ipaUS": "/noʊ ˈwʌndər/",
+      "ipaUK": "/nəʊ ˈwʌndə/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "312b6c7e-c783-5577-8924-2b0094313e81",
+      "term": "To some extent",
+      "partOfSpeech": "phrase",
+      "cefr": "B2",
+      "definition": "Partly, but not completely.",
+      "turkishMeaning": "Bir ölçüde.",
+      "examples": [
+        "**To some extent**, I agree with you.",
+        "The result depends on luck **to some extent**."
+      ],
+      "ipaUS": "/tə sʌm ɪkˈstent/",
+      "ipaUK": "/tə sʌm ɪkˈstent/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "c4ea6c75-8d99-55b2-a8e7-4148cb7fe470",
+      "term": "On second thought",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "After considering something again.",
+      "turkishMeaning": "Bir daha düşününce.",
+      "examples": [
+        "**On second thought**, I'll stay home.",
+        "**On second thought**, the blue one looks better."
+      ],
+      "ipaUS": "/ɑːn ˈsekənd θɔːt/",
+      "ipaUK": "/ɒn ˈsekənd θɔːt/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "5b76d752-7529-5250-9ed5-90e658405ded",
+      "term": "Speaking of",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Used to connect a new topic to something just mentioned.",
+      "turkishMeaning": "… demişken.",
+      "examples": [
+        "**Speaking of** travel, how was your trip?",
+        "**Speaking of** coffee, would you like some?"
+      ],
+      "ipaUS": "/ˈspiːkɪŋ əv/",
+      "ipaUK": "/ˈspiːkɪŋ əv/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "497fb38e-2a68-5f73-a50f-2c4870047c16",
+      "term": "As usual",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "In the way that normally happens.",
+      "turkishMeaning": "Her zamanki gibi.",
+      "examples": [
+        "**As usual**, the café was busy.",
+        "He arrived early, **as usual**."
+      ],
+      "ipaUS": "/æz ˈjuːʒuəl/",
+      "ipaUK": "/æz ˈjuːʒuəl/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "5bde6aaf-c329-599f-9cfc-d8257a710067",
+      "term": "For the time being",
+      "partOfSpeech": "phrase",
+      "cefr": "B2",
+      "definition": "For now, until something changes.",
+      "turkishMeaning": "Şimdilik.",
+      "examples": [
+        "**For the time being**, I'll stay here.",
+        "We can use this table **for the time being**."
+      ],
+      "ipaUS": "/fɔːr ðə taɪm ˈbiːɪŋ/",
+      "ipaUK": "/fə ðə taɪm ˈbiːɪŋ/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "ba64fb95-35a5-5893-838f-0415a2003df3",
+      "term": "In a nutshell",
+      "partOfSpeech": "phrase",
+      "cefr": "B2",
+      "definition": "In a few words.",
+      "turkishMeaning": "Kısaca; özetle.",
+      "examples": [
+        "**In a nutshell**, we need more time.",
+        "That is the story **in a nutshell**."
+      ],
+      "ipaUS": "/ɪn ə ˈnʌtʃel/",
+      "ipaUK": "/ɪn ə ˈnʌtʃel/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "9fa90b32-7b54-589d-9ccb-4e3cb9ddde6f",
+      "term": "Take it easy",
+      "partOfSpeech": "phrase",
+      "cefr": "B1",
+      "definition": "Relax and avoid working too hard.",
+      "turkishMeaning": "Rahat ol; kendini yorma.",
+      "examples": [
+        "**Take it easy** this weekend.",
+        "You've had a long day; **take it easy**."
+      ],
+      "ipaUS": "/teɪk ɪt ˈiːzi/",
+      "ipaUK": "/teɪk ɪt ˈiːzi/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "eabfc33c-8fc8-5c98-b99e-c46d861c386d",
+      "term": "It slipped my mind",
+      "partOfSpeech": "phrase",
+      "cefr": "B2",
+      "definition": "I forgot it without intending to.",
+      "turkishMeaning": "Aklımdan çıkmış.",
+      "examples": [
+        "I'm sorry; **it slipped my mind**.",
+        "I meant to call, but **it slipped my mind**."
+      ],
+      "ipaUS": "/ɪt slɪpt maɪ maɪnd/",
+      "ipaUK": "/ɪt slɪpt maɪ maɪnd/",
+      "tags": [
+        "daily",
+        "communication"
+      ]
+    },
+    {
+      "id": "60560320-4a0c-5ed1-a0f8-ecb920566f17",
+      "term": "I owe you one",
+      "partOfSpeech": "phrase",
+      "cefr": "A2",
+      "definition": "I am grateful and want to help you in return.",
+      "turkishMeaning": "Sana bir iyilik borçluyum.",
+      "examples": [
+        "Thanks for the ride. **I owe you one**.",
+        "You saved me a seat? **I owe you one**."
+      ],
+      "ipaUS": "/aɪ oʊ juː wʌn/",
+      "ipaUK": "/aɪ əʊ juː wʌn/",
+      "tags": [
+        "daily",
+        "communication",
+        "travel"
+      ]
+    },
+    {
+      "id": "d55d7311-39c1-586a-a504-1fb9f72e0010",
+      "term": "That's enough",
+      "partOfSpeech": "phrase",
+      "cefr": "A2",
+      "definition": "No more is needed.",
+      "turkishMeaning": "Bu kadar yeter.",
+      "examples": [
+        "**That's enough** sugar, thank you.",
+        "We have six chairs; **that's enough**."
+      ],
+      "ipaUS": "/ðæts ɪˈnʌf/",
+      "ipaUK": "/ðæts ɪˈnʌf/",
+      "tags": [
+        "daily",
+        "communication",
+        "travel"
+      ]
+    },
+    {
+      "id": "038c858a-43c6-57ec-a74c-d30cb0c6e416",
+      "term": "How much is it",
+      "partOfSpeech": "phrase",
+      "cefr": "A2",
+      "definition": "A question asking the price.",
+      "turkishMeaning": "Ne kadar?",
+      "examples": [
+        "I like this scarf. **How much is it**?",
+        "**How much is it** for one night?"
+      ],
+      "ipaUS": "/haʊ mʌtʃ ɪz ɪt/",
+      "ipaUK": "/haʊ mʌtʃ ɪz ɪt/",
+      "tags": [
+        "daily",
+        "communication",
+        "travel"
+      ]
+    },
+    {
+      "id": "a4ef417d-d966-5061-a6b0-a39837fbf7a4",
+      "term": "Can I pay by card",
+      "partOfSpeech": "phrase",
+      "cefr": "A2",
+      "definition": "A question asking whether card payment is accepted.",
+      "turkishMeaning": "Kartla ödeyebilir miyim?",
+      "examples": [
+        "**Can I pay by card**, please?",
+        "I don't have cash. **Can I pay by card**?"
+      ],
+      "ipaUS": "/kæn aɪ peɪ baɪ kɑːrd/",
+      "ipaUK": "/kæn aɪ peɪ baɪ kɑːd/",
+      "tags": [
+        "daily",
+        "communication",
+        "travel"
+      ]
+    },
+    {
+      "id": "b1f84cff-1277-56fb-a8d0-591d4fd67035",
+      "term": "Could we split the bill",
+      "partOfSpeech": "phrase",
+      "cefr": "A2",
+      "definition": "A request to divide the cost between people.",
+      "turkishMeaning": "Hesabı bölüşebilir miyiz?",
+      "examples": [
+        "**Could we split the bill** equally?",
+        "**Could we split the bill**, please?"
+      ],
+      "ipaUS": "/kʊd wiː splɪt ðə bɪl/",
+      "ipaUK": "/kʊd wiː splɪt ðə bɪl/",
+      "tags": [
+        "daily",
+        "communication",
+        "travel"
+      ]
+    },
+    {
+      "id": "80ccb121-2bd9-52cc-8a9d-1a7e4fa9d62a",
+      "term": "I'd like to book",
+      "partOfSpeech": "phrase",
+      "cefr": "A2",
+      "definition": "I want to reserve something.",
+      "turkishMeaning": "Rezervasyon yapmak istiyorum.",
+      "examples": [
+        "**I'd like to book** a table for two.",
+        "**I'd like to book** a room for Friday."
+      ],
+      "ipaUS": "/aɪd laɪk tə bʊk/",
+      "ipaUK": "/aɪd laɪk tə bʊk/",
+      "tags": [
+        "daily",
+        "communication",
+        "travel"
+      ]
+    },
+    {
+      "id": "c7e827e3-e182-57d7-bb66-dbed481cad82",
+      "term": "Is this seat taken",
+      "partOfSpeech": "phrase",
+      "cefr": "A2",
+      "definition": "Does someone already plan to sit here?",
+      "turkishMeaning": "Bu koltuk dolu mu?",
+      "examples": [
+        "Excuse me, **is this seat taken**?",
+        "**Is this seat taken**, or may I sit here?"
+      ],
+      "ipaUS": "/ɪz ðɪs siːt ˈteɪkən/",
+      "ipaUK": "/ɪz ðɪs siːt ˈteɪkən/",
+      "tags": [
+        "daily",
+        "communication",
+        "travel"
+      ]
+    },
+    {
+      "id": "0975f537-2826-582d-b782-3def23494acb",
+      "term": "I'm just browsing",
+      "partOfSpeech": "phrase",
+      "cefr": "A2",
+      "definition": "I am looking at products without a specific buying plan.",
+      "turkishMeaning": "Sadece bakıyorum.",
+      "examples": [
+        "Thanks, **I'm just browsing**.",
+        "**I'm just browsing** for a gift today."
+      ],
+      "ipaUS": "/aɪm dʒʌst ˈbraʊzɪŋ/",
+      "ipaUK": "/aɪm dʒʌst ˈbraʊzɪŋ/",
+      "tags": [
+        "daily",
+        "communication",
+        "travel"
+      ]
+    },
+    {
+      "id": "0cecbc70-dfc9-5cd4-a341-25afcc4889c4",
+      "term": "Could I try a different size",
+      "partOfSpeech": "phrase",
+      "cefr": "A2",
+      "definition": "A request to test clothing in another size.",
+      "turkishMeaning": "Başka bir beden deneyebilir miyim?",
+      "examples": [
+        "**Could I try a different size**, please?",
+        "This is tight. **Could I try a different size**?"
+      ],
+      "ipaUS": "/kʊd aɪ traɪ ə ˈdɪfrənt saɪz/",
+      "ipaUK": "/kʊd aɪ traɪ ə ˈdɪfrənt saɪz/",
+      "tags": [
+        "daily",
+        "communication",
+        "travel"
+      ]
+    },
+    {
+      "id": "c7889d39-6f30-5067-90b0-f6a3e769a793",
+      "term": "Have a safe trip",
+      "partOfSpeech": "phrase",
+      "cefr": "A2",
+      "definition": "A wish that someone travels safely.",
+      "turkishMeaning": "İyi ve güvenli yolculuklar.",
+      "examples": [
+        "**Have a safe trip** to London.",
+        "I'll see you next week. **Have a safe trip**."
+      ],
+      "ipaUS": "/hæv ə seɪf trɪp/",
+      "ipaUK": "/hæv ə seɪf trɪp/",
+      "tags": [
+        "daily",
+        "communication",
+        "travel"
+      ]
+    },
+    {
+      "id": "d5ab397b-39e4-57c6-9eef-f42b9e1cfda1",
+      "term": "Get well soon",
+      "partOfSpeech": "phrase",
+      "cefr": "A2",
+      "definition": "A wish that someone recovers quickly.",
+      "turkishMeaning": "Geçmiş olsun; çabuk iyileş.",
+      "examples": [
+        "**Get well soon**; we miss you.",
+        "Rest today and **get well soon**."
+      ],
+      "ipaUS": "/ɡet wel suːn/",
+      "ipaUK": "/ɡet wel suːn/",
+      "tags": [
+        "daily",
+        "communication",
+        "travel"
+      ]
     }
   ]
 }

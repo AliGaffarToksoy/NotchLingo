@@ -109,7 +109,7 @@ import UserNotifications
         lastPing = now
         if Bundle.main.bundleIdentifier != nil { NotificationService.send(model: model) }
         if model.preferences.directPings {
-            model.pingVisible = true; notch?.show(expanded: true, userInitiated: false); pingUntil = now.addingTimeInterval(20)
+            model.preparePing(); notch?.show(expanded: true, userInitiated: false); pingUntil = now.addingTimeInterval(20)
         }
     }
     nonisolated func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
