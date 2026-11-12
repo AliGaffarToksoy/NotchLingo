@@ -18,10 +18,12 @@ jobs:
           swift --version
       - name: Unit and persistence tests
         run: swift test
-      - name: Validate bundled decks
-        run: swift run NotchLingoValidate
+      - name: Validate bundled decks in English and Turkish system locales
+        run: |
+          swift run NotchLingoValidate -AppleLanguages '(en)' -AppleLocale en_US
+          swift run NotchLingoValidate -AppleLanguages '(tr)' -AppleLocale tr_TR
       - name: Build application
-        run: bash Scripts/package.sh
+        run: VERSION="0.1.${{ github.run_number }}" bash Scripts/package.sh
       - name: Upload application
         uses: actions/upload-artifact@v4
         with:

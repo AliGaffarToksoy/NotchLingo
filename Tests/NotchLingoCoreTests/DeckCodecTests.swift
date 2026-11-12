@@ -39,6 +39,21 @@ final class DeckCodecTests: XCTestCase {
         let text = String(decoding: data, as: UTF8.self).replacingOccurrences(of: "\"A2\"", with: "\"C2\"")
         XCTAssertThrowsError(try DeckCodec.decode(Data(text.utf8)))
     }
+    func testEnglishHighlightCasingIsIndependentOfDeviceLanguage() throws {
+        var deck = try SeedDecks.load()[0]
+        deck.cards = [deck.cards[0]]
+        deck.cards[0].term = "If I were you"
+        deck.cards[0].examples = [
+            "**If I were you**, I'd ask.",
+            "I'd ask **if I were you**."
+        ]
+        XCTAssertNoThrow(try DeckCodec.validate(deck))
+        deck.cards[0].examples[1] = "I'd ask **IF I WERE YOU**."
+        XCTAssertNoThrow(try DeckCodec.validate(deck))
+        // English i must not become Turkish dotless ı; do not accept wrong terms.
+        deck.cards[0].examples[1] = "I'd ask **ıf I were you**."
+        XCTAssertThrowsError(try DeckCodec.validate(deck))
+    }
     func testOptionalNoteMayBeAbsent() throws {
         var deck = try SeedDecks.load()[0]; deck.cards[0].note = nil
         XCTAssertEqual(try DeckCodec.decode(DeckCodec.encode(deck)), deck)

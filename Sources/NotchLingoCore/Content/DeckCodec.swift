@@ -37,12 +37,14 @@ public enum DeckCodec {
                   (2...3).contains(card.examples.count) else {
                 throw DeckError.invalid("Card \(card.id) has missing fields, invalid tags, or needs 2–3 examples.")
             }
+            // English learning content must not inherit Turkish I/ı casing rules
+            // (or any other device locale) during startup and import validation.
             for example in card.examples {
                 let segments = example.components(separatedBy: "**")
                 guard segments.count >= 3, segments.count % 2 == 1,
                       stride(from: 1, to: segments.count, by: 2).allSatisfy({
                           segments[$0].trimmingCharacters(in: .whitespacesAndNewlines)
-                              .localizedCaseInsensitiveCompare(card.term) == .orderedSame
+                              .compare(card.term, options: .caseInsensitive, locale: Locale(identifier: "en_US_POSIX")) == .orderedSame
                       }) else {
                     throw DeckError.invalid("Each example for '\(card.term)' must highlight **\(card.term)**.")
                 }
