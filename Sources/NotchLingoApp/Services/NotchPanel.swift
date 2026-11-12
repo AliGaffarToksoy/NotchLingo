@@ -16,8 +16,10 @@ final class LearningPanel: NSPanel {
     @Published var bodyHeight: CGFloat = 180
     @Published var maxBodyHeight: CGFloat = 570
     @Published var passive = false
+    @Published var wordPreview = false
     var onMeasure: ((CGFloat) -> Void)?
     var onCollapse: (() -> Void)?
+    var onPreview: (() -> Void)?
 }
 
 @MainActor final class NotchController {
@@ -28,7 +30,10 @@ final class LearningPanel: NSPanel {
     private var expanded = false
     private var screen: NSScreen?
     private var measuredHeight: CGFloat = 180
-    private var currentWidth: CGFloat { expanded ? 440 : (presentation.topInset > 0 ? max(360, presentation.cameraWidth + 180) : 300) }
+    private var currentWidth: CGFloat {
+        let desired = presentation.topInset > 0 ? max(480, presentation.cameraWidth + 388) : 480
+        return min(desired, (screen?.frame.width ?? 800) - 40)
+    }
     init(model: AppModel) {
         self.model = model
         panel = LearningPanel(contentRect: .zero, styleMask: [.borderless, .nonactivatingPanel], backing: .buffered, defer: false)
@@ -43,6 +48,10 @@ final class LearningPanel: NSPanel {
             self.resize(animated: true)
         }
         presentation.onCollapse = { [weak self] in self?.collapse() }
+        presentation.onPreview = { [weak self] in
+            self?.show(expanded: true, userInitiated: true)
+            self?.presentation.wordPreview = true
+        }
         observers.append(NotificationCenter.default.addObserver(forName: NSApplication.didChangeScreenParametersNotification, object: nil, queue: .main) { [weak self] _ in
             Task { @MainActor in self?.chooseScreen(); self?.resize(animated: false) }
         })
@@ -59,6 +68,7 @@ final class LearningPanel: NSPanel {
         presentation.maxBodyHeight = min(570, screen.visibleFrame.height - 100)
     }
     func show(expanded: Bool, userInitiated: Bool) {
+        presentation.wordPreview = false
         self.expanded = expanded; presentation.passive = expanded && !userInitiated
         model.panelExpanded = expanded; panel.acceptsKeyboard = expanded && userInitiated
         chooseScreen(); resize(animated: true); panel.orderFrontRegardless()
@@ -70,7 +80,7 @@ final class LearningPanel: NSPanel {
     private func resize(animated: Bool) {
         guard let screen else { return }
         presentation.bodyHeight = min(max(100, measuredHeight), presentation.maxBodyHeight)
-        let height = expanded ? presentation.topInset + 44 + presentation.bodyHeight : max(34, presentation.topInset + 5)
+        let height = expanded ? presentation.topInset + 44 + presentation.bodyHeight : max(44, presentation.topInset + 8)
         let rect = NSRect(x: screen.frame.midX - currentWidth / 2, y: screen.frame.maxY - height, width: currentWidth, height: height)
         guard abs(panel.frame.width - rect.width) > 0.5 || abs(panel.frame.height - rect.height) > 0.5 || panel.frame.origin != rect.origin else { return }
         if animated && !NSWorkspace.shared.accessibilityDisplayShouldReduceMotion {
@@ -100,7 +110,8 @@ private struct NotchView: View {
                 header
                 ScrollView {
                     VStack(alignment: .leading, spacing: 0) {
-                        if presentation.passive { ping }
+                        if presentation.wordPreview { wordPreview }
+                        else if presentation.passive { ping }
                         else if model.sessionActive && model.current != nil { ExerciseView(model: model, audio: model.audio) }
                         else { completion }
                     }
@@ -130,25 +141,80 @@ private struct NotchView: View {
         .onExitCommand { presentation.onCollapse?() }
     }
     private var collapsed: some View {
-        Button {
-            if model.sessionActive { model.expandPanel?(true) } else { model.startSession() }
-        } label: {
+        Button { presentation.onPreview?() } label: {
             HStack(spacing: 0) {
-                HStack(spacing: 6) {
-                    Image(systemName: model.sessionActive ? "waveform" : "character.bubble.fill").font(.system(size: 13, weight: .medium)).foregroundStyle(.teal)
-                    if presentation.topInset == 0 { Text("NotchLingo").font(.system(size: 12, weight: .medium)) }
-                    Spacer(minLength: 0)
+                Text(model.wordOfDay?.term ?? "NotchLingo")
+                    .font(.system(size: 12, weight: .semibold))
+                    .foregroundStyle(.white.opacity(0.95))
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                if presentation.topInset > 0 {
+                    Color.clear.frame(width: presentation.cameraWidth + 16)
+                } else {
+                    Rectangle().fill(.white.opacity(0.16)).frame(width: 1, height: 20).padding(.horizontal, 14)
                 }
-                if presentation.topInset > 0 { Color.clear.frame(width: presentation.cameraWidth + 16) }
-                HStack(spacing: 6) {
-                    if presentation.topInset == 0 { Spacer(minLength: 0) }
-                    Text(model.sessionActive ? "\(model.secondsLeft / 60):\(String(format: "%02d", model.secondsLeft % 60))" : (model.wordOfDay?.term ?? "English"))
-                        .font(.system(size: 11, weight: .medium)).lineLimit(1).truncationMode(.tail).foregroundStyle(.white.opacity(0.8))
-                }.frame(maxWidth: .infinity, alignment: .trailing)
-            }.padding(.horizontal, 14).frame(height: max(34, presentation.topInset + 5)).contentShape(Rectangle())
+                Text(model.wordOfDay?.turkishMeaning ?? "İngilizce öğren")
+                    .font(.system(size: 11, weight: .medium))
+                    .foregroundStyle(.teal)
+                    .frame(maxWidth: .infinity, alignment: .trailing)
+            }
+            .lineLimit(2).multilineTextAlignment(.leading)
+            .padding(.horizontal, 14)
+            .frame(height: max(44, presentation.topInset + 8))
+            .contentShape(Rectangle())
         }.buttonStyle(.plain)
             .help(model.wordOfDay.map { "\($0.term) · \($0.turkishMeaning)" } ?? "NotchLingo")
-            .accessibilityLabel(model.t("Open quick session. Word of the day: ", "Hızlı çalışmayı aç. Günün kelimesi: ") + (model.wordOfDay?.term ?? ""))
+            .accessibilityLabel((model.wordOfDay.map { "\($0.term). \($0.turkishMeaning). " } ?? "") + model.t("Show usage examples", "Kullanım örneklerini göster"))
+    }
+    private var wordPreview: some View {
+        VStack(alignment: .leading, spacing: 16) {
+            if let word = model.wordOfDay {
+                HStack {
+                    Text(model.t("WORD OF THE DAY", "GÜNÜN KELİMESİ"))
+                        .font(.system(size: 10, weight: .semibold)).tracking(1).foregroundStyle(.secondary)
+                    Spacer()
+                    Text(word.cefr.rawValue).font(.caption).foregroundStyle(.secondary)
+                }
+                HStack(alignment: .firstTextBaseline) {
+                    Text(word.term).font(.system(size: 25, weight: .semibold))
+                        .fixedSize(horizontal: false, vertical: true)
+                    Spacer()
+                    QuietIconButton(symbol: "speaker.wave.2", label: model.t("Listen", "Dinle")) {
+                        model.audio.speak(word.term, locale: model.preferences.voice)
+                    }
+                }
+                VStack(alignment: .leading, spacing: 6) {
+                    Text(word.turkishMeaning).font(.system(size: 16, weight: .medium)).foregroundStyle(.teal)
+                    Text(word.definition).font(.callout).foregroundStyle(.secondary)
+                    Text(model.preferences.voice == "en-GB" ? word.ipaUK : word.ipaUS)
+                        .font(.caption).foregroundStyle(.secondary)
+                }.fixedSize(horizontal: false, vertical: true)
+                Divider()
+                Text(model.t("In everyday use", "Cümle içinde kullanım")).font(.caption.weight(.semibold)).foregroundStyle(.secondary)
+                ForEach(word.examples, id: \.self) { example in
+                    HStack(alignment: .top, spacing: 12) {
+                        Text((try? AttributedString(markdown: example)) ?? AttributedString(example))
+                            .font(.system(size: 14)).fixedSize(horizontal: false, vertical: true)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        QuietIconButton(symbol: "speaker.wave.2", label: model.t("Listen to example", "Örneği dinle")) {
+                            model.audio.speak(example.replacingOccurrences(of: "**", with: ""), locale: model.preferences.voice)
+                        }
+                    }
+                    .padding(12).background(.white.opacity(0.045), in: RoundedRectangle(cornerRadius: 10))
+                }
+                if model.preferences.hints, let note = word.note {
+                    Text(note).font(.caption).foregroundStyle(.secondary).fixedSize(horizontal: false, vertical: true)
+                }
+                Divider()
+                HStack {
+                    Text(model.t("Keep it in sight. Let it sink in.", "Gözünün önünde kalsın, aklına yerleşsin."))
+                        .font(.caption).foregroundStyle(.secondary)
+                    Spacer()
+                    Button(model.sessionActive ? model.t("Resume practice", "Çalışmaya dön") : model.t("Practice", "Çalış")) {
+                        if model.sessionActive { model.expandPanel?(true) } else { model.startSession() }
+                    }.buttonStyle(.bordered)
+                }
+            }
+        }
     }
     private var header: some View {
         HStack(spacing: 8) {
